@@ -46,7 +46,7 @@ Met by your information-security and risk practices. Map onto:
 
 ## Where it meets Solution Development
 
-This is FitSD's signature move: **secure by design.** The Service Acceptance criteria for **Security**, **Access** and **Backup (tested)** are SA's hooks into every new service — security isn't reviewed after the fact, it's a condition of going live. Exceptions raised during design land in the SA exception register (FSD-SA-4). And at the *other* end of the lifecycle, retirement (FSD-RR-7) calls back on SA: access revoked and data securely disposed of when a service is decommissioned. *(Supplier / supply-chain assurance — FSD-SC — is the planned sixth capability, closing NIS2 21(2)(d).)*
+This is FitSD's signature move: **secure by design.** The Service Acceptance criteria for **Security**, **Access** and **Backup (tested)** are SA's hooks into every new service — security isn't reviewed after the fact, it's a condition of going live. Exceptions raised during design land in the SA exception register (FSD-SA-4). And at the *other* end of the lifecycle, retirement (FSD-RR-7) calls back on SA: access revoked and data securely disposed of when a service is decommissioned. *(Supplier / supply-chain assurance is its own capability — **FSD-SC**, closing NIS2 21(2)(d); see its card.)*
 
 ## The "shift left" lens
 

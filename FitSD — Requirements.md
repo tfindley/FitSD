@@ -16,15 +16,15 @@ tags:
 
 # FitSD — Requirements
 
-> **TL;DR** — The testable "shall" statements you must meet to conform, grouped by the five capabilities. Each is a one-line outcome; the right-hand **Note** says what it means in practice. Meet them with your own documents and tools — FitSD ships a full process only for Solution Development.
+> **TL;DR** — The testable "shall" statements you must meet to conform, grouped by capability. Each is a one-line outcome; the right-hand **Note** says what it means in practice. Meet them with your own documents and tools — FitSD ships a full process only for Solution Development.
 
-> **Status: v0.2 draft, founding layer.** This is Tier 1 of FitSD — the testable spine. Each requirement is a "shall" statement that an implementation must satisfy to conform, by whatever local documents and tools it chooses (see *Charter* §7). Requirements are grouped by the five capabilities. IDs are stable; wording will be refined.
+> **Status: draft, founding layer.** This is Tier 1 of FitSD — the testable spine. Each requirement is a "shall" statement that an implementation must satisfy to conform, by whatever local documents and tools it chooses (see *Charter* §7). Requirements are grouped by capability. IDs are stable; wording will be refined.
 
 ## How to read this
 
 Each requirement has an ID (`FSD-XX-n`), a statement, and where useful a short note on intent. Conformance is about the *requirement* being met and evidenced — not about adopting any particular template. Keep the set small: a requirement that does not change a decision does not belong here.
 
-**Two registers of depth.** FitSD owns only the *requirements* — these thin, outcome-based "shall" statements. It deliberately does **not** build a process for every capability. The *how* is satisfied one of two ways: (a) a **FitSD reference capability** (a Tier 2 process doc — shipped only for the flagship, Solution Development), or (b) a **reference to an existing process or standard** the team already runs (its own change- or incident-management policy, or ITIL / FitSM). Each capability names where its "how" lives. This is how FitSD can require change, incident, security and the rest **without rebuilding those disciplines**.
+**Two routes to the *how*.** FitSD owns only the *requirements* — these thin, outcome-based "shall" statements. It deliberately does **not** build a process for every capability. The *how* is satisfied one of two ways: (a) a **FitSD reference capability** (a Tier 2 process doc — shipped only for the flagship, Solution Development), or (b) a **reference to an existing process or standard** the team already runs (its own change- or incident-management policy, or ITIL / FitSM). Each capability names where its "how" lives. This is how FitSD can require change, incident, security and the rest **without rebuilding those disciplines**.
 
 ---
 
@@ -44,7 +44,7 @@ The management system itself.
 | **FSD-GV-6** | Roles **shall** be defined, including who may authorise what.                                                        | One person may hold several.                |
 | **FSD-GV-7** | The organisation **shall** define and **ratify a standing Service Acceptance baseline** — its own thresholds for each Service Acceptance Criterion — and apply it to every solution's Service Acceptance. | The SAC categories are fixed (FSD-SD-5); the *thresholds* are the organisation's, set once and inherited by every solution rather than rediscovered each time. Defined in *reference/FitSD — Service Acceptance Criteria*; stood up via *FitSD — Implementation Guide*. |
 
-## FSD-SD — Bring in (Solution Development)
+## FSD-SD — Solution Development
 
 The front door. How net-new work enters and reaches live service — and the control point for adopting new technology.
 
@@ -56,7 +56,7 @@ The front door. How net-new work enters and reaches live service — and the con
 | **FSD-SD-2** | A new service **shall** pass a value/feasibility decision before design begins.                                                                                                                                       | Gate 1 — "worth doing?"                          |
 | **FSD-SD-3** | A new service **shall** pass a design-readiness decision before delivery, covering how it will be operated.                                                                                                           | Gate 2 — "ready to build?"                       |
 | **FSD-SD-4** | Every new or materially changed service **shall** meet a defined Service Acceptance / Definition of Done before entering live service, **evidenced** rather than asserted.                                            | Readiness baked in.                              |
-| **FSD-SD-5** | Service Acceptance **shall**, as a minimum, cover: documentation; tested backup and recoverability; security; access control; availability; monitoring and alerting; service-level incident triggers; supportability, handover and continuity (operating knowledge captured, not reliant on a single person); and cost/licensing. | The Definition of Done — categories defined in *reference/FitSD — Service Acceptance Criteria*, proven at FSD-PRO §7. The set may grow as practice matures; thresholds are the organisation's standing baseline (FSD-GV-7). Incident triggers also satisfy FSD-RR-6. |
+| **FSD-SD-5** | Service Acceptance **shall**, as a minimum, cover: documentation; tested backup and recoverability; security; access control; availability; monitoring and alerting; service-level incident triggers; supportability, handover and continuity (operating knowledge captured, not reliant on a single person); and cost/licensing. | The Definition of Done — categories defined in *reference/FitSD — Service Acceptance Criteria*, proven at FSD-PRO §7. The set may grow as practice matures; thresholds are the organisation's standing baseline (FSD-GV-7), including any recorded applicability rules. Incident triggers also satisfy FSD-RR-6. |
 | **FSD-SD-6** | Each gate and acceptance decision **shall** have a single accountable approver and be recorded.                                                                                                                       | Lightweight, single-approver by default.         |
 
 ## FSD-CH — Change & release
@@ -86,13 +86,13 @@ Keeping services healthy.
 | **FSD-RR-4** | Services **shall** be monitored against expected availability, and capacity managed ahead of need.          |                      |
 | **FSD-RR-5** | Security patches **shall** be assessed and applied within risk-based timescales.                            |                      |
 | **FSD-RR-6** | Each service **shall** declare a **service-level incident profile** — what constitutes an incident *for that service*, with triggers and severities — registered with the incident-management process. | The gap most orgs have: central policy defines "an incident" generically; the per-service triggers are rarely written down. Defined at Service Acceptance (SAC), consumed by the central process. |
-| **FSD-RR-7** | When a service reaches end of life (EOL/EOS, obsolescence, or no longer needed), a decision **shall** be recorded — **renew, replace, or retire** — and, if retired, decommissioning **shall** be controlled: data handled, access revoked, SLAs withdrawn, documentation archived, the register updated, and operating knowledge captured (so another person could run or wind it down). | Closes the lifecycle. *Replace* routes back to Solution Development as new demand; *renew* keeps it running (contract/licence via the planned FSD-SC); access and data disposal tie to FSD-SA. |
+| **FSD-RR-7** | When a service reaches end of life (EOL/EOS, obsolescence, or no longer needed), a decision **shall** be recorded — **renew, replace, or retire** — and, if retired, decommissioning **shall** be controlled: data handled, access revoked, SLAs withdrawn, documentation archived, the register updated, and operating knowledge captured (so another person could run or wind it down). | Closes the lifecycle. *Replace* routes back to Solution Development as new demand; *renew* keeps it running (contract/licence via FSD-SC); access and data disposal tie to FSD-SA. |
 
 ## FSD-SA — Secure & assure
 
 Staying safe and compliant.
 
-**Reference (how satisfied):** met by your information-security and risk practices — FitSD ships no separate process here. Maps to ISO 27001 Annex A, FitSM PR6, ITIL *Information security / Risk management*. (Supplier / supply-chain — **FSD-SC** — is on the backlog, closing NIS2 21(2)(d).)
+**Reference (how satisfied):** met by your information-security and risk practices — FitSD ships no separate process here. Maps to ISO 27001 Annex A, FitSM PR6, ITIL *Information security / Risk management*. (Supplier / supply-chain duties live next door in **FSD-SC**.)
 
 | ID          | Requirement                                                                                                                  | Note                      |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
@@ -101,6 +101,19 @@ Staying safe and compliant.
 | **FSD-SA-3** | Data **shall** be backed up to a defined scheme, and recoverability tested — not assumed.                                    | Ties to FSD-SD-5.          |
 | **FSD-SA-4** | Departures from policy **shall** be handled as recorded, time-bound, compensated exceptions.                                 |                           |
 | **FSD-SA-5** | Service management **shall** align to applicable legal and regulatory obligations, with evidence of control retained.        | e.g. NIS2-style measures. |
+
+## FSD-SC — Supplier & supply chain
+
+Who the services stand on. **Conditional:** these requirements apply where services rely on suppliers or third-party dependencies the team is accountable for — cloud, SaaS, support contracts, critical products. In practice that's most teams; one with genuinely none records that fact and moves on.
+
+**Reference (how satisfied):** met by your procurement and supplier-management practice — FitSD ships no separate process. Maps to ISO 27001 A.5.19–A.5.22, FitSM PR8, NIS2 Article 21(2)(d). The intake-side control already exists: the FSD-SD-1 new-technology trigger and Gate 1's vendor due diligence (FSD-FRM-01 §6).
+
+| ID          | Requirement                                                                                                                  | Note                      |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| **FSD-SC-1** | Suppliers and third-party dependencies that live services rely on **shall** be recorded, each with an accountable owner.    | The supplier register. See *FitSD — Information Stores*. |
+| **FSD-SC-2** | A new supplier or third-party dependency **shall** be assessed for risk and suitability before it is adopted.               | Satisfied at intake — the FSD-SD-1 new-technology trigger and Gate 1 vendor due diligence. |
+| **FSD-SC-3** | Where a supplier handles the team's data or supports a live service, security and service expectations **shall** be set in the agreement and evidence retained. | Contracts, DPAs, support terms — proportionate to what the supplier touches. |
+| **FSD-SC-4** | Supplier dependencies **shall** be reviewed periodically — support horizons (EOL/EOS), renewals, performance — with an exit or replacement path understood for any a service cannot run without. | Feeds the end-of-life decision (FSD-RR-7 *renew*) — the Gate 1 "how would we get off it?" question, kept alive. |
 
 ---
 
@@ -119,4 +132,4 @@ These are illustrative reference material, not part of the normative requirement
 
 ---
 
-*Coverage note: FSD-GV and FSD-SD are the founding spine. FSD-CH / FSD-RR / FSD-SA are stated here so the requirement set is complete, but their reference capabilities (Tier 2) come later.*
+*Coverage note: FSD-GV and FSD-SD are the founding spine. FSD-CH / FSD-RR / FSD-SA / FSD-SC are stated here so the requirement set is complete; their Tier 2 treatment is a capability card plus the process you already run — deliberately. FitSD builds no second full process (see the Roadmap, "Shape & scope").*

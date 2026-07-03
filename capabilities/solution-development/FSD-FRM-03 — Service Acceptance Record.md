@@ -36,9 +36,9 @@ tags:
 
 ## 1. Acceptance criteria
 
-For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline** — the criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance.
+For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline** — the criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance. Where the baseline's applicability rules say a criterion doesn't apply to this service, record **N/A per baseline** with the reason — a recorded call, not a skip.
 
-| Criterion | Evidence / link | Met? (Y/N) |
+| Criterion | Evidence / link | Met? (Y / N / N/A per baseline) |
 |---|---|---|
 | **Documentation** — HLD, runbook, recovery procedure, user/how-to published | | |
 | **Backup (tested)** — backup in place **and test restore performed**, dated | | |

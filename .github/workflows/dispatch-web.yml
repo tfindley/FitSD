@@ -1,0 +1,36 @@
+name: Notify web
+
+# When the standard changes on a watched ref, tell the website repo (fitsd-web) to rebuild — it
+# vendors the standard at these refs into a multi-version site. The set of watched refs mirrors
+# fitsd-web's channels.manifest.mjs: moving branch channels (a preview/future line) and version
+# tags (a promoted current / archived previous).
+#
+# SETUP (one-time): create a fine-grained PAT with "Contents: Read and write" on tfindley/fitsd-web
+# and store it here as the WEB_DISPATCH_TOKEN secret. This workflow must exist on every watched
+# ref (merge it to main and to any watched branch) for that ref's pushes to fire it.
+
+on:
+  push:
+    branches: [main, v0.3] # channels that track a moving branch
+    tags: ["v*"] # a newly cut / promoted version
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify-web
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    name: Dispatch fitsd-web rebuild
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch to fitsd-web
+        env:
+          GH_TOKEN: ${{ secrets.WEB_DISPATCH_TOKEN }}
+        run: |
+          gh api repos/tfindley/fitsd-web/dispatches \
+            -f event_type=standard-updated \
+            -f "client_payload[ref]=${{ github.ref_name }}"

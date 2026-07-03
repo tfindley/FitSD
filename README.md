@@ -6,7 +6,7 @@
 
 > **In one line.** FitSD is just enough process for a small team to take on the right work and ship it so it lasts — one front door for new work, and a "done" that means *operable*, not merely running.
 
-Small teams can't run ITIL — it assumes a department and a budget for process nobody has. But they still have to decide what's worth building, design it so it can actually be run, and avoid the 2 a.m. call-out for something nobody wrote down. FitSD is the smallest amount of that discipline a handful of people can keep up. New work enters through one front door with two quick decision gates — *is this worth doing?* then *is it ready to build?* — and nothing goes live until it's proven ready: documented, recoverable, secure, monitored, supportable. It keeps what ITIL, ISO 20000 and FitSM get right, and drops everything a small team can't sustain.
+Small teams can't run ITIL, but they still have to decide what's worth building, design it so it can actually be run, and avoid the 2 a.m. call-out for something nobody wrote down. FitSD is the smallest amount of that discipline a handful of people can keep up. (The full pitch — spoken and one-page forms — is at the top of `FitSD — Adoption & Positioning.md`.)
 
 Two things do most of the work:
 
@@ -20,7 +20,7 @@ It's a personal project, and it's deliberately not tied to any one organisation.
 You don't need to read it all — pick your path:
 
 - **Just curious?** → `FitSD — Quickstart.md` — one project, five moves.
-- **Pitching it upward?** → `FitSD — Elevator Pitch & Executive Summary.md`.
+- **Pitching it upward?** → `FitSD — Adoption & Positioning.md` — the pitch, ready to say out loud, is right at the top.
 - **Adopting it?** → `FitSD — Framework Charter.md` (what it is) → `FitSD — Requirements.md` (what you must meet) → `capabilities/solution-development/` (the one fully built process).
 - **Checking it against standards?** → `reference/FitSD — Standards Alignment.md`.
 - **Stuck on a term?** → `FitSD — Definitions.md`.
@@ -32,9 +32,8 @@ You don't need to read it all — pick your path:
 | Path                                       | Tier | What it is                                                          |
 | ------------------------------------------ | ---- | ------------------------------------------------------------------- |
 | `FitSD — Framework Charter.md`             | 0    | What FitSD is: principles, the capability model, roles, conformance |
-| `FitSD — Elevator Pitch & Executive Summary.md` | 0 | The short forms: a spoken pitch and a one-page summary for decision-makers |
 | `FitSD — Requirements.md`                  | 1    | The testable "shall" statements — the spine an auditor would check  |
-| `FitSD — Adoption & Positioning.md`        | 0    | Who it's for, why they'd adopt it, and how it fits by org size      |
+| `FitSD — Adoption & Positioning.md`        | 0    | The pitch (spoken + one-pager), who it's for, why they'd adopt it, and how it fits by org size |
 | `FitSD — Implementation Guide.md`          | 2–5  | How to stand FitSD up in your team — the standup checklist and implementation profile |
 | `FitSD — Quickstart.md`                    | 0    | The five-move path from "what's this?" to "we're using it"          |
 | `FitSD — Roadmap.md`                       | 0    | Direction of travel — bigger picture than the backlog               |
@@ -49,18 +48,19 @@ You don't need to read it all — pick your path:
 | `CHANGELOG.md`                             | —    | Notable changes to the standard, per release — for implementers     |
 | `LICENSE`                                  | —    | Creative Commons Attribution 4.0 (CC BY 4.0)                        |
 
-## The five capabilities
+## The capabilities
 
 | Group                               | Code   | Status                                                   |
 | ----------------------------------- | ------ | -------------------------------------------------------- |
 | Govern                              | FSD-GV | Card built (`capabilities/`)                             |
-| Bring in — **Solution Development** | FSD-SD | Built out in full (`capabilities/solution-development/`) |
+| **Solution Development** (the front door) | FSD-SD | Built out in full (`capabilities/solution-development/`) |
 | Change & release                    | FSD-CH | Card built (`capabilities/`)                             |
 | Run & restore                       | FSD-RR | Card built (`capabilities/`)                             |
 | Secure & assure                     | FSD-SA | Card built (`capabilities/`)                             |
+| Supplier & supply chain *(conditional)* | FSD-SC | Card built (`capabilities/`)                             |
 
-Solution Development is built out in full — a process and its forms (intake, two gates, and acceptance). The other four each have a **capability card** — a one-page orientation, not a full process: what it governs, the requirements it carries, and which existing standard or process to satisfy them with. That's the design — FitSD tells you *what* good looks like and lets you keep the *how* you already have.
+Solution Development is built out in full — a process and its forms (intake, two gates, and acceptance). The others each have a **capability card** — a one-page orientation, not a full process: what it governs, the requirements it carries, and which existing standard or process to satisfy them with. That's the design — FitSD tells you *what* good looks like and lets you keep the *how* you already have. (Supplier & supply chain is conditional: it applies where services rely on suppliers or third-party dependencies.)
 
 ## Where it's at
 
-v0.2, founding layer (hardened) — with **v0.3 in progress** on the `v0.3` branch. The charter and requirements are drafted; Solution Development has its full process and forms (intake, two gates, acceptance); the other four capabilities have cards. v0.2 added the full service lifecycle (end-of-life review & retirement), the information-stores layer, continuity in the Definition of Done, and a new-technology intake control. v0.3 reframes the SAC as an inheritable, org-ratified baseline (FSD-GV-7), adds the Idea Brief form (FSD-FRM-00) and a business Implementation Guide, and simplifies the Solution Development forms. The roles model (Tier 3), the maturity self-check (Tier 5) and a worked example are next — see `BACKLOG.md` and `FitSD — Roadmap.md`.
+The current version is in `VERSION`; what changed in each release — and what it means for implementers — is in `CHANGELOG.md`. The founding layer is drafted and hardened: charter, requirements, and all the capabilities, with Solution Development built out in full. Next up: a published worked example, the maturity self-check (Tier 5) and the roles model (Tier 3) — see `BACKLOG.md` and `FitSD — Roadmap.md`.

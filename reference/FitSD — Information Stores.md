@@ -36,12 +36,13 @@ flowchart TB
     Livev -.-> IRec[("Incident records<br/>+ profiles")]
     Livev -.-> PRec[("Problem records")]
     EOLv -.-> RRec[("Retirement<br/>records")]
-    subgraph CROSS["Always-on — Govern + Secure & assure"]
+    subgraph CROSS["Always-on — Govern, Secure & assure, Supplier & supply chain"]
       direction LR
       RKg[("Risk register")]
       EXg[("Exceptions<br/>register")]
       DCg[("Document<br/>register")]
       BKg[("Backup &<br/>restore-test records")]
+      SPg[("Supplier /<br/>dependency register")]
     end
     FLOW -.->|maintained across every stage| CROSS
 ```
@@ -57,6 +58,7 @@ flowchart TB
 | **Service register / catalogue** | Live services, named owner, status (incl. retired) | Govern (FSD-GV-2/4) | Live → retired | FitSM PR1; ITIL service catalogue |
 | **Document register / control** | Governing documents with owner, approver, review cycle | Govern (FSD-GV-3) | All | ISO 27001 7.5 (documented information) |
 | **Risk register** | Risks, treatment or formal acceptance, owner | Secure & Assure (FSD-SA-1) | All | ISO 27001 clause 6.1; FitSM PR6 |
+| **Supplier / dependency register** | Suppliers and third-party dependencies live services rely on — owner, agreement, support horizon | Supplier & Supply Chain (FSD-SC-1) | All | ISO 27001 A.5.19; FitSM PR8 |
 | **Exceptions register** | Time-bound, compensated departures from policy | Secure & Assure (FSD-SA-4) | All | ISO 27001 (risk acceptance) |
 | **Change records** | Changes, risk/authorisation, post-implementation review | Change & Release (FSD-CH-3) | Live | FitSM PR12; ITIL change enablement |
 | **Incident records + per-service incident profiles** | Incidents; what counts as an incident *for each service* | Run & Restore (FSD-RR-1/6) | Live | FitSM PR9; ITIL incident |

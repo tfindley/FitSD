@@ -7,22 +7,45 @@ status: draft
 type: explanatory (non-normative)
 owner: "Tristan Findley"
 date: 2026-06-23
-tags: [fitsd, adoption, positioning, explanatory]
+tags: [fitsd, adoption, positioning, pitch, executive-summary, explanatory]
 ---
 
 # FitSD — Adoption & Positioning
 
-> **What this is.** The *who, why and how-far* of FitSD — who picks it up, what pulls them in, and how it fits teams of different sizes. None of it is normative; it adds no requirements. The framework stays lean. This is the story around it.
+> **What this is.** The *who, why and how-far* of FitSD — the pitch (a spoken version and a one-pager for whoever holds the budget), who picks it up, what pulls them in, and how it fits teams of different sizes. None of it is normative; it adds no requirements. The framework stays lean. This is the story around it.
 
 ## 1. The case, in a line
 
 FitSD gives a technical team just enough governance to take on the right work and ship it so it can be run — and, just as usefully, a shared language for getting a yes out of the people who hold the budget.
 
-## 2. Why a team actually adopts it
+## 2. The pitch
+
+The short forms — a pitch to say out loud, and a one-pager to hand to whoever holds the budget.
+
+**One line.**
+FitSD is just enough process for a small team to take on the right work and ship it so it lasts — one front door for new work, and a "done" that means *operable*, not merely running.
+
+**The thirty-second version.**
+Small teams can't run ITIL — it assumes a department and a budget for process nobody has. But they still have to decide what's worth building, design it so it can actually be run, and avoid the 2 a.m. page for something nobody wrote down. FitSD is the smallest amount of that discipline a handful of people can keep up. New work enters through one front door with two quick decision gates — *is this worth doing?* then *is it ready to build?* — and nothing goes live until it's proven ready: documented, recoverable, secure, monitored, supportable. It keeps what ITIL, ISO 20000 and FitSM get right, and drops everything a small team can't sustain.
+
+**The version that actually lands (talking upward).**
+Ever watched a good idea die because there was no clean way to pitch it? FitSD turns "we need to replace the ageing build pipeline" from a nervous corridor conversation into a one-page proposal with a yes/no at the bottom — in the language leadership already speaks: the driver, the cost of doing nothing, the options, the effort. It gets technical teams heard and funded, then makes sure what they ship can actually be run and supported. Governance that works *for* the team, not on it.
+
+### The one-pager
+
+**The problem.** Frameworks like ITIL and ISO/IEC 20000 are built for organisations with a department, a budget, and people whose whole job is process. Most teams have none of that — yet they carry the same risks: effort spent on work that was never worth doing, and services that go live but can't be supported, recovered or secured. Good ideas die for want of a way to pitch them, and the things that do ship come back as out-of-hours incidents and audit findings.
+
+**What FitSD is.** A distillation of mainstream service-management and security practice (ITIL 4, ISO 20000, FitSM) down to the smallest amount a handful of people can actually sustain — vendor- and organisation-neutral, released under CC BY 4.0 so any team can adopt and adapt it. Two commitments set it apart: **one front door** (a single intake and two light decision gates — effort is earned at a gate; nothing is built on a whim) and **readiness as the finish line** (nothing reaches live service until it is *evidenced* as ready — documented, recoverable with a tested restore, secure, access-controlled, monitored and supportable).
+
+**How it stays light.** FitSD owns only a thin set of testable requirements. It ships a full, ready-to-use process for one capability — Solution Development, the front door — and for the others (govern; change & release; run & restore; secure & assure; supplier & supply chain) it states the requirement and points at the standard or process a team already runs. That is how it can require change, incident and security discipline *without rebuilding those disciplines* — the single design choice that keeps it lightweight rather than just claiming to be.
+
+What an adopting team actually gets is §3; where FitSD is the wrong tool is §7.
+
+## 3. Why a team actually adopts it
 
 Most lightweight-ITSM material sells control. FitSD's real pull is the opposite: it helps technical people get heard.
 
-Look at what it produces. The Idea Brief and the Gate 1 Outline Proposal are a project proposal in the language leadership already speaks — the driver, the cost of doing nothing, the options, the effort, and a clear decision to make. That turns "we need to replace the ageing build pipeline" from a nervous meeting and a blank page into a one-pager with a yes/no at the bottom. For an engineer who has watched good ideas die for want of a way to pitch them, that's the hook.
+The "talking upward" pitch above isn't rhetoric — it's literally what the forms produce. The Idea Brief and the Gate 1 Outline Proposal *are* the one-page proposal with a yes/no at the bottom; the driver, the cost of doing nothing, the options and the effort are its section headings. For an engineer who has watched good ideas die for want of a way to pitch them, that's the hook.
 
 The rest follows from there:
 
@@ -30,7 +53,7 @@ The rest follows from there:
 - **Credibility without a PMO.** It leaves the evidence trail customers and auditors ask for — acceptance records, a risk register, change records — without an enterprise governance team to produce it.
 - **An on-ramp, not a dead end.** It maps cleanly onto ISO 27001 and NIS2 (see *Standards Alignment*), so the discipline you build early isn't wasted if you grow into the heavier standards.
 
-## 3. The use case worth leading with
+## 4. The use case worth leading with
 
 Talking upward is where FitSD earns its keep.
 
@@ -40,7 +63,7 @@ Talking upward is where FitSD earns its keep.
 
 Either direction, the trick is the same: the form does the framing. The hard part of talking to leadership — structure, brevity, a clear ask — is baked into the template, so you don't have to be good at it on the day.
 
-## 4. Where Solution Development sits
+## 5. Where Solution Development sits
 
 Demand feeds in from across the business; the outputs feed the operational disciplines. Compliance is one lane of several — not the whole story — and what you learn running a service (a nasty incident, a capacity ceiling) loops back round as fresh demand.
 
@@ -80,7 +103,7 @@ flowchart LR
 
 Six families of demand come through that door: strategy and leadership; customer and market; compliance and governance; risk and security; operational and technical; finance and people. It has to read plainly to all of them — which is why Gate 1 stays in business language, not security jargon.
 
-## 5. Fit by organisation size
+## 6. Fit by organisation size
 
 | Size | What FitSD is to them | Why they'd adopt it |
 |---|---|---|
@@ -89,13 +112,13 @@ Six families of demand come through that door: strategy and leadership; customer
 | **SMB (10–200)** | The whole lightweight management system, and the on-ramp to ISO 27001 / NIS2 | Credibility to customers and regulators, with no enterprise PMO |
 | **Enterprise** | A team-level front door feeding the heavier ITIL machinery | Local discipline; it was never meant to be the system of record |
 
-## 6. Where FitSD is the wrong tool
+## 7. Where FitSD is the wrong tool
 
 - **Not a full ISMS or ITIL** when certification scope, scale or a contract actually demands the heavy apparatus — a formal risk methodology, a Statement of Applicability, internal audit. FitSD is the on-ramp, not the destination.
 - **Not for routine change.** Day-to-day BAU belongs in Change & Release (FSD-CH), not the gates. The scope test in `FSD-PRO §1` exists precisely to keep it out.
 - **Little to add** for a team already running mature ITIL or ISO that works — beyond, maybe, borrowing the intake-first pattern as a front door.
 
-## 7. The adoption journey
+## 8. The adoption journey
 
 Nobody adopts a framework by reading it end to end. They take one step, get a win, and come back for the next. FitSM understood this — its real engine isn't the standard, it's the ladder of certifications that always gives people a next rung. FitSD has no certification body, but it can offer the same shape: a visible next step at every stage.
 

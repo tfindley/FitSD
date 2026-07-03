@@ -20,7 +20,7 @@ tags:
 
 > **TL;DR** — The founding document: what FitSD is, its principles, the five-capability model, the roles, and how you conform. Adopting FitSD? Read this first. Just want to try it? The Quickstart is faster.
 
-> **v0.2 — the founding layer.** This is Tier 0: what FitSD is, and the model everything else hangs off. The testable requirements live in *FitSD — Requirements* (Tier 1). The lower tiers — capabilities, roles, templates, the maturity check — come after.
+> **The founding layer.** This is Tier 0: what FitSD is, and the model everything else hangs off. The testable requirements live in *FitSD — Requirements* (Tier 1). The lower tiers — capabilities, roles, templates, the maturity check — come after.
 
 ## 1. What FitSD is
 
@@ -57,29 +57,31 @@ The rules that decide what makes the cut.
 
 ## 4. The capability model
 
-FitSD splits service management into five groups. A small team rarely needs more — the one likely sixth is supplier / supply-chain assurance (**FSD-SC**), planned for teams with genuine supply-chain exposure (it closes the NIS2 supply-chain gap; see the *Roadmap*).
+FitSD splits service management into five core groups, plus one **conditional** capability — supplier / supply-chain assurance (**FSD-SC**) — for teams whose services rely on suppliers and third-party dependencies (it closes the NIS2 supply-chain gap; see its card).
 
 | Group                | Question it answers                     | Core capabilities                                                    |
 | -------------------- | --------------------------------------- | -------------------------------------------------------------------- |
 | **Govern**           | Are we running a managed system at all? | Scope, document control, roles, continual improvement (PDCA)         |
-| **Bring in**         | How does new work enter?                | **Solution Development** — intake, design, service acceptance        |
+| **Solution Development** | How does new work enter?            | The front door — intake, design, service acceptance                  |
 | **Change & release** | How do we change live services safely?  | Change management, release & deployment                              |
 | **Run & restore**    | How do we keep services healthy?        | Incident & major incident, problem, availability & monitoring, patch |
 | **Secure & assure**  | How do we stay safe and compliant?      | Risk, access, backup & recovery, exceptions, regulatory alignment    |
+| **Supplier & supply chain** *(conditional)* | Who do we depend on, and on what terms? | Supplier register, pre-adoption assessment, agreements, review & exit |
 
-**Bring in is the one that matters most.** Solution Development gets built first because it reaches into all the others — its acceptance criteria drag in security, backup, availability, access, monitoring and change whether you planned for them or not. Get the front door right and the rest of the house reveals itself.
+**Solution Development is the one that matters most.** It gets built first because it reaches into all the others — its acceptance criteria drag in security, backup, availability, access, monitoring and change whether you planned for them or not. Get the front door right and the rest of the house reveals itself.
 
 ```mermaid
 flowchart LR
     subgraph GV["Govern (FSD-GV): scope, roles, document control, PDCA"]
       direction LR
-      D["Demand"] --> SD["Bring in<br/>FSD-SD"]
+      D["Demand"] --> SD["Solution Development<br/>FSD-SD"]
       SD --> CH["Change and release<br/>FSD-CH"]
       CH --> RR["Run and restore<br/>FSD-RR"]
       RR --> Ret["End-of-life<br/>review"]
     end
     SD -.->|secure by design| SA["Secure and assure<br/>FSD-SA"]
     RR -.->|protect and assure| SA
+    SD -.->|vendor due diligence| SC["Supplier and supply chain<br/>FSD-SC (conditional)"]
 ```
 
 ## 5. The document model — Framework and Implementation
@@ -93,9 +95,9 @@ The numbered **tiers** within each layer echo FitSM's numbered parts; the number
 
 | Tier | Name                      | Purpose                                                          | Status                                          |
 | ---- | ------------------------- | ---------------------------------------------------------------- | ----------------------------------------------- |
-| 0    | **Charter & vocabulary**  | What FitSD is, its principles and model (this document)       | v0.2                                            |
-| 1    | **Requirements**          | Testable "shall" statements per capability — the auditable spine | v0.2                                            |
-| 2    | **Capabilities**          | Process descriptions: objective + key activities                 | SD full process; cards for GV/CH/RR/SA         |
+| 0    | **Charter & vocabulary**  | What FitSD is, its principles and model (this document)       | current                                         |
+| 1    | **Requirements**          | Testable "shall" statements per capability — the auditable spine | current                                         |
+| 2    | **Capabilities**          | Process descriptions: objective + key activities                 | SD full process; cards for GV/CH/RR/SA/SC      |
 | 3    | **Roles**                 | The role model (see §6)                                          | later                                           |
 | 4    | **Templates & registers** | Forms, registers, records used to run the capabilities           | Solution Development built (FSD-FRM-00–03) |
 | 5    | **Maturity self-check**   | A 0–5 capability self-assessment (see §7)                        | later                                           |

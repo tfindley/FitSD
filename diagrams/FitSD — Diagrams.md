@@ -48,13 +48,14 @@ flowchart LR
 flowchart LR
     subgraph GV["Govern (FSD-GV): scope, roles, document control, PDCA"]
       direction LR
-      D["Demand"] --> SD["Bring in<br/>FSD-SD"]
+      D["Demand"] --> SD["Solution Development<br/>FSD-SD"]
       SD --> CH["Change and release<br/>FSD-CH"]
       CH --> RR["Run and restore<br/>FSD-RR"]
       RR --> Ret["End-of-life<br/>review"]
     end
     SD -.->|secure by design| SA["Secure and assure<br/>FSD-SA"]
     RR -.->|protect and assure| SA
+    SD -.->|vendor due diligence| SC["Supplier and supply chain<br/>FSD-SC (conditional)"]
 ```
 
 ---
@@ -166,12 +167,13 @@ flowchart TB
     Livev -.-> IRec[("Incident records<br/>+ profiles")]
     Livev -.-> PRec[("Problem records")]
     EOLv -.-> RRec[("Retirement<br/>records")]
-    subgraph CROSS["Always-on — Govern + Secure & assure"]
+    subgraph CROSS["Always-on — Govern, Secure & assure, Supplier & supply chain"]
       direction LR
       RKg[("Risk register")]
       EXg[("Exceptions<br/>register")]
       DCg[("Document<br/>register")]
       BKg[("Backup &<br/>restore-test records")]
+      SPg[("Supplier /<br/>dependency register")]
     end
     FLOW -.->|maintained across every stage| CROSS
 ```

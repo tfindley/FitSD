@@ -45,7 +45,7 @@ It uses **two decision gates** at the front and a **Service Acceptance** close-o
 
 - It introduces a **new service, product, or platform capability** not currently offered; or
 - It requires **new infrastructure or a new architecture**, beyond a configuration change to something that already exists; or
-- Its estimated effort exceeds **approximately 10 person-days**; or
+- Its estimated effort exceeds the team's **net-new effort line** — a threshold you set once, in your implementation profile (about 10 person-days is a sensible default); or
 - It creates a **material new ongoing operating burden or cost** — a new support or operational responsibility, new licensing, or a new run-cost; or
 - It introduces a **new technology, tool, or third-party dependency** the team will have to own, support or secure — *regardless of cost or effort.* This is the anti-sprawl trigger: a new thing doesn't slip in by the back door just because it's small or free.
 
@@ -113,7 +113,15 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 **Purpose.** Decide whether the idea is worth pursuing before any design effort is spent.
 
-**What is captured** (on FSD-FRM-01, carried forward from the Idea Brief where one was raised): the idea and the customer or business need; the benefits; the **primary driver** (value, compliance, or risk reduction); a light value score across four plain lenses (growth, retention, efficiency, and risk/compliance) — noting that compliance- and risk-driven work is justified by impact and the cited obligation rather than the value total; a T-shirt estimate of effort; the impact of doing nothing, why now, and when the case expires; the feasible delivery options; and — where feasibility is still in doubt — an optional Proof of Concept defining its objective, success criteria, method, cost and duration — and, where a vendor or product is involved, its licensing and upgrade path.
+**What is captured** (on FSD-FRM-01, carried forward from the Idea Brief where one was raised):
+
+- the idea, the customer or business need, and the benefits;
+- the **primary driver** (value, compliance, or risk reduction), with a light value score across four plain lenses (growth, retention, efficiency, risk/compliance) — compliance- and risk-driven work is justified by impact and the cited obligation, not the value scores;
+- a T-shirt estimate of effort;
+- the impact of doing nothing, why now, and when the case expires;
+- the feasible delivery options;
+- where a vendor or product is involved, its licensing and upgrade path — the new-technology due diligence;
+- where feasibility is still in doubt, an optional Proof of Concept: its objective, success criteria, method, cost and duration.
 
 **Outcomes:**
 

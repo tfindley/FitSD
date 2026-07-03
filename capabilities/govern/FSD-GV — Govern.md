@@ -21,13 +21,13 @@ tags: [fitsd, govern, capability-card]
 
 ## Objective
 
-Make sure there's actually a managed system here, not just a pile of activities. Govern is what turns "some people do some things" into "we know what services we run, who owns each one, where the documents live, and how we keep improving." Get this wrong and the other four capabilities are disconnected motion.
+Make sure there's actually a managed system here, not just a pile of activities. Govern is what turns "some people do some things" into "we know what services we run, who owns each one, where the documents live, and how we keep improving." Get this wrong and the other capabilities are disconnected motion.
 
 ## Scope
 
 **In:** the management system itself — what's in scope, who owns what, how documents are controlled, the review cadence, the drive to improve.
 
-**Out:** the actual service work. That belongs to the other four capabilities; Govern just holds the frame around them.
+**Out:** the actual service work. That belongs to the other capabilities; Govern just holds the frame around them.
 
 ## Requirements it carries (Tier 1)
 

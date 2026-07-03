@@ -47,4 +47,4 @@ Before you call it live, walk the Service Acceptance Record. Each criterion: met
 
 You've run one service through the front door. If it helped — the Gate 1 conversation went better, or the acceptance check caught something — do it again with the next piece of work. That's adoption: one project at a time, never a big bang.
 
-**Next:** the maturity self-check (once built) will tell you where you stand and what one notch better looks like. Until then, the five capability cards in `capabilities/` show what else FitSD covers and what to point at for each.
+**Next:** the maturity self-check (once built) will tell you where you stand and what one notch better looks like. Until then, the capability cards in `capabilities/` show what else FitSD covers and what to point at for each.

@@ -17,7 +17,7 @@ tags: [fitsd, change, release, capability-card]
 
 *Capability card. FitSD governs change; it doesn't reinvent it.*
 
-> **What a capability card is.** A one-page orientation, not a process. It says what the capability is for, which requirements it carries, what to satisfy them *with* — because here FitSD points at existing practice rather than authoring its own — and how it wires into Solution Development. Solution Development is the only capability FitSD builds out in full. The other four, this one included, are requirements plus a pointer.
+> **What a capability card is.** A one-page orientation, not a process. It says what the capability is for, which requirements it carries, what to satisfy them *with* — because here FitSD points at existing practice rather than authoring its own — and how it wires into Solution Development. Solution Development is the only capability FitSD builds out in full. The rest, this one included, are requirements plus a pointer.
 
 ## Objective
 

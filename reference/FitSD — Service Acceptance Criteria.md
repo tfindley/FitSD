@@ -45,6 +45,8 @@ The set may grow as practice matures — a new criterion is a framework change, 
 
 Set this once, ratify it, and inherit it into every solution. The prompts below are **questions, not answers** — FitSD ships no default numbers, on purpose. Fill them with values that fit *your* organisation and risk appetite. (Worked example values will follow the published end-to-end example — see *FitSD — Roadmap*.)
 
+**Applicability.** The baseline may also set *applicability rules* — where a criterion legitimately doesn't apply (say, a stateless internal tool with nothing of its own to back up). At acceptance, such a criterion is recorded **N/A per baseline, with the reason** — a deliberate call against a standing rule, not a skip. If you find yourself writing N/A with no rule to point at, the fix is to change the baseline, not to bend the record.
+
 | Criterion | Your standard — set once, ratified | Owner |
 |---|---|---|
 | **Documentation** | *Which documents are mandatory; where they live* | |

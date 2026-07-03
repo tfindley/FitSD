@@ -16,7 +16,7 @@ tags: [fitsd, definitions, glossary]
 
 ## FitSD terms
 
-**Capability.** One of the five areas FitSD organises service management into: Govern, Bring in (Solution Development), Change & release, Run & restore, Secure & assure.
+**Capability.** One of the areas FitSD organises service management into: Govern, Solution Development (the front door), Change & release, Run & restore, Secure & assure — plus the conditional sixth, Supplier & supply chain (FSD-SC), for teams whose services rely on suppliers or third-party dependencies.
 
 **Capability card.** A one-page orientation for a capability — its objective, the requirements it carries, what to satisfy them with, and how it connects to Solution Development. Built for the four capabilities FitSD doesn't author a full process for.
 
@@ -47,6 +47,8 @@ tags: [fitsd, definitions, glossary]
 **SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion — set once and inherited by every solution (FSD-GV-7). See *FitSD — Service Acceptance Criteria*.
 
 **Solution Owner.** The single person accountable for a proposed solution, who drives it through the gates and completes the records.
+
+**Supplier register.** The record of suppliers and third-party dependencies that live services rely on — each with an owner, its agreement, and its support horizon (FSD-SC-1). See *FitSD — Information Stores*.
 
 **Approver.** The role that signs off the gates and Service Acceptance, at a level matched to the risk.
 
