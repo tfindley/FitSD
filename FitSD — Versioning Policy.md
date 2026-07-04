@@ -42,10 +42,10 @@ streams below.
 
 Not everything that changes is a release. There are three independent streams:
 
-1. **The website.** Styling, layout, search, build. Versioned by the site's own number
-   (`web/package.json`); never touches the standard. Ships continuously.
+1. **The website.** Styling, layout, search, build. Built by its own repository and versioned by
+   its own number; never touches the standard. Ships continuously.
 2. **Spec errata.** Typos, clarifications, rendering fixes to the *current* version — no
-   normative effect. These land on `main` and republish in place. **No version bump.**
+   normative effect. Applied to the current version without cutting a new one. **No version bump.**
 3. **A spec release.** A normative change (new or altered requirements). This is the only
    stream that cuts a new version: the outgoing version is frozen, `VERSION` is bumped, and
    a tag is created.
@@ -55,8 +55,8 @@ site improvements never forces — or masquerades as — a new version of the fr
 
 ## Latest, and the frozen record
 
-- **`main` is "latest", live.** The site root (`fitsd.tfindley.dev/`) always serves the
-  current version from `main`. Errata appear here as soon as they're merged.
+- **The current version is live.** The site root (`fitsd.tfindley.dev/`) always serves the
+  current version; errata are published against it without cutting a new version.
 - **Released versions are frozen.** When a new version is cut, the outgoing one is archived
   as an immutable snapshot, browsable forever at a stable URL — `…/0.1/`, `…/0.2/` — with a
   version switcher. A frozen version is never edited in place.

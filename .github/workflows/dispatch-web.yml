@@ -11,8 +11,11 @@ name: Notify web
 
 on:
   push:
-    branches: [main, v0.3] # channels that track a moving branch
-    tags: ["v*"] # a newly cut / promoted version
+    # Watched refs mirror fitsd-web/channels.manifest.mjs: the moving preview/future BRANCH
+    # channels, and version TAGS (a release / promotion). Add a branch here when a new moving
+    # channel is added to the manifest.
+    branches: [v0.3]
+    tags: ["v*"]
   workflow_dispatch:
 
 permissions:

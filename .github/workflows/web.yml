@@ -1,20 +1,12 @@
-name: Web
+name: Web (retired — rollback only)
 
-# Build the website container and push it to GHCR whenever the site or the canonical
-# standard changes. Hosting is self-managed: the host pulls ghcr.io/<owner>/fitsd-web
-# and runs it behind Traefik (see web/docker-compose.yml).
+# DISABLED at cutover. The website is now built and published by the fitsd-web repo, which owns
+# ghcr.io/<owner>/fitsd-web:latest (the host pulls it via Watchtower). This workflow — the old
+# single-channel build from web/ — no longer runs on push. It is kept, runnable via
+# workflow_dispatch ONLY, purely as a rollback: a manual run republishes the old single-channel
+# image to :latest. Delete this workflow and web/ once fitsd-web is confirmed stable.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "web/**"
-      # canonical standard — vendored into the site, so a doc edit must rebuild it
-      - "*.md"
-      - "capabilities/**"
-      - "reference/**"
-      - "diagrams/**"
-      - ".github/workflows/web.yml"
   workflow_dispatch:
 
 concurrency:
