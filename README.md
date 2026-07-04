@@ -1,8 +1,11 @@
 # FitSD
 
-[![Web](https://github.com/tfindley/keystone/actions/workflows/web.yml/badge.svg)](https://github.com/tfindley/keystone/actions/workflows/web.yml)
-[![Web CI](https://github.com/tfindley/keystone/actions/workflows/web-ci.yml/badge.svg)](https://github.com/tfindley/keystone/actions/workflows/web-ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+> This repository is the **standard** (the canonical Markdown). The **website** that publishes it —
+> [fitsd.tfindley.dev](https://fitsd.tfindley.dev) — is built from a separate repo,
+> [`tfindley/fitsd-web`](https://github.com/tfindley/fitsd-web), which renders past, current and
+> future versions. This repo just notifies it when the standard changes.
 
 > **In one line.** FitSD is just enough process for a small team to take on the right work and ship it so it lasts — one front door for new work, and a "done" that means *operable*, not merely running.
 
