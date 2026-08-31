@@ -18,7 +18,7 @@ tags: [fitsd, implementation, adoption, guide, standup, non-normative]
 
 ## When to use this
 
-Use the **Quickstart** first: run one real piece of work through the gates and see whether FitSD helps. Come here when it did, and you want to make it the default (the "Adopt" rung of *Adoption & Positioning* §8). Standing FitSD up is a half-day of decisions, not a project. You are choosing where each requirement is met, not building new machinery, most of it points at processes you already run.
+Use the **Quickstart** first: run one real piece of work through the gates and see whether FitSD helps. Come here when it did, and you want to make it the default (the "Adopt" rung of *Adoption & Positioning* §8). Standing FitSD up is a half-day of decisions, not a project. You are choosing where each requirement is met, not building new machinery; most of it points at processes you already run.
 
 ## The stand-up checklist
 

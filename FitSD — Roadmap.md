@@ -28,7 +28,9 @@ tags: [fitsd, roadmap, plan]
 
 ## Next — v0.4: publish the worked example
 
-One release, one deliverable. The framework has already been proven on a real project run end to end (the dogfooding that drove the v0.3 changes), so the shape works in practice. What v0.4 delivers is a *publishable* example: a project FitSD can tell in full, run through Idea Brief, both gates and Service Acceptance (real private runs stay private: FitSD carries no organisation's fingerprints, and that includes its examples). It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`). Nothing else rides in v0.4 — evidence before more structure.
+One release, one deliverable. The framework has already been proven on a real project run end to end (the dogfooding that drove the v0.3 changes), so the shape works in practice. What v0.4 delivers is a *publishable* example: a project FitSD can tell in full, run through Idea Brief, both gates and Service Acceptance (real private runs stay private: FitSD carries no organisation's fingerprints, and that includes its examples).
+
+It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`). Nothing else rides in v0.4 — evidence before more structure.
 
 ## Then — the unbuilt tiers
 

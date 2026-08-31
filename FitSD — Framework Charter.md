@@ -90,7 +90,7 @@ flowchart LR
 FitSD's documents sit in **two layers**:
 
 - **Framework (portable, Tiers 0–1).** What FitSD *is*: the Charter & vocabulary (Tier 0) and the Requirements (Tier 1). The same for every team.
-- **Implementation (per team, Tiers 2–5).** How a given team puts it into practice: Capabilities (2), Roles (3), Templates & registers (4), and the Maturity self-check (5). Yours to shape. *(New adopters: FitSD — Implementation Guide walks standing all of this up.)*
+- **Implementation (per team, Tiers 2–5).** How a given team puts it into practice: Capabilities (2), Roles (3), Templates & registers (4), and the Maturity self-check (5). Yours to shape. *(New adopters: FitSD — Implementation Guide walks you through standing all of this up.)*
 
 The numbered **tiers** within each layer echo FitSM's numbered parts; the numbers are an index, not a ranking. The one hard line is between the Framework and your Implementation of it. The table lists the tiers, and the diagram below shows the same two-layer split.
 

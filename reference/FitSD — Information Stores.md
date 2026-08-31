@@ -17,7 +17,9 @@ tags: [fitsd, reference, information-stores, registers, records]
 
 ## Why name the stores
 
-A framework that requires records but never lists them invites the quiet failure mode where data accumulates (gate notes here, a risk list there, an access spreadsheet someone started) with no owner, no review, and no one sure which copy is current. Naming the stores is the cheapest way to keep that under control. It mirrors ISO/IEC 27001's *documented information* (clause 7.5) and FitSM's record discipline, and it stays deliberately **tool-agnostic**: a "store" is a register or a record set, whether it lives in a wiki, a work-tracker, a spreadsheet or a database. FitSD says *what must be kept and who keeps it*; you choose where.
+A framework that requires records but never lists them invites the quiet failure mode where data accumulates (gate notes here, a risk list there, an access spreadsheet someone started) with no owner, no review, and no one sure which copy is current. Naming the stores is the cheapest way to keep that under control.
+
+The idea mirrors ISO/IEC 27001's *documented information* (clause 7.5) and FitSM's record discipline, and it stays deliberately **tool-agnostic**: a "store" is a register or a record set, whether it lives in a wiki, a work-tracker, a spreadsheet or a database. FitSD says *what must be kept and who keeps it*; you choose where.
 
 ## The map
 

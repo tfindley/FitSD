@@ -25,7 +25,9 @@ tags:
 
 Each requirement has an ID (`FSD-XX-n`), a statement, and where useful a short note on intent. Conformance is about the *requirement* being met and evidenced, not about adopting any particular template. Keep the set small: a requirement that does not change a decision does not belong here.
 
-**Two routes to the *how*.** FitSD owns only the *requirements*: these thin, outcome-based "shall" statements. It deliberately does **not** build a process for every capability. The *how* is satisfied one of two ways: (a) a **FitSD reference capability** (a Tier 2 process doc, shipped only for the flagship, Solution Development), or (b) a **reference to an existing process or standard** the team already runs (its own change- or incident-management policy, or ITIL / FitSM). Each capability names where its "how" lives. This is how FitSD can require change, incident, security and the rest **without rebuilding those disciplines**.
+**Two routes to the *how*.** FitSD owns only the *requirements*: these thin, outcome-based "shall" statements. It deliberately does **not** build a process for every capability.
+
+The *how* is satisfied one of two ways: (a) a **FitSD reference capability** (a Tier 2 process doc, shipped only for the flagship, Solution Development), or (b) a **reference to an existing process or standard** the team already runs (its own change- or incident-management policy, or ITIL / FitSM). Each capability names where its "how" lives. This is how FitSD can require change, incident, security and the rest **without rebuilding those disciplines**.
 
 ---
 

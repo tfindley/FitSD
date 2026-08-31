@@ -52,7 +52,9 @@ It uses **two decision gates** at the front and a **Service Acceptance** close-o
 
 **Out of scope.** Routine changes and minor enhancements are handled under the **Change & Release** capability (FSD-CH). Incidents, problems and patching are handled under **Run & Restore** (FSD-RR). Work that begins here always hands the actual build and deployment back to Change & Release. This process governs the *decision to take on and design* the work, not the individual changes that deliver it.
 
-**Who may raise demand.** The front door is **source-agnostic**: demand may be raised by someone on the team, by another team, or by a **third party or customer** asking this team to take work on. Whoever raises it, it enters the same way: as an Idea Brief (FSD-FRM-00), and the receiving team triages it at Gate 1. Accountability does **not** transfer with the request. A solution that proceeds always has a **Solution Owner on the delivering team** (Principle 3, one accountable owner). A third party can *ask*; only the team that will run the service can accept it through the gates. Where the request sits behind a contract or SLA, that becomes an input to the Gate 1 case, not a substitute for it.
+**Who may raise demand.** The front door is **source-agnostic**: demand may be raised by someone on the team, by another team, or by a **third party or customer** asking this team to take work on. Whoever raises it, it enters the same way: as an Idea Brief (FSD-FRM-00), and the receiving team triages it at Gate 1.
+
+Accountability does **not** transfer with the request. A solution that proceeds always has a **Solution Owner on the delivering team** (Principle 3, one accountable owner). A third party can *ask*; only the team that will run the service can accept it through the gates. Where the request sits behind a contract or SLA, that becomes an input to the Gate 1 case, not a substitute for it.
 
 ---
 

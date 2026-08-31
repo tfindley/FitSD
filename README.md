@@ -9,7 +9,7 @@
 
 > **In one line.** FitSD is just enough process for a small team to take on the right work and ship it so it lasts: one front door for new work, and a "done" that means *operable*, not merely running.
 
-Small teams can't run ITIL, but they still have to decide what's worth building, design it so it can actually be run, and avoid the 2 a.m. call-out for something nobody wrote down. FitSD is the smallest amount of that discipline a handful of people can keep up. (The full pitch, spoken and one-page forms, is at the top of `FitSD — Adoption & Positioning.md`.)
+Small teams can't run ITIL, but they carry the same risks: effort spent on work that was never worth doing, and services that go live but can't be supported, recovered or secured. FitSD distils that discipline down to what a handful of people can actually keep up. (The full pitch, spoken and one-page forms, is at the top of `FitSD — Adoption & Positioning.md`.)
 
 Two things do most of the work:
 
@@ -24,7 +24,7 @@ Don't read it all. Pick your path:
 
 - **Just curious?** → `FitSD — Quickstart.md`: one project, five moves.
 - **Pitching it upward?** → `FitSD — Adoption & Positioning.md`: the pitch, ready to say out loud, is right at the top.
-- **Adopting it?** → `FitSD — Framework Charter.md` (what it is) → `FitSD — Requirements.md` (what you must meet) → `capabilities/solution-development/` (the one fully built process).
+- **Adopting it?** → `FitSD — Framework Charter.md` (what it is) → `FitSD — Requirements.md` (what you must meet) → `capabilities/solution-development/` (the one fully built process) → `FitSD — Implementation Guide.md` (stand it up in your team).
 - **Checking it against standards?** → `reference/FitSD — Standards Alignment.md`.
 - **Stuck on a term?** → `FitSD — Definitions.md`.
 
