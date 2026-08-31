@@ -42,13 +42,16 @@ Don't read it all. Pick your path:
 | `FitSD — Roadmap.md`                       | 0    | Direction of travel — bigger picture than the backlog               |
 | `FitSD — Origins.md`                       | 0    | Where the thinking came from                                        |
 | `FitSD — Definitions.md`                   | 0    | Master glossary: FitSD terms, MoSCoW, and common acronyms          |
+| `FitSD — Versioning Policy.md`             | 0    | How versions work: semver on the normative content, three streams of change |
 | `reference/FitSD — Standards Alignment.md` | 0    | How it maps to ISO 27001, NIS2, ITIL and FitSM                      |
 | `reference/FitSD — Influences.md`          | 0    | The Lean / DevOps canon behind the thinking (non-normative)        |
 | `reference/FitSD — Information Stores.md`  | 0    | The registers and records FitSD relies on, tech-agnostic, the data model |
+| `reference/FitSD — Inputs, Activities & Outputs.md` | 0 | The whole framework on one page: what each capability takes in, does, and produces |
 | `reference/FitSD — Service Acceptance Criteria.md` | 0 | The SAC defined once, inheritable categories plus your ratifiable baseline |
 | `capabilities/`                            | 2/4  | The process docs and forms — built out for Solution Development     |
 | `diagrams/`, `BACKLOG.md`                  | —    | Mermaid diagrams; the running list of what's next                   |
 | `CHANGELOG.md`                             | —    | Notable changes to the standard, per release, for implementers     |
+| `VERSION`, `RELEASING.md`, `SECURITY.md`   | —    | The current version number; how releases are cut; how to report a vulnerability |
 | `LICENSE`                                  | —    | Creative Commons Attribution 4.0 (CC BY 4.0)                        |
 
 ## The capabilities

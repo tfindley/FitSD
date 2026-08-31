@@ -12,12 +12,12 @@ tags: [fitsd, roadmap, plan]
 
 # FitSD — Roadmap
 
-> The direction of travel. Bigger-picture than the `BACKLOG` (which is the task list). This is the why and the where. Rough on purpose; a personal project moves when it moves.
+> **TL;DR** — The direction of travel: the why and the where, bigger-picture than the `BACKLOG` (the task list). Rough on purpose; a personal project moves when it moves.
 
 ## Now (v0.2) — shipped
 
 - The **Framework** layer (Tiers 0–1): the charter and the requirements.
-- All five capabilities: Solution Development built in full (process + its gate and acceptance forms); capability cards for Govern, Change & Release, Run & Restore, Secure & Assure.
+- The five original capabilities: Solution Development built in full (process + its gate and acceptance forms); capability cards for Govern, Change & Release, Run & Restore, Secure & Assure. (The conditional sixth, Supplier & Supply Chain, lands in v0.3 below.)
 - The supporting layer: adoption & positioning (which now opens with the pitch and one-page executive summary), standards alignment, influences, quickstart, definitions, diagrams, and a licence.
 - **v0.2 hardening:** lifecycle completion (end-of-life review & retirement, FSD-RR-7), the **information-stores** layer (every register/record made explicit and tech-agnostic), the demand pipeline + retained history in FSD-GV-4, continuity in the Definition of Done, and the new-technology intake trigger.
 

@@ -5,11 +5,11 @@ document_id: FSD-GV
 capability: Govern
 type: capability card
 tier: 2
-version: 0.2
+version: 0.3
 status: draft
 owner: "Management System Owner"
-satisfies: [FSD-GV-1, FSD-GV-2, FSD-GV-3, FSD-GV-4, FSD-GV-5, FSD-GV-6]
-date: 2026-06-23
+satisfies: [FSD-GV-1, FSD-GV-2, FSD-GV-3, FSD-GV-4, FSD-GV-5, FSD-GV-6, FSD-GV-7]
+date: 2026-08-31
 tags: [fitsd, govern, capability-card]
 ---
 
@@ -37,6 +37,7 @@ Make sure there's actually a managed system here, not just a pile of activities.
 - **FSD-GV-4**: a register of services, the demand pipeline, and key records is kept current, with completed and retired entries retained as history.
 - **FSD-GV-5**: the management system is reviewed on a cadence and improved (PDCA).
 - **FSD-GV-6**: roles are defined, including who may authorise what.
+- **FSD-GV-7**: a standing Service Acceptance baseline — the organisation's own thresholds for each Service Acceptance Criterion — is defined, ratified, and inherited by every solution.
 
 ## How to satisfy them
 
@@ -48,7 +49,7 @@ There's no separate Govern process to install. These are met directly by how you
 
 ## Where it meets Solution Development
 
-Govern wraps the whole lifecycle. Three concrete touch-points: the **register** (FSD-GV-4) holds the demand pipeline (what's upcoming and in-flight), becomes the service register once a solution passes Service Acceptance, with a named owner (FSD-GV-2), and keeps retired entries as history. The **review cadence** (FSD-GV-5) catches services that have drifted from how they were accepted, and surfaces end-of-life candidates for the FSD-RR-7 renew / replace / retire decision. And the **information-stores view** (see *FitSD — Information Stores*) is Govern's map of every register and record, so data isn't kept without an owner.
+Govern wraps the whole lifecycle. Four concrete touch-points: the **register** (FSD-GV-4) holds the demand pipeline (what's upcoming and in-flight), becomes the service register once a solution passes Service Acceptance, with a named owner (FSD-GV-2), and keeps retired entries as history. The **SAC baseline** (FSD-GV-7) is Govern's service design baseline: a standing standard every solution is designed *to* at Gate 2 and proven against at acceptance — a Govern artefact, consumed by Solution Development. The **review cadence** (FSD-GV-5) catches services that have drifted from how they were accepted, and surfaces end-of-life candidates for the FSD-RR-7 renew / replace / retire decision. And the **information-stores view** (see *FitSD — Information Stores*) is Govern's map of every register and record, so data isn't kept without an owner.
 
 ## The improvement lens
 
@@ -66,6 +67,7 @@ Govern is home to the *Third Way* of *The Phoenix Project*: continual learning a
 
 - `FSD-PRO`: Solution Development (Govern frames its gates and feeds the service register)
 - `FitSD — Requirements` → FSD-GV section
+- `reference/FitSD — Service Acceptance Criteria`: the standing baseline Govern ratifies (FSD-GV-7)
 - `FitSD — Standards Alignment`: FitSM GR1–9, ISO 27001 clauses 4–10
 - `reference/FitSD — Influences`: the canon behind the improvement lens
 - `reference/FitSD — Information Stores`: the registers and records Govern keeps in order

@@ -3,17 +3,17 @@ title: "FitSD — Information Stores"
 framework: FitSD
 document: Information Stores
 tier: 0
-version: 0.2
+version: 0.3
 type: reference (non-normative)
 status: draft
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, reference, information-stores, registers, records]
 ---
 
 # FitSD — Information Stores
 
-> **What this is.** The registers and records FitSD relies on, gathered in one place and described by *what they hold and who owns them*, never by which tool holds them. FitSD's requirements already call for most of these, scattered across the capabilities; this gathers them so nothing is stored without an owner, and so a team can see its whole information model at a glance. Non-normative: it adds no requirement. (The map is below; it's also catalogued in *FitSD — Diagrams* §6.)
+> **TL;DR** — Every register and record FitSD relies on, in one place, described by *what it holds and who owns it*, never by which tool. So nothing is stored without an owner, and a team sees its whole information model at a glance. Non-normative: it adds no requirement. (Map below; also in *FitSD — Diagrams* §6.)
 
 ## Why name the stores
 
@@ -81,3 +81,4 @@ Most of the above are implied by existing requirements. Two were missing and are
 - `FitSD — Diagrams` §6: the picture
 - `reference/FitSD — Service Acceptance Criteria`: where the SAC baseline store is defined and ratified
 - `reference/FitSD — Standards Alignment`: the FitSM / ITIL / ISO 27001 mappings these borrow from
+- `reference/FitSD — Inputs, Activities & Outputs`: which capability's activities produce and consume each record

@@ -47,7 +47,7 @@ Pick when you'll review the system (and re-ratify the SAC baseline): annually, o
 
 ## Your implementation profile
 
-This is FitSD's answer to "are we actually conforming?": a plain mapping of each requirement to the local thing that satisfies it. It is the **implementation profile** the Charter already names (*Charter* §8), *not* a Statement of Applicability. FitSD deliberately doesn't carry the certification apparatus (see *Standards Alignment*). Keep it light; a populated example will follow the published worked example.
+This is FitSD's answer to "are we actually conforming?": a plain mapping of each requirement to the local thing that satisfies it. It is the **implementation profile** the Charter already names (*Charter* §8, Vocabulary), *not* a Statement of Applicability. FitSD deliberately doesn't carry the certification apparatus (see *Standards Alignment*). Keep it light; a populated example will follow the published worked example.
 
 | Capability | Requirements | Satisfied by (your local doc / tool / policy) | Owner |
 |---|---|---|---|

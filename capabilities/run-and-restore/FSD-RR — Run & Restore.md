@@ -5,11 +5,11 @@ document_id: FSD-RR
 capability: Run & Restore
 type: capability card
 tier: 2
-version: 0.2
+version: 0.3
 status: draft
 owner: "Management System Owner"
 satisfies: [FSD-RR-1, FSD-RR-2, FSD-RR-3, FSD-RR-4, FSD-RR-5, FSD-RR-6, FSD-RR-7]
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, run, restore, incident, capability-card]
 ---
 

@@ -18,7 +18,7 @@ tags:
 
 *Fit for Solution Development. Just enough process to take on the right work and ship it so it lasts.*
 
-> **TL;DR** — The founding document: what FitSD is, its principles, the five-capability model, the roles, and how you conform. Adopting FitSD? Read this first. Just want to try it? The Quickstart is faster.
+> **TL;DR** — The founding document: what FitSD is, its principles, the capability model, the roles, and how you conform. Adopting FitSD? Read this first. Just want to try it? The Quickstart is faster.
 
 > **The founding layer.** This is Tier 0: what FitSD is, and the model everything else hangs off. The testable requirements live in *FitSD — Requirements* (Tier 1). The lower tiers (capabilities, roles, templates, the maturity check) come after.
 

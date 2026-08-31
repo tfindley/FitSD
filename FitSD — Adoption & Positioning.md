@@ -12,7 +12,7 @@ tags: [fitsd, adoption, positioning, pitch, executive-summary, explanatory]
 
 # FitSD — Adoption & Positioning
 
-> **What this is.** The *who, why and how-far* of FitSD: the pitch (a spoken version and a one-pager for whoever holds the budget), who picks it up, what pulls them in, and how it fits teams of different sizes. None of it is normative; it adds no requirements. The framework stays lean. This is the story around it.
+> **TL;DR** — Who FitSD is for, why they adopt it, and how to pitch it upward. It opens with the pitch (a spoken version and a one-pager for whoever holds the budget), then who picks it up, the fit by team size, and where it's the wrong tool. Non-normative: the story around the framework, not new requirements.
 
 ## 1. The case, in a line
 
@@ -102,6 +102,8 @@ flowchart LR
 ```
 
 Six families of demand come through that door: strategy and leadership; customer and market; compliance and governance; risk and security; operational and technical; finance and people. It has to read plainly to all of them, which is why Gate 1 stays in business language, not security jargon.
+
+This diagram is the Solution Development slice. For the same inputs-and-outputs view across *all* the capabilities, see *FitSD — Inputs, Activities & Outputs*.
 
 ## 6. Fit by organisation size
 

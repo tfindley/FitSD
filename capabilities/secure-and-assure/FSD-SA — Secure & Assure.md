@@ -5,11 +5,11 @@ document_id: FSD-SA
 capability: Secure & Assure
 type: capability card
 tier: 2
-version: 0.2
+version: 0.3
 status: draft
 owner: "Management System Owner"
 satisfies: [FSD-SA-1, FSD-SA-2, FSD-SA-3, FSD-SA-4, FSD-SA-5]
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, security, risk, assurance, capability-card]
 ---
 

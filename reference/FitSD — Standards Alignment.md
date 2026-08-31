@@ -3,10 +3,10 @@ title: FitSD — Standards Alignment
 framework: FitSD
 document: Standards Alignment
 tier: 0
-version: 0.2
+version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - reference
@@ -50,6 +50,8 @@ FitSD re-groups FitSM's 14 processes (PR1–PR14) and General Requirements (GR1�
 | Supplier & supply chain (FSD-SC)  | PR8 Supplier Relationship Mgmt                                                                          |
 
 **Only divergence:** FitSM has no single intake/Service-Design process; FitSD consolidates portfolio decision + design + release-readiness into one Solution Development capability with the Service Acceptance Criteria (SAC). A FitSM assessor would see FitSD's SD records satisfying PR1 and PR13 together.
+
+**Known gaps:** four FitSM processes have no direct FitSD home. **PR2 Service Level Management** and **PR3 Service Reporting** are candidate thin requirements (see `BACKLOG`); until then, the availability SLO inside the SAC carries PR2's sharpest edge. **PR7 Customer Relationship Management** and **PR11 Configuration Management** are declared non-goals, met by "use your existing practice" (see the *Roadmap*, "Shape & scope").
 
 ## 3. ITIL 4
 

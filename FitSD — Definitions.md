@@ -12,13 +12,13 @@ tags: [fitsd, definitions, glossary]
 
 # FitSD — Definitions
 
-> A master glossary. Each FitSD document defines the terms it uses where it uses them. That's deliberate, so a document stands alone. This is the single place that gathers them all, plus the common industry terms and acronyms FitSD leans on. Cheap to keep, handy to have. Non-normative: nothing here adds a requirement.
+> **TL;DR** — A master glossary: every FitSD term plus the industry terms and acronyms it leans on, gathered in one place. Each document also defines its own terms inline, so it stands alone. Non-normative: nothing here adds a requirement.
 
 ## FitSD terms
 
 **Capability.** One of the areas FitSD organises service management into: Govern, Solution Development (the front door), Change & release, Run & restore, Secure & assure — plus the conditional sixth, Supplier & supply chain (FSD-SC), for teams whose services rely on suppliers or third-party dependencies.
 
-**Capability card.** A one-page orientation for a capability: its objective, the requirements it carries, what to satisfy them with, and how it connects to Solution Development. Built for the four capabilities FitSD doesn't author a full process for.
+**Capability card.** A one-page orientation for a capability: its objective, the requirements it carries, what to satisfy them with, and how it connects to Solution Development. Built for every capability FitSD doesn't author a full process for — all of them except Solution Development.
 
 **Gate.** A decision point with explicit outcomes: go, hold, or stop. Work doesn't pass a gate until it's signed off.
 
@@ -46,7 +46,7 @@ tags: [fitsd, definitions, glossary]
 
 **Service Acceptance Criteria (SAC) / Definition of Done.** The standing set of conditions a service must meet to be accepted: documentation, tested backup, security, access, availability, monitoring & alerting, incident profile, supportability, cost/licensing. Fixed *categories*; each organisation sets and ratifies its own *thresholds* as a standing baseline (FSD-GV-7). Defined in *FitSD — Service Acceptance Criteria*.
 
-**SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). See *FitSD — Service Acceptance Criteria*.
+**SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). In effect a standing **service design baseline**: a Govern artefact every solution is designed *to* at Gate 2 and proven against at acceptance. See *FitSD — Service Acceptance Criteria*.
 
 **Solution Owner.** The single person accountable for a proposed solution, who drives it through the gates and completes the records.
 

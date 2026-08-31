@@ -13,7 +13,7 @@ tags: [fitsd, reference, service-acceptance, sac, definition-of-done, non-normat
 
 # FitSD — Service Acceptance Criteria
 
-> **What this is.** The single canonical home of the Service Acceptance Criteria (SAC): the standing Definition of Done every solution is held to. It states the *categories* and what each one is for, and gives an organisation a template to set its *own* thresholds and ratify them once. Non-normative: the criteria are elaborated here, but the "shall" that makes them binding lives in *FitSD — Requirements* (the standing-baseline requirement and FSD-SD-4/5). The process proves them (`FSD-PRO §7`); the forms design and evidence them (`FSD-FRM-02 §5`, `FSD-FRM-03 §1`); this document is where they are *defined*.
+> **TL;DR** — The Service Acceptance Criteria, defined once: the standing Definition of Done every solution meets. Fixed *categories*; each organisation sets and ratifies its *own* thresholds. Non-normative here — the binding "shall" lives in *FitSD — Requirements* (the standing-baseline requirement and FSD-SD-4/5). This document *defines* the criteria; `FSD-PRO §7` proves them; the forms design and evidence them (`FSD-FRM-02 §5`, `FSD-FRM-03 §1`).
 
 ## The SAC are principles, not one org's numbers
 

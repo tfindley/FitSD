@@ -2,10 +2,10 @@
 title: FitSD — Diagrams
 framework: FitSD
 document: Diagrams
-version: 0.2
+version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - diagrams
