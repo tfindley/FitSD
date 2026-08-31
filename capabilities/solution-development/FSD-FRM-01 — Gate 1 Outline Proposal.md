@@ -21,15 +21,15 @@ tags:
 
 # FSD-FRM-01 — Gate 1 Outline Proposal
 
-> **Gate 1 asks: is this worth doing?** Complete this record to bring an idea to the Approver for a decision. Keep it light — this is a filter, not a design. Sections 6–7 are conditional; most proposals skip them. **This record is the business case for the work**: the fundable proposal you take upward, at the right weight. The live copy is held in the team's work-tracking system; this is the blank template. Once approved, the content carries forward into Gate 2 (FSD-FRM-02).
+> **Gate 1 asks: is this worth doing?** Complete this record to bring an idea to the Approver for a decision. Keep it light — this is a filter, not a design. Sections 6–7 are conditional; most proposals skip them. **This record is the business case for the work**: the fundable proposal you take upward, at the right weight. *(Terms — CAPEX/OPEX, T-shirt sizing, MoSCoW: see `FitSD — Definitions`.)* The live copy is held in the team's work-tracking system; this is the blank template. Once approved, the content carries forward into Gate 2 (FSD-FRM-02).
 
 ## Header
 
 | Field              | Entry                             |
 | ------------------ | --------------------------------- |
 | **Solution title** |                                   |
-| **Status**         | Draft / Submitted / Approved      |
-| **Solution Owner** | *(accountable for this solution)* |
+| **Status**         | Draft / Submitted / Decided (per §8) |
+| **Solution Owner** | *(accountable for this solution; confirmed by the Approver at sign-off)* |
 | **Contributors**   |                                   |
 | **Linked Idea Brief (FSD-FRM-00)** | *(if one was raised)* |
 | **Date**           |                                   |
@@ -47,7 +47,7 @@ tags:
 
 ## 2. Value and driver
 
-**Primary driver:** _Value / Compliance / Risk reduction_. State which. For compliance- or risk-driven work the case rests on §4 (impact of doing nothing) and the cited obligation or risk record, **not** the value scores; low scores do not weaken a mandated case. Score the lenses anyway, for prioritisation.
+**Primary driver:** _Value / Compliance / Risk reduction_. State which. For compliance- or risk-driven work the case rests on §4 (impact of doing nothing) and the cited obligation or risk record, **not** the value scores; low scores do not weaken a mandated case. (No standing record to cite? Raise one now and cite it — the proposal is often how the risk gets registered.) Score the lenses anyway, for prioritisation.
 
 Score each lens **1–3** (1 = low, 3 = high). A priority signal, not a pass/fail.
 
@@ -85,7 +85,7 @@ Size each as **S / M / L** with a short note. Remember to consider all aspects (
 
 ## 6. New technology / vendor *(complete if this brings in a new technology, tool, product or third-party dependency)*
 
-Due diligence so a new dependency comes in through the front door, not the back. Fill this whenever the work adopts a new tool, product or supplier, **regardless of cost or effort**.
+Due diligence so a new dependency comes in through the front door, not the back. Fill this whenever the work adopts a new tool, product or supplier, **regardless of cost or effort** — and repeat the table for **each** new technology, tool or dependency the preferred option adopts. The quiet ones (a free tier going load-bearing) are the ones that matter most.
 
 | Field                   | Entry                                                                            |
 | ----------------------- | -------------------------------------------------------------------------------- |
@@ -108,11 +108,12 @@ Due diligence so a new dependency comes in through the front door, not the back.
 
 ## 8. Sign-off
 
-Sign-off authorises progression to Gate 2 (or to a PoC first). Note any conditions.
+Sign-off confirms the Solution Owner and authorises progression to Gate 2 (or to a PoC first) — it commits design/PoC effort only; build and run costs are committed at Gate 2. Note any conditions (each with an owner and a target date).
 
 | Field                   | Entry                                                     |
 | ----------------------- | --------------------------------------------------------- |
 | **Decision**            | Proceed to Gate 2 / Proceed via PoC first / Park / Reject |
 | **Approver**            |                                                           |
 | **Conditions / reason** |                                                           |
+| **Notes** *(optional)*  | *Routing rationale, Solution Owner confirmation, actions taken with the decision* |
 | **Date**                |                                                           |

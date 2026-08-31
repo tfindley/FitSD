@@ -55,6 +55,8 @@ tags: [fitsd, definitions, glossary]
 
 **Approver.** The role that signs off the gates and Service Acceptance, at a level matched to the risk.
 
+**Operator.** The role that performs the day-to-day work of running a service and maintains its records (*Charter* §6) — including any first-line/support function. The named operators accept the runbook and SOPs at Service Acceptance; their acceptance can hold up go-live, and that is the point.
+
 **Incident profile.** What counts as an incident for a *specific* service — its triggers and severities — registered with the incident process. Defined at Service Acceptance.
 
 **Tier (0–5).** FitSD's document layers: 0 charter & vocabulary, 1 requirements, 2 capabilities, 3 roles, 4 templates, 5 maturity self-check. Tiers 0–1 are the framework; 2–5 are how a team implements it.
@@ -107,7 +109,7 @@ tags: [fitsd, definitions, glossary]
 
 **SLA / SLO.** Service-level agreement (a commitment to a customer) / service-level objective (an internal target).
 
-**SOP.** Standard Operating Procedure: a documented, repeatable procedure for operating or maintaining a service. In FitSD a service's SOPs are its runbook and recovery procedure, required under the Documentation criterion and accepted by operators under Supportability/handover at Service Acceptance.
+**SOP.** Standard Operating Procedure: a documented, repeatable procedure for operating or maintaining a service. A service's runbook and recovery procedure are its core SOPs; any further standing procedures the service needs (flagged at Gate 2 §4) join them, wherever they physically live. All are required under the Documentation criterion and accepted by operators under Supportability/handover at Service Acceptance.
 
 **T-shirt sizing.** Rough estimation in sizes — S, M, L — rather than precise numbers, used when detail isn't known yet.
 

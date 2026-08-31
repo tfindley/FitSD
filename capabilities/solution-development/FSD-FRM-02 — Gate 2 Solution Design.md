@@ -21,7 +21,7 @@ tags:
 
 # FSD-FRM-02 — Gate 2 Solution Design
 
-> **Gate 2 asks: is it ready to build?** Refine the approved Gate 1 idea into a buildable, operable design. The design must state *how* each Service Acceptance Criterion (§5) will be met — those are proven later on FSD-FRM-03. The live copy is held in the team's work-tracking system; this is the blank template.
+> **Gate 2 asks: is it ready to build?** Refine the approved Gate 1 idea into a buildable, operable design. The design must state *how* each Service Acceptance Criterion (§5) will be met — those are proven later on FSD-FRM-03. *(Terms: see `FitSD — Definitions`.)* The live copy is held in the team's work-tracking system; this is the blank template.
 
 ## Header
 
@@ -41,7 +41,8 @@ tags:
 | Field                       | Entry |
 | --------------------------- | ----- |
 | **Outcome / requirement**   |       |
-| **Selected option**         | *Which Gate 1 delivery option was chosen, and the evaluation / research reference* |
+| **Selected option**         | *Which Gate 1 delivery option was chosen, and the evaluation / research reference (file evaluation evidence — a PoC scorecard, say — with the gate record)* |
+| **Gate 1 conditions**       | *Each condition from the Gate 1 sign-off, and how this design discharges it* |
 | **Value (recap)**           |       |
 | **Effort (recap, refined)** |       |
 
@@ -57,7 +58,7 @@ tags:
 
 ## 3. Architecture
 
-*Sketch the architecture and where it fits in the wider estate. Include a diagram, and show where security sits in it. Note any departures from the team's design principles.*
+*Sketch the architecture and where it fits in the wider estate. Include a diagram, and show where security sits in it. Note any departures from the team's design principles or security baseline (name which — if you have no written design principles, your security policies and SAC baseline stand in).*
 
 > *Insert / link architecture diagram here.*
 
@@ -96,13 +97,15 @@ State *how* each criterion will be met **against your organisation's standing SA
 
 ## 6. RAIDD
 
-| Type           | Description |
-| -------------- | ----------- |
-| **Risk**       |             |
-| **Assumption** |             |
-| **Issue**      |             |
-| **Dependency** |             |
-| **Decision**   |             |
+*One row per item; repeat types as needed. For a **Decision**, the description carries the rationale, who decided, and when — at acceptance, open risks transfer to the risk register and decisions (with their rationale) into the service's standing documentation, so they outlive the delivery.*
+
+| Type           | Description | Owner | Status / mitigation |
+| -------------- | ----------- | ----- | ------------------- |
+| **Risk**       |             |       |                     |
+| **Assumption** |             |       |                     |
+| **Issue**      |             |       |                     |
+| **Dependency** |             |       |                     |
+| **Decision**   |             |       |                     |
 
 ## 7. Refined effort, cost and timeline
 
@@ -115,6 +118,7 @@ State *how* each criterion will be met **against your organisation's standing SA
 | **People** | *person-days, by role / workstream* |                           |
 | **CAPEX**  |                                     | *purchase / one-off*      |
 | **OPEX**   |                                     | *ongoing run / licensing* |
+| **Ongoing operating effort** | *est. person-days/month once live: patching, support, upkeep* | *refined and confirmed at acceptance* |
 
 ### 7.2 Milestones
 
@@ -125,11 +129,12 @@ State *how* each criterion will be met **against your organisation's standing SA
 
 ## 8. Sign-off
 
-Sign-off authorises progression to delivery. Build and deployment changes are then raised through Change & Release (FSD-CH).
+Sign-off authorises progression to delivery; build and deployment changes are then raised through Change & Release (FSD-CH). The approval states what it commits — build effort, the accepted ongoing run-cost — and any conditions carry an owner and a target date.
 
 | Field          | Entry                          |
 | -------------- | ------------------------------ |
 | **Decision**   | Approved for delivery / Rework |
 | **Approver**   |                                |
 | **Conditions** |                                |
+| **Ratified with this decision** *(optional)* | *Exceptions, data classifications, deviations the design asks the Approver to own* |
 | **Date**       |                                |

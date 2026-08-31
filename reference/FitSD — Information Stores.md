@@ -53,8 +53,8 @@ flowchart TB
 
 | Store | What it holds | Owning capability | Lifecycle stage | Borrowed from |
 |---|---|---|---|---|
-| **Demand / pipeline register** | Proposed, parked, rejected and in-flight work, with driver, status and reasons | Solution Development → Govern (FSD-GV-4, FSD-SD-1) | Intake → delivery | FitSM PR1 (service portfolio); ITIL service portfolio |
-| **Gate records (Gate 1 / Gate 2)** | Per-item decisions, conditions and approver | Solution Development (FSD-SD-6; FRM-01/02) | Gates | ITIL service design records |
+| **Demand / pipeline register** | Proposed, parked, rejected and in-flight work, with driver, status and reasons — below-the-line enhancement candidates may queue here too, with a named prioritiser | Solution Development → Govern (FSD-GV-4, FSD-SD-1) | Intake → delivery | FitSM PR1 (service portfolio); ITIL service portfolio |
+| **Gate records (Gate 1 / Gate 2)** | Per-item decisions, conditions and approver; evaluation evidence (a PoC scorecard, an options study) files with the record it informed | Solution Development (FSD-SD-6; FRM-01/02) | Gates | ITIL service design records |
 | **Service Acceptance records** | Definition-of-Done evidence per service | Solution Development (FSD-SD-4/5; FRM-03) | Acceptance | ITIL service validation & testing |
 | **SAC baseline (standing)** | The organisation's ratified Service Acceptance thresholds, inherited by every solution | Govern (FSD-GV-7) | All | ISO 27001 7.5 (documented information) |
 | **Service register / catalogue** | Live services, named owner, status (incl. retired) | Govern (FSD-GV-2/4) | Live → retired | FitSM PR1; ITIL service catalogue |
@@ -66,7 +66,8 @@ flowchart TB
 | **Incident records + per-service incident profiles** | Incidents; what counts as an incident *for each service* | Run & Restore (FSD-RR-1/6) | Live | FitSM PR9; ITIL incident |
 | **Problem records** | Root-cause investigations | Run & Restore (FSD-RR-3) | Live | FitSM PR10; ITIL problem |
 | **Backup & restore-test records** | Backup scope/frequency/retention and dated test restores | Secure & Assure / Run & Restore (FSD-SA-3; SAC) | Acceptance + live | ISO 27001 A.8.13 |
-| **RAIDD log** | Risks, assumptions, issues, dependencies, decisions per delivery | Solution Development (FRM-02) | Delivery | Project-management practice |
+| **RAIDD log** | Risks, assumptions, issues, dependencies, decisions per delivery — at acceptance, open risks transfer to the risk register and decisions (with rationale) into the service's standing documentation | Solution Development (FRM-02) | Delivery | Project-management practice |
+| **Per-service operational documentation** | The service's standing document set — HLD (carrying the design decisions and rationale), runbook, recovery procedure, SOPs, user docs; for bespoke components, where the source lives and how a successor changes it | Service Owner (via Solution Development at acceptance) | Live → retired | The SAC Documentation criterion, given a home |
 | **Retirement records** | End-of-life decision (renew / replace / retire) and decommission evidence | Run & Restore (FSD-RR-7) | End of life | ISO 27001 A.8.10 (information deletion); FitSM PR1 (status) |
 
 ## The two FitSD adds

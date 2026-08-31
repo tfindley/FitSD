@@ -28,7 +28,7 @@ The shape: **two gates** (*is this worth doing?* at Gate 1, *is it ready to buil
 
 One page (there's a template, FSD-FRM-00). What's the problem, what would "done" look like, what's roughly in and out of scope. Don't design anything yet; you're just getting enough on paper to decide whether it's worth a proper look. (A public worked example, run end to end, is in the works.)
 
-## 2. Take it to Gate 1 — one conversation, ~30 minutes
+## 2. Take it to Gate 1 — half a day to write, one ~30-minute conversation
 
 Fill the Gate 1 form: the driver, a rough value/risk read, T-shirt effort, the options you can see, and the decision you're asking for. Put it in front of whoever says yes or no. They proceed, park, or reject. That decision, made on a page instead of in a corridor, is the first thing FitSD buys you.
 

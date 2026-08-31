@@ -44,6 +44,7 @@ Most teams already run a central incident policy. Use it. Map onto:
 - **FitSM PR9 (Incident & Service Request), PR10 (Problem), PR4 (Availability & Continuity), PR5 (Capacity).**
 - **ITIL 4 Incident, Problem, and Monitoring & Event management.**
 - **Your central incident-management policy** for the escalation and comms path.
+- No central policy or severity scheme at all? Define Sev1–4 in your SAC baseline and treat it as the team's standing scheme — the per-service profiles then have something to register against.
 
 FitSD's distinct contributions here are two. **FSD-RR-6** — the per-service incident profile: central policies define "an incident" in the abstract; almost nobody writes down what it means for *this* service (FitSD makes you, at Service Acceptance). And **FSD-RR-7** — controlled end-of-life: most teams have no clean way to retire a service, so they never quite do; FitSD makes the renew / replace / retire decision explicit and the decommission controlled.
 

@@ -22,7 +22,7 @@ tags:
 
 # FSD-FRM-00 — Idea Brief
 
-> **The Idea Brief asks: is this worth a proper look?** One page: enough on paper to decide whether an idea earns a Gate 1 review. **Don't design anything yet**; requirements, options and priorities come at the gates (Gate 1 makes the case, Gate 2 designs it). Once it's worth pursuing, this carries forward into Gate 1 (FSD-FRM-01). *(Form 00 — the optional pre-gate intake, before the numbered gates.)* The live copy is held in the team's work-tracking system; this is the blank template.
+> **The Idea Brief asks: is this worth a proper look?** One page: enough on paper to decide whether an idea earns a Gate 1 review. **Don't design anything yet**; requirements, options and priorities come at the gates (Gate 1 makes the case, Gate 2 designs it). Once it's worth pursuing, this carries forward into Gate 1 (FSD-FRM-01) — and if you can already answer Gate 1's questions, go straight there; the brief is optional. Related demands may share one brief (the Gate 1 Approver decides whether they share a case). *(Form 00 — the optional pre-gate intake, before the numbered gates. Terms: see `FitSD — Definitions`.)* The live copy is held in the team's work-tracking system; this is the blank template.
 
 ## Header
 

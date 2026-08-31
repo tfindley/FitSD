@@ -128,6 +128,8 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 - where a vendor or product is involved, its licensing and upgrade path, the new-technology due diligence;
 - where feasibility is still in doubt, an optional Proof of Concept: its objective, success criteria, method, cost and duration.
 
+**Deciding.** The Approver decides with the demand / pipeline register in view: "worth doing?" includes "worth doing *ahead of what*?". Sign-off also confirms the Solution Owner, and commits **design (and any PoC) effort only** — build and run costs are committed at Gate 2.
+
 **Outcomes:**
 
 - **Proceed to Gate 2:** the idea is worth designing.
@@ -145,7 +147,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 **Outcomes:**
 
-- **Approved for delivery:** work moves into delivery; build changes are raised through Change & Release (FSD-CH).
+- **Approved for delivery:** work moves into delivery; build changes are raised through Change & Release (FSD-CH). The approval records what it commits — the build effort, the accepted ongoing run-cost (cash *and* operating effort), and any exceptions or classifications ratified with the decision.
 - **Rework:** design returned with conditions.
 
 ---
@@ -162,13 +164,13 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 | **Access** | Access model implemented: roles, least privilege, grant/revoke, admin control; joiners/movers/leavers handling confirmed |
 | **Availability** | Expected availability / SLO met or accepted; capacity and scaling understood; DR position recorded |
 | **Monitoring & alerting** | Monitoring live with thresholds set and alert routing confirmed; a test alert observed end-to-end |
-| **Incident profile** | Service-level incident triggers and severities defined (what counts as an incident for *this* service) and registered with the incident-management process (FSD-RR-6) |
-| **Supportability / handover** | Operating and support model agreed; runbook and SOPs accepted by operators; knowledge transfer / cross-training delivered; **continuity** assured: operating knowledge captured, not reliant on a single person; any new or changed standing procedure the service forced (Gate 2 §4) written and adopted |
+| **Incident profile** | Service-level incident triggers and severities defined (what counts as an incident for *this* service) and registered with the incident-management process (FSD-RR-6) — registration evidenced by who accepted the profile for that process, and when |
+| **Supportability / handover** | Operating and support model agreed; runbook and SOPs accepted by the named operators — first-line support included — in a dated record; knowledge transfer / cross-training delivered; **continuity** assured: operating knowledge captured, not reliant on a single person; any new or changed standing procedure the service forced (Gate 2 §4) written and adopted |
 | **Cost / licensing** | Licences in place; ongoing run-cost confirmed and owned |
 
 **Outcomes:**
 
-- **Accepted:** solution enters service; managed thereafter as BAU (changes via FSD-CH, patching via FSD-RR).
+- **Accepted:** solution enters service; managed thereafter as BAU (changes via FSD-CH, patching via FSD-RR). At acceptance the Approver confirms the live **Service Owner** (and any deputy) on the service register (FSD-GV-2) — the hand-off from the Solution Owner is recorded, not assumed. Acceptance **may carry conditions**: each is recorded with an owner, a target date, and where it will be tracked; an accepted-with-conditions record stays on the review agenda until every condition closes.
 - **Remediation required:** outstanding criteria listed; re-presented when closed.
 
 ---

@@ -18,7 +18,7 @@ tags: [fitsd, implementation, adoption, guide, standup, non-normative]
 
 ## When to use this
 
-Use the **Quickstart** first: run one real piece of work through the gates and see whether FitSD helps. Come here when it did, and you want to make it the default (the "Adopt" rung of *Adoption & Positioning* §8). Standing FitSD up is a half-day of decisions, not a project. You are choosing where each requirement is met, not building new machinery; most of it points at processes you already run.
+Use the **Quickstart** first: run one real piece of work through the gates and see whether FitSD helps. Come here when it did, and you want to make it the default (the "Adopt" rung of *Adoption & Positioning* §8). Record the seven decisions below on one page — call it the **adoption record** — and put it under your own document control (FSD-GV-3): it's the page an auditor, or a new joiner, reads first. Standing FitSD up is a half-day of decisions, not a project. You are choosing where each requirement is met, not building new machinery; most of it points at processes you already run.
 
 ## The stand-up checklist
 
@@ -28,13 +28,13 @@ Seven steps, about half a day total. Each one is a decision you record, not mach
 Write down which services are under management: what's in, what's out. A line, not a document. This is the boundary everything else sits inside.
 
 ### 2. Name the owners and the Approver — *FSD-GV-2, FSD-GV-6, FSD-SD-6*
-Every service gets **one** accountable owner (roles may be shared; accountability isn't). Name who signs off gates and acceptance: the **Approver**. On a small team these collapse onto a couple of people; see *Roles on a small team* below.
+Every service gets **one** accountable owner (roles may be shared; accountability isn't). Name who signs off gates and acceptance: the **Approver** — and write down your **escalation line**: the spend, data-classification or impact level above which approval moves up (e.g. "the manager by default; the CTO above £10k/yr, for a new data classification, or for company-wide impact"). Name the **alternate approver** for work the default Approver builds (the "one line uncrossed" below). On a small team these collapse onto a couple of people; see *Roles on a small team* below.
 
 ### 3. Adopt the four forms — *FSD-SD-1…4*
-Take the blank templates from `capabilities/solution-development/`: **Idea Brief** (FSD-FRM-00), **Gate 1** (FSD-FRM-01), **Gate 2** (FSD-FRM-02), and the **Service Acceptance Record** (FSD-FRM-03). Put copies where your team works. Set your **net-new effort line** at the same time — the estimated-effort threshold above which work counts as net-new and comes through the gates (`FSD-PRO §1`; about 10 person-days is a sensible default). From now on, net-new work comes through this door.
+Take the blank templates from `capabilities/solution-development/`: **Idea Brief** (FSD-FRM-00), **Gate 1** (FSD-FRM-01), **Gate 2** (FSD-FRM-02), and the **Service Acceptance Record** (FSD-FRM-03). Put copies where your team works. Set your **net-new effort line** at the same time — the estimated-effort threshold above which work counts as net-new and comes through the gates (`FSD-PRO §1`; about 10 person-days is a sensible default) — and, if approval routes on cost (step 2), anchor the Gate 1 T-shirt sizes to rough local ranges so a size can't dodge the routing. From now on, net-new work comes through this door.
 
 ### 4. Ratify your SAC baseline — *FSD-GV-7*
-This is the step teams skip and regret. The Service Acceptance Criteria are fixed *categories* but **your** *thresholds*: your availability target, your backup-test cadence, your continuity rule, what you count as a reportable incident. Open *FitSD — Service Acceptance Criteria*, fill the baseline template with your own values, and have the accountable owner **ratify** it. Now every solution inherits one known bar instead of rediscovering it at go-live.
+This is the step teams skip and regret. The Service Acceptance Criteria are fixed *categories* but **your** *thresholds*: your availability target, your backup-test cadence, your continuity rule, what you count as a reportable incident. Open *FitSD — Service Acceptance Criteria*, fill the baseline template with your own values, and have the accountable owner **ratify** it — where the team sits inside a larger organisation, ratification sits *above* the person who wrote the baseline, so "ratified" adds something over "written". Now every solution inherits one known bar instead of rediscovering it at go-live.
 
 ### 5. Point Change, Incident and Security at what you already run — *the implementation profile*
 FitSD ships a full process only for Solution Development. For **Change & Release (FSD-CH)**, **Run & Restore (FSD-RR)**, **Secure & Assure (FSD-SA)** and, where it applies, **Supplier & Supply Chain (FSD-SC)** it states the requirement and expects you to meet it with the policy you already have. Record *which* of your policies/tools meets each: that mapping is your **implementation profile** (below).
@@ -43,7 +43,7 @@ FitSD ships a full process only for Solution Development. For **Change & Release
 Make sure the information stores exist in whatever tool you use (wiki, work-tracker, spreadsheet): the **demand / pipeline register**, the **service register**, and the **risk register** at minimum, plus the **supplier register** if FSD-SC applies to you. See *FitSD — Information Stores* for the full set. You don't need new tools, just named homes with owners.
 
 ### 7. Set the review cadence — *FSD-GV-5*
-Pick when you'll review the system (and re-ratify the SAC baseline): annually, or on material change. Tie it to a review you already hold rather than inventing a ritual.
+Pick when you'll review the system (and re-ratify the SAC baseline): annually, or on material change. Tie it to a review you already hold rather than inventing a ritual. Give the review an agenda it can't skip: walk the registers for accuracy, then per live service the open conditions, overdue evidence (re-tests, re-walk-throughs) and end-of-life candidates. Hold the review to its date — a review that quietly doesn't happen is the failure mode this step exists to prevent, so a missed one escalates rather than slides.
 
 ## Your implementation profile
 

@@ -78,6 +78,14 @@ Two **Implementation**-layer tiers are named in the Charter (§5) but not yet bu
 - **RACI granularity:** per capability vs per key activity: keep it light enough that a small team actually fills it in.
 - **Minimum viable role set:** which roles are mandatory (Owner + Approver?) and which are optional or named-only on a tiny team.
 
+An end-to-end simulation exercise (2026-08) surfaced five more calls for the same draft:
+
+- **Sponsorship and the submitter:** nobody is *obliged* to help a submitter gather facts, and the mid-tier approver who carries a case upward to the next gate has no name. A sponsor duty, or an Approver duty to broker contributor input?
+- **Operators and first line:** *FSD-PRO* §7 requires acceptance "by operators" and the *Charter* defines Operator — but the process's own role table doesn't carry it, and the first-line/support function is invisible everywhere. Say who the operators are, first line included.
+- **Design authority:** who stands behind a Gate 2 design (distinct from the Solution Owner who drives it), and whether work above a local bar warrants qualified technical review beyond the single Approver.
+- **Value over time:** does a product/value-owner role exist, or does the Service Owner explicitly carry it? Silence reads as "nobody does".
+- **Review independence:** FSD-GV-5's review has no independence rule; the builder rule ("one line uncrossed") is the cheap pattern to mirror.
+
 **Effort & sequencing.** Medium: more design than Tier 5, and it touches existing docs (the Owner reconciliation ripples into FSD-PRO and the Charter). Light dependencies, but worth landing before or alongside Tier 5: the maturity self-check scores FSD-GV-6 (roles defined) and FSD-GV-2 (single owner), so a settled role model makes those scores meaningful.
 
 ### Also queued
