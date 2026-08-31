@@ -4,6 +4,7 @@ framework: FitSD
 document_id: FSD-FRM-03
 capability: Solution Development
 tier: 4
+type: form (reference template)
 version: 0.3
 status: draft
 owner: Management System Owner

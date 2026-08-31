@@ -4,6 +4,7 @@ framework: FitSD
 document_id: FSD-PRO
 capability: Solution Development
 tier: 2
+type: process (reference implementation)
 version: 0.3
 status: draft
 owner: Management System Owner
@@ -16,7 +17,7 @@ satisfies:
   - FSD-SD-5
   - FSD-SD-6
 review_cycle: Annual, or on material change to how the team takes on new work
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - solution-development
@@ -31,7 +32,7 @@ tags:
 
 > **TL;DR** — The front door for new work: two gates (*worth doing?* → *ready to build?*) and a Service Acceptance close-out (*proven done?*). The scope test in §1 decides what comes through here versus routine change. This is the one process FitSD ships in full.
 
-## §1 Purpose and Scope
+## 1. Purpose and scope
 
 This process controls how net-new work enters the team's stream and follows it through to the point it is accepted into live service. It is also the team's **control point for adopting new technology** (nothing new gets picked up without due diligence) and it feeds the registers that show what's upcoming, in-flight and live. The point is plain: don't commit real effort until an idea has earned it, and don't call something done until it can actually be run — documented, recoverable, secure, access-controlled and monitored, not just switched on.
 
@@ -55,7 +56,7 @@ It uses **two decision gates** at the front and a **Service Acceptance** close-o
 
 ---
 
-## §2 Definitions
+## 2. Definitions
 
 **Gate.** A defined decision point at which the Approver authorises the work to proceed, with or without conditions. Work does not advance past a gate until it is signed off.
 
@@ -75,7 +76,7 @@ It uses **two decision gates** at the front and a **Service Acceptance** close-o
 
 ---
 
-## §3 Roles
+## 3. Roles
 
 | Role               | Responsibility                                                                                             |
 | ------------------ | ---------------------------------------------------------------------------------------------------------- |
@@ -87,7 +88,7 @@ A single person may hold more than one role, but accountability for any one solu
 
 ---
 
-## §4 Lifecycle
+## 4. Lifecycle
 
 ```mermaid
 flowchart LR
@@ -111,7 +112,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 ---
 
-## §5 Gate 1 — Outline Proposal
+## 5. Gate 1 — Outline Proposal
 
 **Purpose.** Decide whether the idea is worth pursuing before any design effort is spent. The record is the **business case** for the work: the fundable proposal taken upward for a decision.
 
@@ -134,7 +135,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 ---
 
-## §6 Gate 2 — Solution Design
+## 6. Gate 2 — Solution Design
 
 **Purpose.** Confirm the chosen approach is designed and ready to build, including how it will be operated.
 
@@ -147,7 +148,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 ---
 
-## §7 Service Acceptance
+## 7. Service Acceptance
 
 **Purpose.** Confirm the solution is ready to run before it is accepted into service. The outputs of this process are the product itself **plus** the operational artefacts below that make it supportable. The criteria are defined once in *FitSD — Service Acceptance Criteria* and proven here against the organisation's standing baseline (FSD-GV-7). Each is *designed* at Gate 2 and *proven* here, on FSD-FRM-03, with evidence.
 
@@ -170,7 +171,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 ---
 
-## §8 Records and Review
+## 8. Records and review
 
 The live records (§4, *System of record*) are the authoritative record of any individual solution's progress.
 
@@ -178,7 +179,7 @@ This process is reviewed annually by the Management System Owner, or sooner on a
 
 ---
 
-## §9 Related Documents
+## 9. Related documents
 
 - FSD-FRM-00 — Idea Brief
 - FSD-FRM-01 — Gate 1 Outline Proposal

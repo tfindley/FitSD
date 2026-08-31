@@ -20,9 +20,7 @@ tags:
 
 # FitSD — Standards Alignment
 
-Reference mapping of FitSD to the established frameworks and standards it distils from or supports: **FitSM**, **ITIL 4**, **USM**, **ISO/IEC 27001:2022**, and the **NIS2 Directive**.
-
-> **Purpose.** FitSD is an opinionated *distillation* of mainstream service-management and security practice for small teams. It does not conflict with any of these standards; it maps onto sections of each. This document records those mappings so adopters can (a) see FitSD is well-grounded, (b) use it as an on-ramp toward ISO 27001 / NIS2, and (c) reuse the tables as audit evidence.
+> **TL;DR** — How FitSD maps to the established frameworks and standards it distils from or supports: **FitSM**, **ITIL 4**, **USM**, **ISO/IEC 27001:2022**, and the **NIS2 Directive**. FitSD is an opinionated *distillation* of mainstream practice; it conflicts with none of these, and maps onto sections of each. The mappings are recorded so adopters can (a) see FitSD is well-grounded, (b) use it as an on-ramp toward ISO 27001 / NIS2, and (c) reuse the tables as audit evidence.
 >
 > **Caveat.** Mappings are indicative, not certified. Clause and control numbers are correct as of the standard versions cited in §7. Always verify against the current authoritative text before relying on this for compliance.
 

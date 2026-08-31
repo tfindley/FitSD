@@ -3,10 +3,11 @@ title: FitSD — Framework Charter
 framework: FitSD
 document: Charter
 tier: 0
+type: framework charter
 version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - framework

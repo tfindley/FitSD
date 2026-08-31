@@ -14,7 +14,7 @@ tags: [fitsd, implementation, adoption, guide, standup, non-normative]
 
 # FitSD — Implementation Guide
 
-> **What this is.** The missing "how do we stand this up *here*?" layer. *FitSD — Adoption & Positioning* is the *why and who*; the *Quickstart* runs *one project* through the front door; this is how you turn that into the way your team takes on work — the standing management system. Non-normative: it adds no requirement. It walks the Tier 1 requirements and shows what "adopted" looks like in practice.
+> **TL;DR** — The missing "how do we stand this up *here*?" layer. *FitSD — Adoption & Positioning* is the *why and who*; the *Quickstart* runs *one project* through the front door; this is how you turn that into the way your team takes on work — the standing management system. Non-normative: it adds no requirement. It walks the Tier 1 requirements and shows what "adopted" looks like in practice.
 
 ## When to use this
 

@@ -3,10 +3,11 @@ title: "FitSD — Adoption & Positioning"
 framework: FitSD
 document: Adoption & Positioning
 tier: 0
-status: draft
 type: explanatory (non-normative)
+version: 0.3
+status: draft
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, adoption, positioning, pitch, executive-summary, explanatory]
 ---
 

@@ -4,9 +4,10 @@ framework: FitSD
 document: Roadmap
 tier: 0
 type: explanatory (non-normative)
+version: 0.3
 status: living
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, roadmap, plan]
 ---
 

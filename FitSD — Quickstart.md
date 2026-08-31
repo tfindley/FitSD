@@ -4,15 +4,16 @@ framework: FitSD
 document: Quickstart
 tier: 0
 type: explanatory (non-normative)
+version: 0.3
 status: draft
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, quickstart, getting-started]
 ---
 
 # FitSD — Quickstart
 
-> The fastest path from "what's this?" to "we're using it." Written for one person on a small team who wants a win this week — not a rollout plan.
+> **TL;DR** — The fastest path from "what's this?" to "we're using it." Written for one person on a small team who wants a win this week, not a rollout plan.
 
 Adopt FitSD by running one real piece of work through it, not by reading it. Five moves, about a week of calendar time and an afternoon of real effort.
 

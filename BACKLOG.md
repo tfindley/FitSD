@@ -10,7 +10,7 @@ tags: [fitsd, backlog]
 
 # FitSD — Backlog
 
-Deferred ideas and improvements surfaced while building the framework, many from dogfooding it on a real project. Not yet scheduled.
+> **TL;DR** — Deferred ideas and improvements surfaced while building the framework, many from dogfooding it on a real project. Not yet scheduled; the bigger picture is the `Roadmap`.
 
 ## Framework tiers
 

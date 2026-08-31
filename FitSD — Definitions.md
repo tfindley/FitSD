@@ -4,9 +4,10 @@ framework: FitSD
 document: Definitions
 tier: 0
 type: reference (non-normative)
+version: 0.3
 status: living
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, definitions, glossary]
 ---
 

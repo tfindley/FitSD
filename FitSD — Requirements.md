@@ -3,10 +3,11 @@ title: FitSD — Requirements
 framework: FitSD
 document: Requirements
 tier: 1
+type: normative
 version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - framework
@@ -16,7 +17,7 @@ tags:
 
 # FitSD — Requirements
 
-> **TL;DR**: The testable "shall" statements you must meet to conform, grouped by capability. Each is a one-line outcome; the right-hand **Note** says what it means in practice. Meet them with your own documents and tools. FitSD ships a full process only for Solution Development.
+> **TL;DR** — The testable "shall" statements you must meet to conform, grouped by capability. Each is a one-line outcome; the right-hand **Note** says what it means in practice. Meet them with your own documents and tools. FitSD ships a full process only for Solution Development.
 
 > **Status: draft, founding layer.** This is Tier 1 of FitSD: the testable spine. Each requirement is a "shall" statement that an implementation must satisfy to conform, by whatever local documents and tools it chooses (see *Charter* §7). Requirements are grouped by capability. IDs are stable; wording will be refined.
 
