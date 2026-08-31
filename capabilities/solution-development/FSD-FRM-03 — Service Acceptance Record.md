@@ -36,19 +36,19 @@ tags:
 
 ## 1. Acceptance criteria
 
-For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline** — the criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance. Where the baseline's applicability rules say a criterion doesn't apply to this service, record **N/A per baseline** with the reason — a recorded call, not a skip.
+For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline**. The criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance. Where the baseline's applicability rules say a criterion doesn't apply to this service, record **N/A per baseline** with the reason, a recorded call, not a skip.
 
 | Criterion | Evidence / link | Met? (Y / N / N/A per baseline) |
 |---|---|---|
-| **Documentation** — HLD, runbook, recovery procedure, user/how-to published | | |
-| **Backup (tested)** — backup in place **and test restore performed**, dated | | |
-| **Security** — hardening applied, patch path set (FSD-RR), vuln posture acceptable, exceptions logged (FSD-SA) | | |
-| **Access** — access model implemented; least privilege; JML handling confirmed | | |
-| **Availability** — SLO met or accepted; capacity & scaling understood; DR position recorded | | |
-| **Monitoring & alerting** — monitoring live; thresholds set; test alert observed end-to-end | | |
-| **Incident profile** — service-level incident triggers & severities registered with the incident-management process | | |
-| **Supportability / handover** — support model agreed; runbook accepted by operators; team ready; training done; **continuity** assured (knowledge captured, not reliant on one person) | | |
-| **Cost / licensing** — licences in place; ongoing run-cost confirmed and owned | | |
+| **Documentation:** HLD, runbook, recovery procedure, operating procedures (SOPs), user/how-to published | | |
+| **Backup (tested):** backup in place **and test restore performed**, dated | | |
+| **Security:** hardening applied, patch path set (FSD-RR), vuln posture acceptable, exceptions logged (FSD-SA) | | |
+| **Access:** access model implemented; least privilege; JML handling confirmed | | |
+| **Availability:** SLO met or accepted; capacity & scaling understood; DR position recorded | | |
+| **Monitoring & alerting:** monitoring live; thresholds set; test alert observed end-to-end | | |
+| **Incident profile:** service-level incident triggers & severities registered with the incident-management process | | |
+| **Supportability / handover:** support model agreed; runbook & SOPs accepted by operators; knowledge transfer / cross-training done; team ready; **continuity** assured (not reliant on one person); any new/changed standing procedure the service forced (Gate 2 §4) written & adopted | | |
+| **Cost / licensing:** licences in place; ongoing run-cost confirmed and owned | | |
 
 ## 2. Outstanding remediation
 

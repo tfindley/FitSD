@@ -12,7 +12,7 @@ tags: [fitsd, versioning, governance, releases]
 
 # FitSD — Versioning Policy
 
-> **What this is.** How FitSD is versioned, so a team can adopt — and conform to — a
+> **What this is.** How FitSD is versioned, so a team can adopt, and conform to, a
 > *specific* version and trust it won't move under them. Non-normative governance; it adds
 > no requirements. Maintainers: the operational how-to is in `RELEASING.md`.
 
@@ -25,17 +25,17 @@ other way round.
 
 ## What the numbers mean
 
-FitSD uses semantic versioning — `MAJOR.MINOR.PATCH` — applied to the **normative**
+FitSD uses semantic versioning (`MAJOR.MINOR.PATCH`) applied to the **normative**
 content (the testable requirements and the model they hang off):
 
 | Part      | Changes when…                                                                                                                                      | Example         |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| **MAJOR** | A normative change that could break conformance — a requirement is removed, tightened, or redefined so an existing adopter might no longer comply. | `1.0.0 → 2.0.0` |
-| **MINOR** | A backward-compatible normative addition — a new requirement or capability that doesn't invalidate existing conformance.                           | `0.2.0 → 0.3.0` |
-| **PATCH** | A correction with no normative effect — wording, examples, a clarified note that doesn't change what's required.                                   | `0.2.0 → 0.2.1` |
+| **MAJOR** | A normative change that could break conformance: a requirement is removed, tightened, or redefined so an existing adopter might no longer comply. | `1.0.0 → 2.0.0` |
+| **MINOR** | A backward-compatible normative addition, a new requirement or capability that doesn't invalidate existing conformance.                           | `0.2.0 → 0.3.0` |
+| **PATCH** | A correction with no normative effect: wording, examples, a clarified note that doesn't change what's required.                                   | `0.2.0 → 0.2.1` |
 
-If a change doesn't touch the normative content at all — a typo in an explanatory page, a
-diagram redraw, a website tweak — it does **not** need a new version. See the three
+If a change doesn't touch the normative content at all (a typo in an explanatory page, a
+diagram redraw, a website tweak) it does **not** need a new version. See the three
 streams below.
 
 ## Three streams of change, decoupled
@@ -51,14 +51,14 @@ Not everything that changes is a release. There are three independent streams:
    a tag is created.
 
 This is the decoupling that keeps the standard stable: a stream of small corrections and
-site improvements never forces — or masquerades as — a new version of the framework.
+site improvements never forces, or masquerades as, a new version of the framework.
 
 ## Latest, and the frozen record
 
 - **The current version is live.** The site root (`fitsd.tfindley.dev/`) always serves the
   current version; errata are published against it without cutting a new version.
 - **Released versions are frozen.** When a new version is cut, the outgoing one is archived
-  as an immutable snapshot, browsable forever at a stable URL — `…/0.1/`, `…/0.2/` — with a
+  as an immutable snapshot, browsable forever at a stable URL (`…/0.1/`, `…/0.2/`) with a
   version switcher. A frozen version is never edited in place.
 
 ## Adopting a version
@@ -72,5 +72,5 @@ right choice for a team that simply wants the most recent guidance.
 
 A release is a deliberate, reviewable act, not an automatic side effect of editing. The
 maintainer runs the release script, which freezes the outgoing version, bumps `VERSION`,
-and creates the tag for review before anything is published. The full procedure — and the
-errata-vs-release decision — is in [`RELEASING.md`](https://github.com/tfindley/keystone/blob/main/RELEASING.md).
+and creates the tag for review before anything is published. The full procedure, and the
+errata-vs-release decision, is in [`RELEASING.md`](https://github.com/tfindley/keystone/blob/main/RELEASING.md).

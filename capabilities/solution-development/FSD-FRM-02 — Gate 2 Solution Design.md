@@ -35,7 +35,7 @@ tags:
 
 ## 1. Carry-forward from Gate 1
 
-*Summarise the approved Gate 1 — outcome sought, value, and effort — updated as more is now known.*
+*Summarise the approved Gate 1 (outcome sought, value, and effort), updated as more is now known.*
 
 | Field                       | Entry |
 | --------------------------- | ----- |
@@ -68,14 +68,14 @@ tags:
 
 ## 4. Operational impact — cross-process
 
-*Where this service touches your **other** operating processes and systems. The SAC-aligned operational design (monitoring, backup, access, availability, support, cost) lives in §5 — don't duplicate it here.*
+*Where this service touches your **other** operating processes and systems. The SAC-aligned operational design (monitoring, backup, access, availability, support, cost) lives in §5. Don't duplicate it here.*
 
 | Integration point                        | Impact / approach |
 | ---------------------------------------- | ----------------- |
 | **Billing / chargeback** (if applicable) | *Integration with the billing/finance system (run-cost itself is a SAC item — §5)* |
 | **Service desk / ITSM**                  |                   |
 | **Environments** (dev / ongoing)         |                   |
-| **Process impact**                       | *Does this force changes to your change, incident or other operating processes? Note which capability — FSD-CH / FSD-RR / FSD-SA.* |
+| **Process impact**                       | *Does this force changes to your change, incident or other operating processes? Note which capability: FSD-CH / FSD-RR / FSD-SA. Any new or changed standing procedure noted here is proven written and adopted at Service Acceptance (Supportability/handover, §5).* |
 
 ## 5. Service Acceptance Criteria — design approach
 
@@ -83,14 +83,14 @@ State *how* each criterion will be met **against your organisation's standing SA
 
 | Criterion | Design approach |
 |---|---|
-| **Documentation** | *Which docs (HLD, runbook, recovery, user) and where they will live* |
-| **Backup (tested)** | *What is backed up, frequency, retention, location — and how a test restore will be proven* |
+| **Documentation** | *Which docs (HLD, runbook, recovery, operating procedures/SOPs, user) and where they will live* |
+| **Backup (tested)** | *What is backed up, frequency, retention, location, and how a test restore will be proven* |
 | **Security** | *Hardening, patch path (FSD-RR), vulnerability posture, any exceptions (FSD-SA)* |
-| **Access** | *Access model — roles, least privilege, grant/revoke, admin control, JML handling* |
+| **Access** | *Access model: roles, least privilege, grant/revoke, admin control, JML handling* |
 | **Availability** | *Expected availability / SLO, capacity & scaling, DR considerations* |
 | **Monitoring & alerting** | *What is monitored, thresholds, where alerts route* |
-| **Incident profile** | *What counts as an incident for this service — triggers and severities — to register with the incident-management process* |
-| **Supportability / handover** | *Operating & support model, runbook, training needed; how continuity is assured — cross-training / knowledge capture so the service isn't reliant on one person* |
+| **Incident profile** | *What counts as an incident for this service (triggers and severities) to register with the incident-management process* |
+| **Supportability / handover** | *Operating & support model, runbook & SOPs, knowledge transfer / cross-training needed; how continuity is assured so the service isn't reliant on one person; any new/changed standing procedure this service will require (from §4 process impact)* |
 | **Cost / licensing** | *Expected run-cost and licences* |
 
 ## 6. RAIDD
@@ -105,7 +105,7 @@ State *how* each criterion will be met **against your organisation's standing SA
 
 ## 7. Refined effort, cost and timeline
 
-*Keep proportionate: person-days by role/workstream and a short milestone list — not a full FTE/capacity model (only reach for that under genuine resource contention).*
+*Keep proportionate: person-days by role/workstream and a short milestone list, not a full FTE/capacity model (only reach for that under genuine resource contention).*
 
 ### 7.1 Effort and cost
 

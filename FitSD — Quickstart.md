@@ -16,20 +16,20 @@ tags: [fitsd, quickstart, getting-started]
 
 You don't adopt FitSD by reading it. You adopt it by running one real piece of work through the front door and seeing whether it helps. Here's the whole thing in five moves.
 
-The shape, in one line: FitSD uses **two gates** — *is this worth doing?* (Gate 1) and *is it ready to build?* (Gate 2) — then a final **Service Acceptance** check that it's proven ready to run.
+The shape, in one line: FitSD uses **two gates**: *is this worth doing?* (Gate 1) and *is it ready to build?* (Gate 2), then a final **Service Acceptance** check that it's proven ready to run.
 
 ## Before you start (5 minutes)
 
-- Pick **one** real piece of upcoming work — something **net-new** (a new service, tool, or capability — not a routine change to something you already run). A tool to stand up, a service to replace, a capability to add.
+- Pick **one** real piece of upcoming work: something **net-new** (a new service, tool, or capability, not a routine change to something you already run). A tool to stand up, a service to replace, a capability to add.
 - Grab the forms from `capabilities/solution-development/`: the Idea Brief (FSD-FRM-00), Gate 1 (Outline Proposal), Gate 2 (Solution Design), and the Service Acceptance Record.
 
 ## 1. Write the Idea Brief — half a day, tops
 
-One page (there's a template — FSD-FRM-00). What's the problem, what would "done" look like, what's roughly in and out of scope. Don't design anything yet; you're just getting enough on paper to decide whether it's worth a proper look. (A public worked example, run end to end, is in the works.)
+One page (there's a template, FSD-FRM-00). What's the problem, what would "done" look like, what's roughly in and out of scope. Don't design anything yet; you're just getting enough on paper to decide whether it's worth a proper look. (A public worked example, run end to end, is in the works.)
 
 ## 2. Take it to Gate 1 — one short conversation
 
-Fill the Gate 1 form: the driver, a rough value/risk read, T-shirt effort, the options you can see, and the decision you're asking for. Put it in front of whoever says yes or no. They proceed, park, or reject. That decision — made on a page instead of in a corridor — is the first thing FitSD buys you.
+Fill the Gate 1 form: the driver, a rough value/risk read, T-shirt effort, the options you can see, and the decision you're asking for. Put it in front of whoever says yes or no. They proceed, park, or reject. That decision, made on a page instead of in a corridor, is the first thing FitSD buys you.
 
 ## 3. Design it at Gate 2 — once Gate 1 says go
 
@@ -45,6 +45,6 @@ Before you call it live, walk the Service Acceptance Record. Each criterion: met
 
 ## That's the loop
 
-You've run one service through the front door. If it helped — the Gate 1 conversation went better, or the acceptance check caught something — do it again with the next piece of work. That's adoption: one project at a time, never a big bang.
+You've run one service through the front door. If it helped (the Gate 1 conversation went better, or the acceptance check caught something), do it again with the next piece of work. That's adoption: one project at a time, never a big bang.
 
 **Next:** the maturity self-check (once built) will tell you where you stand and what one notch better looks like. Until then, the capability cards in `capabilities/` show what else FitSD covers and what to point at for each.

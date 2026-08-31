@@ -20,7 +20,7 @@ tags:
 
 > **TL;DR** — The founding document: what FitSD is, its principles, the five-capability model, the roles, and how you conform. Adopting FitSD? Read this first. Just want to try it? The Quickstart is faster.
 
-> **The founding layer.** This is Tier 0: what FitSD is, and the model everything else hangs off. The testable requirements live in *FitSD — Requirements* (Tier 1). The lower tiers — capabilities, roles, templates, the maturity check — come after.
+> **The founding layer.** This is Tier 0: what FitSD is, and the model everything else hangs off. The testable requirements live in *FitSD — Requirements* (Tier 1). The lower tiers (capabilities, roles, templates, the maturity check) come after.
 
 ## 1. What FitSD is
 
@@ -28,7 +28,7 @@ A small team trying to run services properly hits the same wall every time. ITIL
 
 FitSD is the smallest amount of that discipline a handful of people can keep up. It takes what ITIL, ISO 20000 and FitSM get right and drops everything a small team can't sustain.
 
-The name nods to **FitSM** (*Fit for Service Management*), the lightweight ITSM standard it sits closest to. FitSD is *Fit for Solution Development* — same intent, narrower focus: the front door work comes through. *(Working name; the naming story is in the project's notes.)*
+The name nods to **FitSM** (*Fit for Service Management*), the lightweight ITSM standard it sits closest to. FitSD is *Fit for Solution Development*. Same intent, narrower focus: the front door work comes through. *(Working name; the naming story is in the project's notes.)*
 
 ## 2. Where it sits
 
@@ -41,7 +41,7 @@ FitSD doesn't compete with ITIL or ISO 20000. It's a smaller cut of the same clo
 | FitSM         | Lightweight, ~14 processes, neutral | Closest cousin; FitSD is lighter still and **intake-first**              |
 | USM / VeriSM  | Method / digital-first              | Compatible philosophies; FitSD is more prescriptive about the front door |
 
-Two commitments set it apart. Work enters through one front door, not a dozen side channels. And nothing goes live until it's ready to be run — documented, recoverable, secure, monitored, supportable — not just switched on. Security and resilience are designed in from the start, not bolted on once an auditor asks.
+Two commitments set it apart. Work enters through one front door, not a dozen side channels. And nothing goes live until it's ready to be run (documented, recoverable, secure, monitored, supportable), not just switched on. Security and resilience are designed in from the start, not bolted on once an auditor asks.
 
 ## 3. Principles
 
@@ -57,7 +57,7 @@ The rules that decide what makes the cut.
 
 ## 4. The capability model
 
-FitSD splits service management into five core groups, plus one **conditional** capability — supplier / supply-chain assurance (**FSD-SC**) — for teams whose services rely on suppliers and third-party dependencies (it closes the NIS2 supply-chain gap; see its card).
+FitSD splits service management into five core groups, plus one **conditional** capability, supplier / supply-chain assurance (**FSD-SC**), for teams whose services rely on suppliers and third-party dependencies (it closes the NIS2 supply-chain gap; see its card).
 
 | Group                | Question it answers                     | Core capabilities                                                    |
 | -------------------- | --------------------------------------- | -------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ FitSD splits service management into five core groups, plus one **conditional** 
 | **Secure & assure**  | How do we stay safe and compliant?      | Risk, access, backup & recovery, exceptions, regulatory alignment    |
 | **Supplier & supply chain** *(conditional)* | Who do we depend on, and on what terms? | Supplier register, pre-adoption assessment, agreements, review & exit |
 
-**Solution Development is the one that matters most.** It gets built first because it reaches into all the others — its acceptance criteria drag in security, backup, availability, access, monitoring and change whether you planned for them or not. Get the front door right and the rest of the house reveals itself.
+**Solution Development is the one that matters most.** It gets built first because it reaches into all the others: its acceptance criteria drag in security, backup, availability, access, monitoring and change whether you planned for them or not. Get the front door right and the rest of the house reveals itself.
 
 ```mermaid
 flowchart LR
@@ -88,10 +88,10 @@ flowchart LR
 
 FitSD's documents sit in **two layers**:
 
-- **Framework (portable — Tiers 0–1).** What FitSD *is*: the Charter & vocabulary (Tier 0) and the Requirements (Tier 1). The same for every team.
-- **Implementation (per team — Tiers 2–5).** How a given team puts it into practice: Capabilities (2), Roles (3), Templates & registers (4), and the Maturity self-check (5). Yours to shape. *(New adopters: FitSD — Implementation Guide walks standing all of this up.)*
+- **Framework (portable, Tiers 0–1).** What FitSD *is*: the Charter & vocabulary (Tier 0) and the Requirements (Tier 1). The same for every team.
+- **Implementation (per team, Tiers 2–5).** How a given team puts it into practice: Capabilities (2), Roles (3), Templates & registers (4), and the Maturity self-check (5). Yours to shape. *(New adopters: FitSD — Implementation Guide walks standing all of this up.)*
 
-The numbered **tiers** within each layer echo FitSM's numbered parts; the numbers are an index, not a ranking. The one hard line is between the Framework and your Implementation of it — the table lists the tiers, and the diagram below shows the same two-layer split.
+The numbered **tiers** within each layer echo FitSM's numbered parts; the numbers are an index, not a ranking. The one hard line is between the Framework and your Implementation of it. The table lists the tiers, and the diagram below shows the same two-layer split.
 
 | Tier | Name                      | Purpose                                                          | Status                                          |
 | ---- | ------------------------- | ---------------------------------------------------------------- | ----------------------------------------------- |
@@ -135,7 +135,7 @@ FitSD names functions, not job titles. On a small team one person wears several 
 
 ## 7. Conformance and maturity
 
-You conform to FitSD when you can show each Tier 1 requirement is met — with your own documents, tools and registers. It's about meeting the requirement, not adopting our templates.
+You conform to FitSD when you can show each Tier 1 requirement is met, with your own documents, tools and registers. It's about meeting the requirement, not adopting our templates.
 
 Maturity is a rough self-assessment, scored per capability:
 
@@ -148,7 +148,7 @@ Maturity is a rough self-assessment, scored per capability:
 | 4     | Measured — metrics watched and acted on            |
 | 5     | Improving — routinely refined through PDCA         |
 
-Nobody's expected to hit 5 across the board. "Good enough for now" is a real answer — as long as it's a call you made on purpose and wrote down.
+Nobody's expected to hit 5 across the board. "Good enough for now" is a real answer, as long as it's a call you made on purpose and wrote down.
 
 ## 8. Vocabulary
 
@@ -164,7 +164,7 @@ Only the words that carry a specific meaning here.
 
 **Service Acceptance / Definition of Done.** The conditions a service must meet, with evidence, before it goes live.
 
-**Implementation profile.** A team's local version of FitSD — their actual documents, mapped to the requirements.
+**Implementation profile.** A team's local version of FitSD: their actual documents, mapped to the requirements.
 
 ## 9. Ownership and licensing
 

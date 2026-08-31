@@ -14,12 +14,12 @@ Deferred ideas and improvements surfaced while building the framework, many from
 
 ## Framework tiers
 
-- **Tier 3 — Roles model.** Canonical role definitions, authority levels, and a light RACI across the capabilities; reconciles Solution Owner (FSD-PRO §3) with Service Owner (Charter §6). Guidepost in the `Roadmap`.
-- **Tier 5 — Maturity self-check.** The 0–5 capability self-assessment described in the Charter (§7). Most of the content already exists in the cards' "Maturity, briefly" thumbnails. Guidepost in the `Roadmap`.
+- **Tier 3: Roles model.** Canonical role definitions, authority levels, and a light RACI across the capabilities; reconciles Solution Owner (FSD-PRO §3) with Service Owner (Charter §6). Guidepost in the `Roadmap`.
+- **Tier 5: Maturity self-check.** The 0–5 capability self-assessment described in the Charter (§7). Most of the content already exists in the cards' "Maturity, briefly" thumbnails. Guidepost in the `Roadmap`.
 
 ## Principles
 
-- **Openness / honest disclosure (candidate principle).** Consider whether FitSD should state a value of being open about how a service is built and run — its tooling, dependencies, and methods (including AI assistance) — beyond the existing "documented & evidenced" bar. Surfaced while writing the site's AI-assisted disclosure: the page espouses openness, but FitSD's seven principles (Charter §3) don't name it. A deliberate call, not a quiet add — likely a normative change (see `Versioning Policy`).
+- **Openness / honest disclosure (candidate principle).** Consider whether FitSD should state a value of being open about how a service is built and run, its tooling, dependencies, and methods (including AI assistance), beyond the existing "documented & evidenced" bar. Surfaced while writing the site's AI-assisted disclosure: the page espouses openness, but FitSD's seven principles (Charter §3) don't name it. A deliberate call, not a quiet add — likely a normative change (see `Versioning Policy`).
 
 ## Solution Development
 
@@ -27,24 +27,24 @@ Deferred ideas and improvements surfaced while building the framework, many from
 
 ## Adoption & reach
 
-- **FAQ.** One page answering the questions an informed adopter actually asks — led by "**Why not just FitSM?**" (the answer exists but is scattered across the Roadmap's "sharp wedge" note and *Standards Alignment* §2), plus: is it certifiable, does it work for a team of one, what if we already run ITIL / a CAB.
-- **SAC one-pager — the shareable atom.** Nobody adopts a framework from a README, but everyone copies a good checklist. A standalone "steal this Definition of Done" cut of the SAC as the marketing front door — it pulls people into the framework, not the other way round. Pairs with the tech-sprawl article (Roadmap, "Later").
+- **FAQ.** One page answering the questions an informed adopter actually asks: led by "**Why not just FitSM?**" (the answer exists but is scattered across the Roadmap's "sharp wedge" note and *Standards Alignment* §2), plus: is it certifiable, does it work for a team of one, what if we already run ITIL / a CAB.
+- **SAC one-pager: the shareable atom.** Nobody adopts a framework from a README, but everyone copies a good checklist. A standalone "steal this Definition of Done" cut of the SAC as the marketing front door — it pulls people into the framework, not the other way round. Pairs with the tech-sprawl article (Roadmap, "Later").
 - **CONTRIBUTING.md + issue templates.** `.github/` currently holds only the web workflows; a standard that asks for worked examples and implementation profiles back (Adoption §8, "Share") needs a contribution front door of its own.
-- **Conformance checklist.** The Tier 1 shalls as a per-requirement tick-list with a "satisfied by" column — probably a website download generated from *Requirements*, not a new standard document (it would only restate the spine).
+- **Conformance checklist.** The Tier 1 shalls as a per-requirement tick-list with a "satisfied by" column, probably a website download generated from *Requirements*, not a new standard document (it would only restate the spine).
 
 ## Structure (deferred decisions)
 
 - **Kebab-case filenames.** The em-dash names (`FitSD — Requirements.md`) hurt URLs, CLI use, cross-linking and contributor friction. Rename to plain kebab-case **during the web migration**, when links churn anyway. *(Decision 2026-07-03: deferred to the migration, not before.)*
-- **Tier labels → document types (candidate).** The tier numbering strains at the edges: the Implementation Guide is "2–5 (cross-cutting)", FitSD itself authors docs labelled tier 2/4 inside the "per-team" layer, and the SAC reference is tier 0 yet non-normative. Consider standards-world labels instead — normative / guidance / reference implementation / meta. Churns every frontmatter; not before the worked example lands.
+- **Tier labels → document types (candidate).** The tier numbering strains at the edges: the Implementation Guide is "2–5 (cross-cutting)", FitSD itself authors docs labelled tier 2/4 inside the "per-team" layer, and the SAC reference is tier 0 yet non-normative. Consider standards-world labels instead: normative / guidance / reference implementation / meta. Churns every frontmatter; not before the worked example lands.
 
 ## Scope & the wider family
 
-Direction set while scoping v0.3 (fuller narrative in the `Roadmap`, "Shape & scope"). Candidates and boundaries — not yet scheduled.
+Direction set while scoping v0.3 (fuller narrative in the `Roadmap`, "Shape & scope"). Candidates and boundaries, not yet scheduled.
 
-- **Service Level Management (candidate thin requirement).** A *thin* `shall` — each live service has agreed, recorded service levels (or an explicit "best effort" statement) with its customer. Closes the FitSM PR2 gap without building an SLM process; the availability SLO already lives in the SAC. Reference-out for the *how*.
-- **Service Reporting (candidate thin requirement).** A *thin* `shall` — service performance is reported to stakeholders at a defined cadence (could fold into the FSD-GV-5 review). Closes the FitSM PR3 gap. Reference-out for the *how*.
+- **Service Level Management (candidate thin requirement).** A *thin* `shall`: each live service has agreed, recorded service levels (or an explicit "best effort" statement) with its customer. Closes the FitSM PR2 gap without building an SLM process; the availability SLO already lives in the SAC. Reference-out for the *how*.
+- **Service Reporting (candidate thin requirement).** A *thin* `shall`: service performance is reported to stakeholders at a defined cadence (could fold into the FSD-GV-5 review). Closes the FitSM PR3 gap. Reference-out for the *how*.
 - **Declared non-goals.** Full Configuration Management / CMDB (FitSM PR11), Customer Relationship Management (PR7), and capacity-as-a-discipline stay out of scope — met by "use your existing practice." Worth stating explicitly so the boundary is deliberate, not accidental.
-- **Shared core (only if the family grows).** FitSD currently double-hats as the umbrella frame (the capability groups + requirements spine + definitions — the `FSD-` prefix on everything) *and* the Solution Development deep-dive. If a second "Fit-" deep-dive (Change, Incident) becomes real, extract a shared core so siblings reference the frame rather than redefine it.
+- **Shared core (only if the family grows).** FitSD currently double-hats as the umbrella frame (the capability groups + requirements spine + definitions, the `FSD-` prefix on everything) *and* the Solution Development deep-dive. If a second "Fit-" deep-dive (Change, Incident) becomes real, extract a shared core so siblings reference the frame rather than redefine it.
 
 ## Done (recent)
 

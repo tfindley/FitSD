@@ -87,7 +87,7 @@ flowchart TB
 
 ## 4. Service lifecycle (status)
 
-*The state a solution moves through, from idea to retirement — including the end-of-life fork (renew / replace / retire). Useful for tracking any one solution's position in the pipeline.*
+*The state a solution moves through, from idea to retirement, including the end-of-life fork (renew / replace / retire). Useful for tracking any one solution's position in the pipeline.*
 
 ```mermaid
 stateDiagram-v2
@@ -152,7 +152,7 @@ flowchart LR
 
 ## 6. Information stores
 
-*Embedded in `reference/FitSD — Information Stores`. The registers and records FitSD relies on, shown tech-agnostically — a "store" is a register or record set, never a named tool. Each is owned by a capability and tied to a lifecycle stage.*
+*Embedded in `reference/FitSD — Information Stores`. The registers and records FitSD relies on, shown tech-agnostically. A "store" is a register or record set, never a named tool. Each is owned by a capability and tied to a lifecycle stage.*
 
 ```mermaid
 flowchart TB

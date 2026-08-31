@@ -17,7 +17,7 @@ tags: [fitsd, run, restore, incident, capability-card]
 
 *Capability card. Keep live services healthy, and get them back fast when they break.*
 
-> **What a capability card is.** A one-page orientation, not a process — what the capability is for, the requirements it carries, what to satisfy them *with*, and how it wires into Solution Development. FitSD authors a full process only for Solution Development; the rest are requirements plus a pointer.
+> **What a capability card is.** A one-page orientation, not a process: what the capability is for, the requirements it carries, what to satisfy them *with*, and how it wires into Solution Development. FitSD authors a full process only for Solution Development; the rest are requirements plus a pointer.
 
 ## Objective
 
@@ -29,17 +29,17 @@ Detect when something's wrong, fix it fast, and stop it happening twice. This is
 
 ## Requirements it carries (Tier 1)
 
-- **FSD-RR-1** — service-affecting events detected, recorded, prioritised and resolved to targets.
-- **FSD-RR-2** — major incidents have a defined escalation and communication path.
-- **FSD-RR-3** — recurring or high-impact incidents investigated for root cause.
-- **FSD-RR-4** — services monitored against expected availability; capacity managed ahead of need.
-- **FSD-RR-5** — security patches assessed and applied to risk-based timescales.
-- **FSD-RR-6** — each service declares its incident profile — what counts as an incident *for it*, with severities — registered with the incident process.
-- **FSD-RR-7** — at end of life, a renew / replace / retire decision is recorded; retirement is carried out cleanly (data, access, SLAs, docs, register, knowledge).
+- **FSD-RR-1**: service-affecting events detected, recorded, prioritised and resolved to targets.
+- **FSD-RR-2**: major incidents have a defined escalation and communication path.
+- **FSD-RR-3**: recurring or high-impact incidents investigated for root cause.
+- **FSD-RR-4**: services monitored against expected availability; capacity managed ahead of need.
+- **FSD-RR-5**: security patches assessed and applied to risk-based timescales.
+- **FSD-RR-6**: each service declares its incident profile (what counts as an incident *for it*, with severities), registered with the incident process.
+- **FSD-RR-7**: at end of life, a renew / replace / retire decision is recorded; retirement is carried out cleanly (data, access, SLAs, docs, register, knowledge).
 
 ## How to satisfy them
 
-Most teams already run a central incident policy — use it. Map onto:
+Most teams already run a central incident policy. Use it. Map onto:
 
 - **FitSM PR9 (Incident & Service Request), PR10 (Problem), PR4 (Availability & Continuity), PR5 (Capacity).**
 - **ITIL 4 Incident, Problem, and Monitoring & Event management.**
@@ -49,23 +49,23 @@ FitSD's distinct contributions here are two. **FSD-RR-6** — the per-service in
 
 ## Where it meets Solution Development
 
-The Service Acceptance criteria are the hand-over. **Monitoring & alerting**, the **incident profile**, and the **supportability / handover** all pass from a new service into Run & Restore the moment it's accepted. And the loop closes at end of life (FSD-RR-7): a service is reviewed and either **renewed** (keep running), **replaced** (the function's still needed — back through the front door as fresh demand) or **retired** (decommissioned cleanly). What you learn running a service — a nasty incident, a capacity ceiling — also comes back round as new demand.
+The Service Acceptance criteria are the hand-over. **Monitoring & alerting**, the **incident profile**, and the **supportability / handover** all pass from a new service into Run & Restore the moment it's accepted. And the loop closes at end of life (FSD-RR-7): a service is reviewed and either **renewed** (keep running), **replaced** (the function's still needed, back through the front door as fresh demand) or **retired** (decommissioned cleanly). What you learn running a service (a nasty incident, a capacity ceiling) also comes back round as new demand.
 
 ## The feedback lens
 
-This is the *Second Way* of *The Phoenix Project*: fast feedback, right to left. See problems as they happen, restore quickly, and feed what you learn back upstream. The metric is **time to restore service** — one of the DORA four — and the cultural habit is the **blameless postmortem**, which is really just problem management (FSD-RR-3) done without finger-pointing.
+This is the *Second Way* of *The Phoenix Project*: fast feedback, right to left. See problems as they happen, restore quickly, and feed what you learn back upstream. The metric is **time to restore service** (one of the DORA four), and the cultural habit is the **blameless postmortem**, which is really just problem management (FSD-RR-3) done without finger-pointing.
 
 ## Maturity, briefly
 
-- **0–1** — incidents handled by whoever's nearest; little record, no root-cause habit.
-- **2–3** — defined incident and problem paths, monitoring in place, patches kept up.
-- **4–5** — MTTR watched and falling; recurring problems designed out, not just fixed.
+- **0–1**: incidents handled by whoever's nearest; little record, no root-cause habit.
+- **2–3**: defined incident and problem paths, monitoring in place, patches kept up.
+- **4–5**: MTTR watched and falling; recurring problems designed out, not just fixed.
 
 (Full 0–5 scale in the Charter, §7.)
 
 ## See also
 
-- `FSD-PRO` — Solution Development (hands over monitoring, incident profile and support model)
+- `FSD-PRO`: Solution Development (hands over monitoring, incident profile and support model)
 - `FitSD — Requirements` → FSD-RR section
-- `FitSD — Standards Alignment` — FitSM PR9/PR10/PR4, ITIL mapping
-- `reference/FitSD — Influences` — the canon behind the feedback lens
+- `FitSD — Standards Alignment`: FitSM PR9/PR10/PR4, ITIL mapping
+- `reference/FitSD — Influences`: the canon behind the feedback lens
