@@ -49,7 +49,7 @@ FitSD re-groups FitSM's 14 processes (PR1–PR14) and General Requirements (GR1�
 
 **Only divergence:** FitSM has no single intake/Service-Design process; FitSD consolidates portfolio decision + design + release-readiness into one Solution Development capability with the Service Acceptance Criteria (SAC). A FitSM assessor would see FitSD's SD records satisfying PR1 and PR13 together.
 
-**Known gaps:** four FitSM processes have no direct FitSD home. **PR2 Service Level Management** and **PR3 Service Reporting** are candidate thin requirements (see `BACKLOG`); until then, the availability SLO inside the SAC carries PR2's sharpest edge. **PR7 Customer Relationship Management** and **PR11 Configuration Management** are declared non-goals, met by "use your existing practice" (see the *Roadmap*, "Shape & scope").
+**Known gaps, mostly closed:** **PR2 Service Level Management** and **PR3 Service Reporting** are now covered by the thin requirement FSD-GV-9 (service levels stated and published to customers; performance reported at a cadence), with the availability SLO living in the SAC. **PR7 Customer Relationship Management** and **PR11 Configuration Management** remain declared non-goals, met by "use your existing practice" (see the *Roadmap*, "Shape & scope").
 
 ## 3. ITIL 4
 
@@ -102,6 +102,7 @@ FitSD's Service Acceptance Criteria (defined in *FitSD — Service Acceptance Cr
 | FSD-SA-1 Risk register                         | Clause 6.1 + A.5.x organisational controls                                           |
 | SAC: Supportability, continuity & training  | A.6.3 Awareness & training                                                           |
 | FSD-SC Supplier & supply chain                 | A.5.19–A.5.22 Supplier relationships                                                 |
+| FSD-SA-6 Key / secret management               | A.8.24 Use of cryptography                                                           |
 
 **Framing:** FitSD provides the operational muscle memory and evidence artefacts (Service Acceptance Records, risk register, change records). The journey to certification adds the ISMS management layer on top. FitSD is ISO 27001 "stage 0–1". Controlled retirement (FSD-RR-7) also maps to A.8.10 information deletion and A.5.11 return of assets, and continuity (FSD-SD-5) reinforces A.6.3.
 
@@ -118,13 +119,13 @@ Mapping FitSD to **NIS2 Article 21(2)** minimum measures. (NIS2 is a *law* — o
 | (e) Security in acquisition, development & maintenance + vulnerability handling | FSD-SD intake + SAC Security (secure-by-design, patch path) | ✅ Signature strength               |
 | (f) Policies to assess effectiveness                                            | FSD-GV PDCA, maturity self-check, metrics                      | ✅ Solves                           |
 | (g) Cyber hygiene & training                                                    | SAC Supportability/handover + **continuity** (FSD-SD-5)          | 🟡 Partial (improving)             |
-| (h) Cryptography / encryption                                                   | —                                                             | ❌ Gap (control-level)              |
+| (h) Cryptography / encryption                                                   | FSD-SA-6 (key/secret management to a defined standard) + SAC Security row     | ✅ Solves (thin, reference-out)     |
 | (i) HR security, access control, asset mgmt                                     | FSD-SA-2 (access); register (assets)                           | 🟡 Partial (HR security missing)   |
 | (j) MFA / secure comms                                                          | —                                                             | ❌ Gap                              |
 
 Also: **Article 20** (management-body accountability) aligns with FitSD's single-accountable-owner + Approver model; **Article 23** (24-hour / 72-hour / 1-month incident *reporting* timelines) is a gap. FitSD has incident *management*, not the statutory reporting cadence.
 
-**One line:** FitSD's distinctive NIS2 contribution is measure **(e) secure-by-design at intake**, plus (a), (b), (c), and (d) supply chain via FSD-SC. Gaps to close: (h) cryptography, (j) MFA, and Article 23 reporting.
+**One line:** FitSD's distinctive NIS2 contribution is measure **(e) secure-by-design at intake**, plus (a), (b), (c), (d) supply chain via FSD-SC, and now (h) via FSD-SA-6. Gaps to close: (j) MFA and Article 23 reporting.
 
 ## 7. Sources
 

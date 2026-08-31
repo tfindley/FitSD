@@ -43,9 +43,11 @@ The management system itself.
 | **FSD-GV-2** | Each service **shall** have a single named owner accountable for it.                                                 | Roles may be shared; accountability is not. |
 | **FSD-GV-3** | Documents that govern services **shall** be version-controlled, each with an owner, an approver, and a review cycle. | Document control.                           |
 | **FSD-GV-4** | A register of services, the demand pipeline, and key records **shall** be maintained and kept current, with completed and retired entries retained as the historical record.                                     | The system's index: the upcoming, in-flight and completed view. |
-| **FSD-GV-5** | The management system **shall** be reviewed at a defined cadence and improved (Plan-Do-Check-Act).                   | Continual improvement.                      |
+| **FSD-GV-5** | The management system **shall** be reviewed at a defined cadence and improved (Plan-Do-Check-Act).                   | Continual improvement. The review looks at per-service state — register accuracy, open conditions (FSD-SD-7), overdue evidence, end-of-life candidates — not only at the system; a review missed by its due date is escalated, not skipped. |
 | **FSD-GV-6** | Roles **shall** be defined, including who may authorise what.                                                        | One person may hold several.                |
 | **FSD-GV-7** | The organisation **shall** define and **ratify a standing Service Acceptance baseline** — its own thresholds for each Service Acceptance Criterion — and apply it to every solution's Service Acceptance. | The SAC categories are fixed (FSD-SD-5); the *thresholds* are the organisation's, set once and inherited by every solution rather than rediscovered each time. Defined in *reference/FitSD — Service Acceptance Criteria*; stood up via *FitSD — Implementation Guide*. |
+| **FSD-GV-8** | When the accountable owner of a live service changes or leaves, continuity **shall** be re-established and re-evidenced within a period the organisation defines: a handover, the successor's walk-through of the runbook and recovery procedure, any deputy or cover the baseline requires re-named, and the leaver's owned register entries transferred. | The gap between "owner named" (FSD-GV-2) and "leaver's access revoked" (FSD-SA-2) is where operating knowledge lives. Continuity is proven at Service Acceptance (FSD-SD-5); this re-proves it on the one event that voids it. |
+| **FSD-GV-9** | Each live service **shall** have agreed, recorded service levels — or an explicit best-effort statement — with its customers, **published to them**, and performance against them **shall** be reported to those customers at a defined cadence. | Thin and reference-out: the availability SLO already lives in the SAC; reporting can ride the FSD-GV-5 review or another meeting you already hold. Closes the FitSM PR2/PR3 gap. |
 
 ## FSD-SD — Solution Development
 
@@ -61,6 +63,7 @@ The front door. How net-new work enters and reaches live service, and the contro
 | **FSD-SD-4** | Every new or materially changed service **shall** meet a defined Service Acceptance / Definition of Done before entering live service, **evidenced** rather than asserted.                                            | Readiness baked in.                              |
 | **FSD-SD-5** | Service Acceptance **shall**, as a minimum, cover: documentation; tested backup and recoverability; security; access control; availability; monitoring and alerting; service-level incident triggers; supportability, handover and continuity (operating knowledge captured, not reliant on a single person); and cost/licensing. | The Definition of Done: categories defined in *reference/FitSD — Service Acceptance Criteria*, proven at FSD-PRO §7. The set may grow as practice matures; thresholds are the organisation's standing baseline (FSD-GV-7), including any recorded applicability rules. Incident triggers also satisfy FSD-RR-6. |
 | **FSD-SD-6** | Each gate and acceptance decision **shall** have a single accountable approver and be recorded.                                                                                                                       | Lightweight, single-approver by default.         |
+| **FSD-SD-7** | Conditions attached to a gate or acceptance decision **shall** be recorded with an owner and a target date and tracked to closure; a breached condition **shall** be escalated to the approver who set it.             | Real decisions are usually "yes, with conditions". The forms carry the fields (FRM-02 §1, FRM-03 §2–3); this is the duty that stops conditions silently dying after go-live. A new requirement, not a tightening of FSD-SD-6. |
 
 ## FSD-CH — Change & release
 
@@ -88,8 +91,8 @@ Keeping services healthy.
 | **FSD-RR-3** | Recurring or high-impact incidents **shall** be investigated for root cause.                                | Problem management.  |
 | **FSD-RR-4** | Services **shall** be monitored against expected availability, and capacity managed ahead of need.          |                      |
 | **FSD-RR-5** | Security patches **shall** be assessed and applied within risk-based timescales.                            |                      |
-| **FSD-RR-6** | Each service **shall** declare a **service-level incident profile** — what constitutes an incident *for that service*, with triggers and severities — registered with the incident-management process. | The gap most orgs have: central policy defines "an incident" generically; the per-service triggers are rarely written down. Defined at Service Acceptance (SAC), consumed by the central process. |
-| **FSD-RR-7** | When a service reaches end of life (EOL/EOS, obsolescence, or no longer needed), a decision **shall** be recorded — **renew, replace, or retire** — and, if retired, decommissioning **shall** be controlled: data handled, access revoked, SLAs withdrawn, documentation archived, the register updated, and operating knowledge captured (so another person could run or wind it down). | Closes the lifecycle. *Replace* routes back to Solution Development as new demand; *renew* keeps it running (contract/licence via FSD-SC); access and data disposal tie to FSD-SA. |
+| **FSD-RR-6** | Each service **shall** declare a **service-level incident profile** — what constitutes an incident *for that service*, with triggers and severities — registered with the incident-management process. | The gap most orgs have: central policy defines "an incident" generically; the per-service triggers are rarely written down. Defined at Service Acceptance (SAC), consumed by the central process. Registration is evidenced: the incident process's owner accepts the profile, by name and date. |
+| **FSD-RR-7** | When a service reaches end of life (EOL/EOS, obsolescence, or no longer needed), a decision **shall** be recorded — **renew, replace, or retire** — and, if retired, decommissioning **shall** be controlled: data handled, access revoked, SLAs withdrawn, documentation archived, the register updated, and operating knowledge captured (so another person could run or wind it down). | Closes the lifecycle. *Replace* routes back to Solution Development as new demand; *renew* keeps it running (contract/licence via FSD-SC); access and data disposal tie to FSD-SA. Recording "not retire — succession routed to Solution Development", with renew-vs-replace settled at Gate 1, is a legitimate decision. |
 
 ## FSD-SA — Secure & assure
 
@@ -104,6 +107,7 @@ Staying safe and compliant.
 | **FSD-SA-3** | Data **shall** be backed up to a defined scheme, and recoverability tested, not assumed.                                    | Ties to FSD-SD-5.          |
 | **FSD-SA-4** | Departures from policy **shall** be handled as recorded, time-bound, compensated exceptions.                                 |                           |
 | **FSD-SA-5** | Service management **shall** align to applicable legal and regulatory obligations, with evidence of control retained.        | e.g. NIS2-style measures. |
+| **FSD-SA-6** | Cryptographic material — keys, secrets, certificates — **shall** be managed to a defined standard covering generation, storage, rotation and revocation, with evidence of control retained.                           | Reference out to your key-management practice. Closes NIS2 Article 21(2)(h); the per-service posture is designed and proven under the SAC Security criterion. |
 
 ## FSD-SC — Supplier & supply chain
 
@@ -125,7 +129,7 @@ Who the services stand on. **Conditional:** these requirements apply where servi
 FitSD ships reference documents for its flagship **Solution Development** capability, which implementers may adopt and adapt:
 
 - **Idea Brief** form: the pre-Gate-1 intake (FSD-FRM-00).
-- **Solution Development Process**: the two-gate process plus Service Acceptance close-out (satisfies FSD-SD-1…6).
+- **Solution Development Process**: the two-gate process plus Service Acceptance close-out (satisfies FSD-SD-1…7).
 - **Gate 1 — Outline Proposal** form.
 - **Gate 2 — Solution Design** form.
 - **Service Acceptance Record**: the Definition of Done (satisfies FSD-SD-4/5).

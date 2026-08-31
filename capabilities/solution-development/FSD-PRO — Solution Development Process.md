@@ -16,6 +16,7 @@ satisfies:
   - FSD-SD-4
   - FSD-SD-5
   - FSD-SD-6
+  - FSD-SD-7
 review_cycle: Annual, or on material change to how the team takes on new work
 date: 2026-08-31
 tags:
@@ -28,7 +29,7 @@ tags:
 
 # FSD-PRO — Solution Development Process
 
-*FitSD reference capability — Solution Development. Satisfies FSD-SD-1…6.*
+*FitSD reference capability — Solution Development. Satisfies FSD-SD-1…7.*
 
 > **TL;DR** — The front door for new work: two gates (*worth doing?* → *ready to build?*) and a Service Acceptance close-out (*proven done?*). The scope test in §1 decides what comes through here versus routine change. This is the one process FitSD ships in full.
 
@@ -158,7 +159,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 | Criterion | Proven at acceptance |
 |---|---|
-| **Documentation** | HLD, runbook, recovery procedure, operating procedures (SOPs) and user/how-to docs published; links recorded |
+| **Documentation** | HLD (carrying the design decisions and their rationale from delivery), runbook, recovery procedure, operating procedures (SOPs) and user/how-to docs published; links recorded |
 | **Backup (tested)** | Backup defined (scope, frequency, retention, location) **and a test restore performed**, dated, with evidence attached |
 | **Security** | Hardening applied, patch path established (FSD-RR), vulnerability posture acceptable; any exceptions logged (FSD-SA) |
 | **Access** | Access model implemented: roles, least privilege, grant/revoke, admin control; joiners/movers/leavers handling confirmed |
@@ -190,7 +191,7 @@ This process is reviewed annually by the Management System Owner, or sooner on a
 - FSD-FRM-02 — Gate 2 Solution Design
 - FSD-FRM-03 — Service Acceptance Record
 - FitSD — Service Acceptance Criteria — where the SAC categories are defined and the standing baseline is ratified
-- FitSD — Requirements (FSD-SD-1…6, FSD-GV-7; SAC items map to FSD-SA and FSD-RR)
+- FitSD — Requirements (FSD-SD-1…7, FSD-GV-7; SAC items map to FSD-SA and FSD-RR)
 - Change & Release capability (FSD-CH) — delivers the build changes
 - Run & Restore capability (FSD-RR) — runs the service and governs its end-of-life retirement (FSD-RR-7)
 - FitSD — Information Stores — the registers and records this process reads from and writes to

@@ -85,7 +85,7 @@ State *how* each criterion will be met **against your organisation's standing SA
 
 | Criterion | Design approach |
 |---|---|
-| **Documentation** | *Which docs (HLD, runbook, recovery, operating procedures/SOPs, user) and where they will live* |
+| **Documentation** | *Which docs (HLD, runbook, recovery, operating procedures/SOPs, user) and where they will live; how the delivery's decisions and rationale (§6) carry into the design doc* |
 | **Backup (tested)** | *What is backed up, frequency, retention, location, and how a test restore will be proven* |
 | **Security** | *Hardening, patch path (FSD-RR), vulnerability posture, any exceptions (FSD-SA)* |
 | **Access** | *Access model: roles, least privilege, grant/revoke, admin control, JML handling* |

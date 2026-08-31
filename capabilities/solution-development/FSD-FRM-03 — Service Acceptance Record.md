@@ -41,7 +41,7 @@ For each criterion, record the evidence (a link, a date, a reference) and whethe
 
 | Criterion | Evidence / link | Met? (Y / N / N/A per baseline) |
 |---|---|---|
-| **Documentation:** HLD, runbook, recovery procedure, operating procedures (SOPs), user/how-to published | | |
+| **Documentation:** HLD (carrying the design decisions and rationale), runbook, recovery procedure, operating procedures (SOPs), user/how-to published | | |
 | **Backup (tested):** backup in place **and test restore performed**, dated | | |
 | **Security:** hardening applied, patch path set (FSD-RR), vuln posture acceptable, exceptions logged (FSD-SA) | | |
 | **Access:** access model implemented; least privilege; JML handling confirmed | | |

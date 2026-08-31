@@ -69,7 +69,7 @@ tags: [fitsd, definitions, glossary]
 
 **Retirement (decommission).** The controlled close-out of a service no longer needed: data handled, access revoked, SLAs withdrawn, documentation archived, the register updated, and operating knowledge captured. See FSD-RR-7.
 
-**Continuity (operational knowledge).** The assurance that a live service isn't reliant on a single person; its operating knowledge is captured and shared through knowledge transfer, cross-training and runbooks. Proven at Service Acceptance under supportability/handover.
+**Continuity (operational knowledge).** The assurance that a live service isn't reliant on a single person; its operating knowledge is captured and shared through knowledge transfer, cross-training and runbooks. Proven at Service Acceptance under supportability/handover, and re-established when the service's accountable owner changes or leaves (FSD-GV-8).
 
 ## Common terms & acronyms
 
@@ -107,7 +107,7 @@ tags: [fitsd, definitions, glossary]
 
 **RACI.** A responsibility matrix: who is Responsible, Accountable, Consulted, Informed for each activity.
 
-**SLA / SLO.** Service-level agreement (a commitment to a customer) / service-level objective (an internal target).
+**SLA / SLO.** Service-level agreement (a commitment to a customer) / service-level objective (an internal target). FitSD requires each live service to state its service levels — or an explicit best-effort position — to its customers, published to them (FSD-GV-9); the availability SLO itself lives in the SAC baseline.
 
 **SOP.** Standard Operating Procedure: a documented, repeatable procedure for operating or maintaining a service. A service's runbook and recovery procedure are its core SOPs; any further standing procedures the service needs (flagged at Gate 2 §4) join them, wherever they physically live. All are required under the Documentation criterion and accepted by operators under Supportability/handover at Service Acceptance.
 

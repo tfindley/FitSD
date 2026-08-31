@@ -8,7 +8,7 @@ tier: 2
 version: 0.3
 status: draft
 owner: "Management System Owner"
-satisfies: [FSD-GV-1, FSD-GV-2, FSD-GV-3, FSD-GV-4, FSD-GV-5, FSD-GV-6, FSD-GV-7]
+satisfies: [FSD-GV-1, FSD-GV-2, FSD-GV-3, FSD-GV-4, FSD-GV-5, FSD-GV-6, FSD-GV-7, FSD-GV-8, FSD-GV-9]
 date: 2026-08-31
 tags: [fitsd, govern, capability-card]
 ---
@@ -38,6 +38,8 @@ Make sure there's actually a managed system here, not just a pile of activities.
 - **FSD-GV-5**: the management system is reviewed on a cadence and improved (PDCA).
 - **FSD-GV-6**: roles are defined, including who may authorise what.
 - **FSD-GV-7**: a standing Service Acceptance baseline — the organisation's own thresholds for each Service Acceptance Criterion — is defined, ratified, and inherited by every solution.
+- **FSD-GV-8**: when a live service's accountable owner changes or leaves, continuity is re-established and re-evidenced within a defined period — handover, successor walk-through, deputy/cover re-named, owned register entries transferred.
+- **FSD-GV-9**: each live service states its service levels (or an explicit best-effort position) to its customers, published to them, with performance reported at a defined cadence.
 
 ## How to satisfy them
 

@@ -55,7 +55,7 @@ flowchart TB
 |---|---|---|---|---|
 | **Demand / pipeline register** | Proposed, parked, rejected and in-flight work, with driver, status and reasons — below-the-line enhancement candidates may queue here too, with a named prioritiser | Solution Development → Govern (FSD-GV-4, FSD-SD-1) | Intake → delivery | FitSM PR1 (service portfolio); ITIL service portfolio |
 | **Gate records (Gate 1 / Gate 2)** | Per-item decisions, conditions and approver; evaluation evidence (a PoC scorecard, an options study) files with the record it informed | Solution Development (FSD-SD-6; FRM-01/02) | Gates | ITIL service design records |
-| **Service Acceptance records** | Definition-of-Done evidence per service | Solution Development (FSD-SD-4/5; FRM-03) | Acceptance | ITIL service validation & testing |
+| **Service Acceptance records** | Definition-of-Done evidence per service, and any acceptance conditions tracked to closure (FSD-SD-7) | Solution Development (FSD-SD-4/5/7; FRM-03) | Acceptance | ITIL service validation & testing |
 | **SAC baseline (standing)** | The organisation's ratified Service Acceptance thresholds, inherited by every solution | Govern (FSD-GV-7) | All | ISO 27001 7.5 (documented information) |
 | **Service register / catalogue** | Live services, named owner, status (incl. retired) | Govern (FSD-GV-2/4) | Live → retired | FitSM PR1; ITIL service catalogue |
 | **Document register / control** | Governing documents with owner, approver, review cycle | Govern (FSD-GV-3) | All | ISO 27001 7.5 (documented information) |

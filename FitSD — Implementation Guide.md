@@ -51,11 +51,11 @@ This is FitSD's answer to "are we actually conforming?": a plain mapping of each
 
 | Capability | Requirements | Satisfied by (your local doc / tool / policy) | Owner |
 |---|---|---|---|
-| **Govern** | FSD-GV-1…7 | *e.g. your scope statement, doc register, this guide, the ratified SAC baseline* | |
-| **Solution Development** | FSD-SD-1…6 | *FitSD's own process + the four forms (adopted as-is or adapted)* | |
+| **Govern** | FSD-GV-1…9 | *e.g. your scope statement, doc register, this guide, the ratified SAC baseline, your service statements* | |
+| **Solution Development** | FSD-SD-1…7 | *FitSD's own process + the four forms (adopted as-is or adapted)* | |
 | **Change & Release** | FSD-CH-1…4 | *your existing change/CAB process or ITIL / FitSM PR12* | |
 | **Run & Restore** | FSD-RR-1…7 | *your incident-management policy; monitoring; patch process* | |
-| **Secure & Assure** | FSD-SA-1…5 | *your infosec/risk practices; access reviews; backup scheme* | |
+| **Secure & Assure** | FSD-SA-1…6 | *your infosec/risk practices; access reviews; backup scheme; key/secret management* | |
 | **Supplier & Supply Chain** *(if applicable)* | FSD-SC-1…4 | *your procurement / supplier practice; the supplier register* | |
 
 Go per-requirement (one row each) only if you want finer evidence — for most teams per-capability is enough to show the requirement is met and by what.

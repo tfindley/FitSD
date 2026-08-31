@@ -29,9 +29,9 @@ Each criterion is described here by *what it covers*, stage-neutral. It is **des
 
 | Criterion | What it covers | What your baseline sets |
 |---|---|---|
-| **Documentation** | The service can be understood and operated from written material: design, runbook, recovery procedure, operating procedures (SOPs), user/how-to. | Which documents are mandatory, and where they live. |
+| **Documentation** | The service can be understood and operated from written material: design (carrying the key decisions and their rationale from delivery), runbook, recovery procedure, operating procedures (SOPs), user/how-to. | Which documents are mandatory, where they live, and how often they're reviewed. |
 | **Backup (tested)** | Data is recoverable, and recovery is demonstrated rather than assumed. | Backup scope, frequency, retention, location, and how often a restore is actually tested. |
-| **Security** | The service is hardened, has a patch path, and its vulnerability posture is acceptable, with any departures recorded. | The hardening standard, patch timescales by severity, and what "acceptable posture" means (ties to FSD-SA). |
+| **Security** | The service is hardened, has a patch path, and its vulnerability posture is acceptable, with any departures recorded. | The hardening standard, patch timescales by severity, what "acceptable posture" means, and the key/secret-management standard services follow (ties to FSD-SA, incl. FSD-SA-6). |
 | **Access** | Access follows least privilege, with joiners/movers/leavers handled and access reviewed. | The access model and the review cadence (ties to FSD-SA-2). |
 | **Availability** | The service meets an agreed availability target, with capacity and disaster-recovery understood. | The availability target / SLO (by service tier, if you tier) and the DR position. |
 | **Monitoring & alerting** | The service is observed, with thresholds and alert routing that work end to end. | What must be monitored, the thresholds, and where alerts route — checked against the support hours and response targets, so out-of-hours routing and due-by times agree. |
