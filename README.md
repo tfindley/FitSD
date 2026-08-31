@@ -20,7 +20,7 @@ It's a personal project, and it's deliberately not tied to any one organisation.
 
 ## How to read this
 
-You don't need to read it all — pick your path:
+Don't read it all. Pick your path:
 
 - **Just curious?** → `FitSD — Quickstart.md`: one project, five moves.
 - **Pitching it upward?** → `FitSD — Adoption & Positioning.md`: the pitch, ready to say out loud, is right at the top.

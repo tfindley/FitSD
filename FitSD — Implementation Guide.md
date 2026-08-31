@@ -22,7 +22,7 @@ Use the **Quickstart** first: run one real piece of work through the gates and s
 
 ## The stand-up checklist
 
-Work down the list once. Each step names the requirement it satisfies, so you can show conformance later.
+Seven steps, about half a day total. Each one is a decision you record, not machinery you build, and each names the requirement it satisfies so you can show conformance later. Work down the list once.
 
 ### 1. Define your scope — *FSD-GV-1*
 Write down which services are under management: what's in, what's out. A line, not a document. This is the boundary everything else sits inside.
@@ -69,6 +69,10 @@ Keep **one line uncrossed**: whoever built a thing shouldn't be its *sole* accep
 **On a team of one** there is no second pair of eyes, and pretending otherwise helps nobody. The control that remains is the record itself: walk the acceptance criteria honestly, attach the evidence, date it, sign it — writing "not met" where it isn't met is what stands in for the reviewer. Borrow an outside pair of eyes where you can (a peer in another team, a trusted colleague); where you can't, the honest record is the bar.
 
 ## Where to go next
+
+**Do first:** step 1 above — write the one line naming what's in and out of scope. The other six steps follow in an afternoon.
+
+Later:
 
 - **Mature.** The maturity self-check (Tier 5, planned) will score you 0–5 per capability and show the next notch. Until then, *Charter* §7 has the scale.
 - **The worked example.** A real project run end to end (the honest source of SAC sample values and a filled implementation profile) is high on the *Roadmap*. This guide's blank templates get their worked counterparts when it lands.

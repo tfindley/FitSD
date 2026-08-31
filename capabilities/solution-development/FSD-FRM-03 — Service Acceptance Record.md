@@ -22,17 +22,17 @@ tags:
 
 # FSD-FRM-03 — Service Acceptance Record
 
-> **Service Acceptance asks: is it proven done?** A solution is accepted into service only when each Service Acceptance Criterion is met **and evidenced** — not merely configured. The approaches were designed at Gate 2 (FSD-FRM-02); here they are proven. The live copy is held in the team's work-tracking system; this is the blank template.
+> **Service Acceptance asks: is it proven done?** Walk each Service Acceptance Criterion and record the evidence. A solution is accepted into service only when each is met **and evidenced**, not merely configured. The approaches were designed at Gate 2 (FSD-FRM-02); here they are proven. The live copy is held in the team's work-tracking system; this is the blank template.
 
 ## Header
 
-| Field                            | Entry |
-| -------------------------------- | ----- |
-| **Solution title**               |       |
-| **Solution Owner**               |       |
-| **Delivery project (ref)**       |       |
+| Field                          | Entry |
+| ------------------------------ | ----- |
+| **Solution title**             |       |
+| **Solution Owner**             |       |
+| **Delivery project (ref)**     |       |
 | **Linked Gate 2 (FSD-FRM-02)** |       |
-| **Date**                         |       |
+| **Date**                       |       |
 
 ## 1. Acceptance criteria
 
