@@ -4,15 +4,16 @@ framework: FitSD
 document: Versioning Policy
 tier: 0
 type: explanatory (non-normative)
+version: 0.3
 status: draft
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, versioning, governance, releases]
 ---
 
 # FitSD — Versioning Policy
 
-> **What this is.** How FitSD is versioned, so a team can adopt, and conform to, a
+> **TL;DR** — How FitSD is versioned, so a team can adopt, and conform to, a
 > *specific* version and trust it won't move under them. Non-normative governance; it adds
 > no requirements. Maintainers: the operational how-to is in `RELEASING.md`.
 
@@ -37,6 +38,20 @@ content (the testable requirements and the model they hang off):
 If a change doesn't touch the normative content at all (a typo in an explanatory page, a
 diagram redraw, a website tweak) it does **not** need a new version. See the three
 streams below.
+
+## Document markers
+
+Every tiered standard document carries three frontmatter fields (meta files —
+`README`, `CHANGELOG`, `BACKLOG`, `RELEASING`, `SECURITY` — don't need them):
+
+- **`version`** — the spec version the document was last revised for. It tracks content,
+  not the release: only `VERSION` at the repo root names the current release.
+- **`status`** — `draft` until the framework reaches v1.0; `living` for documents that
+  update continuously between releases (the Roadmap, the Definitions, the Backlog).
+- **`type`** — what kind of document it is: `normative` (the Requirements alone),
+  `framework charter`, `explanatory (non-normative)`, `reference (non-normative)`,
+  `implementation guide (non-normative)`, `capability card`,
+  `process (reference implementation)`, or `form (reference template)`.
 
 ## Three streams of change, decoupled
 

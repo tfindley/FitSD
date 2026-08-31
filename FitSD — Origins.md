@@ -4,15 +4,16 @@ framework: FitSD
 document: Origins
 tier: 0
 type: explanatory (non-normative)
+version: 0.3
 status: draft
 owner: "Tristan Findley"
-date: 2026-06-22
+date: 2026-08-31
 tags: [fitsd, origins, about]
 ---
 
 # FitSD — Origins
 
-> Non-normative. Where this came from, and what it owes.
+> **TL;DR** — Where this came from, and what it owes. Non-normative; nothing here adds a requirement.
 
 FitSD didn't start as a framework. It started as a job.
 

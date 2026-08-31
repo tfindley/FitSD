@@ -3,16 +3,17 @@ title: "FitSD — Adoption & Positioning"
 framework: FitSD
 document: Adoption & Positioning
 tier: 0
-status: draft
 type: explanatory (non-normative)
+version: 0.3
+status: draft
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, adoption, positioning, pitch, executive-summary, explanatory]
 ---
 
 # FitSD — Adoption & Positioning
 
-> **What this is.** The *who, why and how-far* of FitSD: the pitch (a spoken version and a one-pager for whoever holds the budget), who picks it up, what pulls them in, and how it fits teams of different sizes. None of it is normative; it adds no requirements. The framework stays lean. This is the story around it.
+> **TL;DR** — Who FitSD is for, why they adopt it, and how to pitch it upward. It opens with the pitch (a spoken version and a one-pager for whoever holds the budget), then who picks it up, the fit by team size, and where it's the wrong tool. Non-normative: the story around the framework, not new requirements.
 
 ## 1. The case, in a line
 
@@ -103,6 +104,8 @@ flowchart LR
 
 Six families of demand come through that door: strategy and leadership; customer and market; compliance and governance; risk and security; operational and technical; finance and people. It has to read plainly to all of them, which is why Gate 1 stays in business language, not security jargon.
 
+This diagram is the Solution Development slice. For the same inputs-and-outputs view across *all* the capabilities, see *FitSD — Inputs, Activities & Outputs*.
+
 ## 6. Fit by organisation size
 
 | Size | What FitSD is to them | Why they'd adopt it |
@@ -123,7 +126,7 @@ Six families of demand come through that door: strategy and leadership; customer
 Nobody adopts a framework by reading it end to end. They take one step, get a win, and come back for the next. FitSM understood this. Its real engine isn't the standard, it's the ladder of certifications that always gives people a next rung. FitSD has no certification body, but it can offer the same shape: a visible next step at every stage.
 
 1. **Discover: "is this even for me?"** Two minutes with the README should settle it. If you're a small team stuck between "just ship it" and "we really should have a process," you're the audience.
-2. **Try: one project, this week.** Don't adopt the framework. Take one real piece of work and run it through the front door: a one-page Idea Brief, a Gate 1, and the Definition of Done at the end. One real piece of work (with a genuine trigger and trade-offs that could go either way) tells you more than any amount of reading. One project is enough to feel whether it helps.
+2. **Try: one project, this week.** Don't adopt the framework. Take one real piece of work (with a genuine trigger and trade-offs that could go either way) and run it through the front door: a one-page Idea Brief, a Gate 1, and the Definition of Done at the end. One project tells you more than any amount of reading.
 3. **Adopt: make it the default.** Copy the four forms and **ratify your SAC baseline**, your own thresholds, set once and inherited by every solution. Agree the requirements you'll actually hold to, and point Change, Incident and Security at the processes you already run. *FitSD — Implementation Guide* walks the whole standup. Now everything new comes through the same door.
 4. **Mature: find your level.** The self-check (0–5 per capability) tells you where you stand and what one notch better looks like. It's the no-bureaucracy answer to FitSM's Foundation / Advanced / Expert ladder: a compass, not a certificate.
 5. **Share: close the loop.** Send back a worked example, a capability you've fleshed out, or a fix. The framework gets better one contribution at a time, from everyone who passes through.

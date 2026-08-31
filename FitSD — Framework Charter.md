@@ -3,10 +3,11 @@ title: FitSD — Framework Charter
 framework: FitSD
 document: Charter
 tier: 0
+type: framework charter
 version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - framework
@@ -18,7 +19,7 @@ tags:
 
 *Fit for Solution Development. Just enough process to take on the right work and ship it so it lasts.*
 
-> **TL;DR** — The founding document: what FitSD is, its principles, the five-capability model, the roles, and how you conform. Adopting FitSD? Read this first. Just want to try it? The Quickstart is faster.
+> **TL;DR** — The founding document: what FitSD is, its principles, the capability model, the roles, and how you conform. Adopting FitSD? Read this first. Just want to try it? The Quickstart is faster.
 
 > **The founding layer.** This is Tier 0: what FitSD is, and the model everything else hangs off. The testable requirements live in *FitSD — Requirements* (Tier 1). The lower tiers (capabilities, roles, templates, the maturity check) come after.
 
@@ -89,7 +90,7 @@ flowchart LR
 FitSD's documents sit in **two layers**:
 
 - **Framework (portable, Tiers 0–1).** What FitSD *is*: the Charter & vocabulary (Tier 0) and the Requirements (Tier 1). The same for every team.
-- **Implementation (per team, Tiers 2–5).** How a given team puts it into practice: Capabilities (2), Roles (3), Templates & registers (4), and the Maturity self-check (5). Yours to shape. *(New adopters: FitSD — Implementation Guide walks standing all of this up.)*
+- **Implementation (per team, Tiers 2–5).** How a given team puts it into practice: Capabilities (2), Roles (3), Templates & registers (4), and the Maturity self-check (5). Yours to shape. *(New adopters: FitSD — Implementation Guide walks you through standing all of this up.)*
 
 The numbered **tiers** within each layer echo FitSM's numbered parts; the numbers are an index, not a ranking. The one hard line is between the Framework and your Implementation of it. The table lists the tiers, and the diagram below shows the same two-layer split.
 

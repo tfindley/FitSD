@@ -5,11 +5,11 @@ document_id: FSD-SA
 capability: Secure & Assure
 type: capability card
 tier: 2
-version: 0.2
+version: 0.3
 status: draft
 owner: "Management System Owner"
-satisfies: [FSD-SA-1, FSD-SA-2, FSD-SA-3, FSD-SA-4, FSD-SA-5]
-date: 2026-06-23
+satisfies: [FSD-SA-1, FSD-SA-2, FSD-SA-3, FSD-SA-4, FSD-SA-5, FSD-SA-6]
+date: 2026-08-31
 tags: [fitsd, security, risk, assurance, capability-card]
 ---
 
@@ -34,6 +34,7 @@ Manage risk, control who gets to what, keep data recoverable, handle the excepti
 - **FSD-SA-3**: data backed up to a defined scheme, and recovery *tested*, not assumed.
 - **FSD-SA-4**: departures from policy handled as recorded, time-bound, compensated exceptions.
 - **FSD-SA-5**: alignment to applicable legal and regulatory duties, with evidence kept.
+- **FSD-SA-6**: cryptographic material — keys, secrets, certificates — managed to a defined standard (generation, storage, rotation, revocation), with evidence retained.
 
 ## How to satisfy them
 

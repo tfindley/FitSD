@@ -3,10 +3,10 @@ title: FitSD — Standards Alignment
 framework: FitSD
 document: Standards Alignment
 tier: 0
-version: 0.2
+version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - reference
@@ -20,9 +20,7 @@ tags:
 
 # FitSD — Standards Alignment
 
-Reference mapping of FitSD to the established frameworks and standards it distils from or supports: **FitSM**, **ITIL 4**, **USM**, **ISO/IEC 27001:2022**, and the **NIS2 Directive**.
-
-> **Purpose.** FitSD is an opinionated *distillation* of mainstream service-management and security practice for small teams. It does not conflict with any of these standards; it maps onto sections of each. This document records those mappings so adopters can (a) see FitSD is well-grounded, (b) use it as an on-ramp toward ISO 27001 / NIS2, and (c) reuse the tables as audit evidence.
+> **TL;DR** — How FitSD maps to the established frameworks and standards it distils from or supports: **FitSM**, **ITIL 4**, **USM**, **ISO/IEC 27001:2022**, and the **NIS2 Directive**. FitSD is an opinionated *distillation* of mainstream practice; it conflicts with none of these, and maps onto sections of each. The mappings are recorded so adopters can (a) see FitSD is well-grounded, (b) use it as an on-ramp toward ISO 27001 / NIS2, and (c) reuse the tables as audit evidence.
 >
 > **Caveat.** Mappings are indicative, not certified. Clause and control numbers are correct as of the standard versions cited in §7. Always verify against the current authoritative text before relying on this for compliance.
 
@@ -50,6 +48,8 @@ FitSD re-groups FitSM's 14 processes (PR1–PR14) and General Requirements (GR1�
 | Supplier & supply chain (FSD-SC)  | PR8 Supplier Relationship Mgmt                                                                          |
 
 **Only divergence:** FitSM has no single intake/Service-Design process; FitSD consolidates portfolio decision + design + release-readiness into one Solution Development capability with the Service Acceptance Criteria (SAC). A FitSM assessor would see FitSD's SD records satisfying PR1 and PR13 together.
+
+**Known gaps, mostly closed:** **PR2 Service Level Management** and **PR3 Service Reporting** are now covered by the thin requirement FSD-GV-9 (service levels stated and published to customers; performance reported at a cadence), with the availability SLO living in the SAC. **PR7 Customer Relationship Management** and **PR11 Configuration Management** remain declared non-goals, met by "use your existing practice" (see the *Roadmap*, "Shape & scope").
 
 ## 3. ITIL 4
 
@@ -102,6 +102,7 @@ FitSD's Service Acceptance Criteria (defined in *FitSD — Service Acceptance Cr
 | FSD-SA-1 Risk register                         | Clause 6.1 + A.5.x organisational controls                                           |
 | SAC: Supportability, continuity & training  | A.6.3 Awareness & training                                                           |
 | FSD-SC Supplier & supply chain                 | A.5.19–A.5.22 Supplier relationships                                                 |
+| FSD-SA-6 Key / secret management               | A.8.24 Use of cryptography                                                           |
 
 **Framing:** FitSD provides the operational muscle memory and evidence artefacts (Service Acceptance Records, risk register, change records). The journey to certification adds the ISMS management layer on top. FitSD is ISO 27001 "stage 0–1". Controlled retirement (FSD-RR-7) also maps to A.8.10 information deletion and A.5.11 return of assets, and continuity (FSD-SD-5) reinforces A.6.3.
 
@@ -118,13 +119,13 @@ Mapping FitSD to **NIS2 Article 21(2)** minimum measures. (NIS2 is a *law* — o
 | (e) Security in acquisition, development & maintenance + vulnerability handling | FSD-SD intake + SAC Security (secure-by-design, patch path) | ✅ Signature strength               |
 | (f) Policies to assess effectiveness                                            | FSD-GV PDCA, maturity self-check, metrics                      | ✅ Solves                           |
 | (g) Cyber hygiene & training                                                    | SAC Supportability/handover + **continuity** (FSD-SD-5)          | 🟡 Partial (improving)             |
-| (h) Cryptography / encryption                                                   | —                                                             | ❌ Gap (control-level)              |
+| (h) Cryptography / encryption                                                   | FSD-SA-6 (key/secret management to a defined standard) + SAC Security row     | ✅ Solves (thin, reference-out)     |
 | (i) HR security, access control, asset mgmt                                     | FSD-SA-2 (access); register (assets)                           | 🟡 Partial (HR security missing)   |
 | (j) MFA / secure comms                                                          | —                                                             | ❌ Gap                              |
 
 Also: **Article 20** (management-body accountability) aligns with FitSD's single-accountable-owner + Approver model; **Article 23** (24-hour / 72-hour / 1-month incident *reporting* timelines) is a gap. FitSD has incident *management*, not the statutory reporting cadence.
 
-**One line:** FitSD's distinctive NIS2 contribution is measure **(e) secure-by-design at intake**, plus (a), (b), (c), and (d) supply chain via FSD-SC. Gaps to close: (h) cryptography, (j) MFA, and Article 23 reporting.
+**One line:** FitSD's distinctive NIS2 contribution is measure **(e) secure-by-design at intake**, plus (a), (b), (c), (d) supply chain via FSD-SC, and now (h) via FSD-SA-6. Gaps to close: (j) MFA and Article 23 reporting.
 
 ## 7. Sources
 

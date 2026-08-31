@@ -4,15 +4,16 @@ framework: FitSD
 document: Influences
 tier: 0
 type: explanatory (non-normative)
+version: 0.3
 status: draft
 owner: "Tristan Findley"
-date: 2026-06-22
+date: 2026-08-31
 tags: [fitsd, reference, influences, devops, lean]
 ---
 
 # FitSD — Influences
 
-> **What this is.** Where the thinking comes from. FitSD is a service-management framework, but its instincts about *flow* are borrowed from the Lean and DevOps canon. This note records those debts. None of it is normative: you don't have to read a single one of these books to use FitSD. But if you've read them, you'll recognise the shapes.
+> **TL;DR** — Where the thinking comes from. FitSD is a service-management framework, but its instincts about *flow* are borrowed from the Lean and DevOps canon. This note records those debts. None of it is normative: you don't have to read a single one of these books to use FitSD. But if you've read them, you'll recognise the shapes.
 
 ## The short version
 

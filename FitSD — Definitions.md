@@ -4,21 +4,22 @@ framework: FitSD
 document: Definitions
 tier: 0
 type: reference (non-normative)
+version: 0.3
 status: living
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, definitions, glossary]
 ---
 
 # FitSD — Definitions
 
-> A master glossary. Each FitSD document defines the terms it uses where it uses them. That's deliberate, so a document stands alone. This is the single place that gathers them all, plus the common industry terms and acronyms FitSD leans on. Cheap to keep, handy to have. Non-normative: nothing here adds a requirement.
+> **TL;DR** — A master glossary: every FitSD term plus the industry terms and acronyms it leans on, gathered in one place. Each document also defines its own terms inline, so it stands alone. Non-normative: nothing here adds a requirement.
 
 ## FitSD terms
 
 **Capability.** One of the areas FitSD organises service management into: Govern, Solution Development (the front door), Change & release, Run & restore, Secure & assure — plus the conditional sixth, Supplier & supply chain (FSD-SC), for teams whose services rely on suppliers or third-party dependencies.
 
-**Capability card.** A one-page orientation for a capability: its objective, the requirements it carries, what to satisfy them with, and how it connects to Solution Development. Built for the four capabilities FitSD doesn't author a full process for.
+**Capability card.** A one-page orientation for a capability: its objective, the requirements it carries, what to satisfy them with, and how it connects to Solution Development. Built for every capability FitSD doesn't author a full process for — all of them except Solution Development.
 
 **Gate.** A decision point with explicit outcomes: go, hold, or stop. Work doesn't pass a gate until it's signed off.
 
@@ -46,13 +47,15 @@ tags: [fitsd, definitions, glossary]
 
 **Service Acceptance Criteria (SAC) / Definition of Done.** The standing set of conditions a service must meet to be accepted: documentation, tested backup, security, access, availability, monitoring & alerting, incident profile, supportability, cost/licensing. Fixed *categories*; each organisation sets and ratifies its own *thresholds* as a standing baseline (FSD-GV-7). Defined in *FitSD — Service Acceptance Criteria*.
 
-**SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). See *FitSD — Service Acceptance Criteria*.
+**SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). In effect a standing **service design baseline**: a Govern artefact every solution is designed *to* at Gate 2 and proven against at acceptance. See *FitSD — Service Acceptance Criteria*.
 
 **Solution Owner.** The single person accountable for a proposed solution, who drives it through the gates and completes the records.
 
 **Supplier register.** The record of suppliers and third-party dependencies that live services rely on, each with an owner, its agreement, and its support horizon (FSD-SC-1). See *FitSD — Information Stores*.
 
 **Approver.** The role that signs off the gates and Service Acceptance, at a level matched to the risk.
+
+**Operator.** The role that performs the day-to-day work of running a service and maintains its records (*Charter* §6) — including any first-line/support function. The named operators accept the runbook and SOPs at Service Acceptance; their acceptance can hold up go-live, and that is the point.
 
 **Incident profile.** What counts as an incident for a *specific* service — its triggers and severities — registered with the incident process. Defined at Service Acceptance.
 
@@ -66,7 +69,7 @@ tags: [fitsd, definitions, glossary]
 
 **Retirement (decommission).** The controlled close-out of a service no longer needed: data handled, access revoked, SLAs withdrawn, documentation archived, the register updated, and operating knowledge captured. See FSD-RR-7.
 
-**Continuity (operational knowledge).** The assurance that a live service isn't reliant on a single person; its operating knowledge is captured and shared through knowledge transfer, cross-training and runbooks. Proven at Service Acceptance under supportability/handover.
+**Continuity (operational knowledge).** The assurance that a live service isn't reliant on a single person; its operating knowledge is captured and shared through knowledge transfer, cross-training and runbooks. Proven at Service Acceptance under supportability/handover, and re-established when the service's accountable owner changes or leaves (FSD-GV-8).
 
 ## Common terms & acronyms
 
@@ -104,9 +107,9 @@ tags: [fitsd, definitions, glossary]
 
 **RACI.** A responsibility matrix: who is Responsible, Accountable, Consulted, Informed for each activity.
 
-**SLA / SLO.** Service-level agreement (a commitment to a customer) / service-level objective (an internal target).
+**SLA / SLO.** Service-level agreement (a commitment to a customer) / service-level objective (an internal target). FitSD requires each live service to state its service levels — or an explicit best-effort position — to its customers, published to them (FSD-GV-9); the availability SLO itself lives in the SAC baseline.
 
-**SOP.** Standard Operating Procedure: a documented, repeatable procedure for operating or maintaining a service. In FitSD a service's SOPs are its runbook and recovery procedure, required under the Documentation criterion and accepted by operators under Supportability/handover at Service Acceptance.
+**SOP.** Standard Operating Procedure: a documented, repeatable procedure for operating or maintaining a service. A service's runbook and recovery procedure are its core SOPs; any further standing procedures the service needs (flagged at Gate 2 §4) join them, wherever they physically live. All are required under the Documentation criterion and accepted by operators under Supportability/handover at Service Acceptance.
 
 **T-shirt sizing.** Rough estimation in sizes — S, M, L — rather than precise numbers, used when detail isn't known yet.
 

@@ -21,10 +21,14 @@ num='(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|[0-9]+)'
 target='(sac|acceptance criteri|criteri(on|a))'
 pattern="\\b${num}[[:space:]]+${target}"
 
+# validation/ holds run evidence (role-played records and findings) that may
+# legitimately quote a count while reporting on the standard; it is not
+# governed prose, so it sits outside this guard.
 hits="$(grep -rInE --include='*.md' \
   --exclude-dir='node_modules' \
   --exclude-dir='.git' \
   --exclude-dir='dist' \
+  --exclude-dir='validation' \
   "$pattern" "$root" || true)"
 
 if [[ -n "$hits" ]]; then

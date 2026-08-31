@@ -5,11 +5,11 @@ document_id: FSD-RR
 capability: Run & Restore
 type: capability card
 tier: 2
-version: 0.2
+version: 0.3
 status: draft
 owner: "Management System Owner"
 satisfies: [FSD-RR-1, FSD-RR-2, FSD-RR-3, FSD-RR-4, FSD-RR-5, FSD-RR-6, FSD-RR-7]
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, run, restore, incident, capability-card]
 ---
 
@@ -44,6 +44,7 @@ Most teams already run a central incident policy. Use it. Map onto:
 - **FitSM PR9 (Incident & Service Request), PR10 (Problem), PR4 (Availability & Continuity), PR5 (Capacity).**
 - **ITIL 4 Incident, Problem, and Monitoring & Event management.**
 - **Your central incident-management policy** for the escalation and comms path.
+- No central policy or severity scheme at all? Define Sev1–4 in your SAC baseline and treat it as the team's standing scheme — the per-service profiles then have something to register against.
 
 FitSD's distinct contributions here are two. **FSD-RR-6** — the per-service incident profile: central policies define "an incident" in the abstract; almost nobody writes down what it means for *this* service (FitSD makes you, at Service Acceptance). And **FSD-RR-7** — controlled end-of-life: most teams have no clean way to retire a service, so they never quite do; FitSD makes the renew / replace / retire decision explicit and the decommission controlled.
 

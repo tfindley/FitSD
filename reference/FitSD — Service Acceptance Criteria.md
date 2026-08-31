@@ -13,7 +13,7 @@ tags: [fitsd, reference, service-acceptance, sac, definition-of-done, non-normat
 
 # FitSD — Service Acceptance Criteria
 
-> **What this is.** The single canonical home of the Service Acceptance Criteria (SAC): the standing Definition of Done every solution is held to. It states the *categories* and what each one is for, and gives an organisation a template to set its *own* thresholds and ratify them once. Non-normative: the criteria are elaborated here, but the "shall" that makes them binding lives in *FitSD — Requirements* (the standing-baseline requirement and FSD-SD-4/5). The process proves them (`FSD-PRO §7`); the forms design and evidence them (`FSD-FRM-02 §5`, `FSD-FRM-03 §1`); this document is where they are *defined*.
+> **TL;DR** — The Service Acceptance Criteria, defined once: the standing Definition of Done every solution meets. Fixed *categories*; each organisation sets and ratifies its *own* thresholds. Non-normative here — the binding "shall" lives in *FitSD — Requirements* (the standing-baseline requirement and FSD-SD-4/5). This document *defines* the criteria; `FSD-PRO §7` proves them; the forms design and evidence them (`FSD-FRM-02 §5`, `FSD-FRM-03 §1`).
 
 ## The SAC are principles, not one org's numbers
 
@@ -29,14 +29,14 @@ Each criterion is described here by *what it covers*, stage-neutral. It is **des
 
 | Criterion | What it covers | What your baseline sets |
 |---|---|---|
-| **Documentation** | The service can be understood and operated from written material: design, runbook, recovery procedure, operating procedures (SOPs), user/how-to. | Which documents are mandatory, and where they live. |
+| **Documentation** | The service can be understood and operated from written material: design (carrying the key decisions and their rationale from delivery), runbook, recovery procedure, operating procedures (SOPs), user/how-to. | Which documents are mandatory, where they live, and how often they're reviewed. |
 | **Backup (tested)** | Data is recoverable, and recovery is demonstrated rather than assumed. | Backup scope, frequency, retention, location, and how often a restore is actually tested. |
-| **Security** | The service is hardened, has a patch path, and its vulnerability posture is acceptable, with any departures recorded. | The hardening standard, patch timescales by severity, and what "acceptable posture" means (ties to FSD-SA). |
+| **Security** | The service is hardened, has a patch path, and its vulnerability posture is acceptable, with any departures recorded. | The hardening standard, patch timescales by severity, what "acceptable posture" means, and the key/secret-management standard services follow (ties to FSD-SA, incl. FSD-SA-6). |
 | **Access** | Access follows least privilege, with joiners/movers/leavers handled and access reviewed. | The access model and the review cadence (ties to FSD-SA-2). |
 | **Availability** | The service meets an agreed availability target, with capacity and disaster-recovery understood. | The availability target / SLO (by service tier, if you tier) and the DR position. |
-| **Monitoring & alerting** | The service is observed, with thresholds and alert routing that work end to end. | What must be monitored, the thresholds, and where alerts route. |
+| **Monitoring & alerting** | The service is observed, with thresholds and alert routing that work end to end. | What must be monitored, the thresholds, and where alerts route — checked against the support hours and response targets, so out-of-hours routing and due-by times agree. |
 | **Incident profile** | What counts as an incident *for this service* is defined and registered with the incident process. | The severity scheme and the reportable-incident bar (satisfies FSD-RR-6). |
-| **Supportability / handover** | An operating and support model exists; knowledge transfer / cross-training is done so **continuity** is assured (the service isn't reliant on a single person) and any new or changed standing procedure the service forced (flagged at Gate 2 §4) has been written and adopted. | The support model, the continuity rule (cross-training / knowledge capture), and how operating-procedure changes are handled. |
+| **Supportability / handover** | An operating and support model exists; knowledge transfer / cross-training is done so **continuity** is assured (the service isn't reliant on a single person) and any new or changed standing procedure the service forced (flagged at Gate 2 §4) has been written and adopted. | The support model — hours, response expectations by severity, who takes first contact, escalation path and cover, and how it's communicated to the service's customers; the continuity rule (no single-person dependency in the operating team *or* the support model, what evidences sufficient cross-training, and who attests it); and how operating-procedure changes are handled. |
 | **Cost / licensing** | Licences are in place and ongoing run-cost is owned. | The licensing posture and who owns the run-cost. |
 
 The set may grow as practice matures. A new criterion is a framework change, versioned like any other.
@@ -46,6 +46,12 @@ The set may grow as practice matures. A new criterion is a framework change, ver
 Set this once, ratify it, and inherit it into every solution. The prompts below are **questions, not answers**: FitSD ships no default numbers, on purpose. Fill them with values that fit *your* organisation and risk appetite. (Worked example values will follow the published end-to-end example; see *FitSD — Roadmap*.)
 
 **Applicability.** The baseline may also set *applicability rules*: where a criterion legitimately doesn't apply (say, a stateless internal tool with nothing of its own to back up). At acceptance, such a criterion is recorded **N/A per baseline, with the reason**, a deliberate call against a standing rule, not a skip. If you find yourself writing N/A with no rule to point at, the fix is to change the baseline, not to bend the record.
+
+**Decay.** Some rows stay proven; others rot. Proven once is not proven forever: the baseline may set a re-verification cadence per criterion — a restore re-test rhythm for Backup, a continuity re-check on a cadence or on any staffing change for Supportability. Ask of each row: does this evidence have a shelf life?
+
+**Cite, don't copy.** Where a row's values already live in a standing policy (patch timescales in your patch standard, say), the row may name that policy as its authority rather than restating the numbers — one source of truth, no drift at the next policy revision.
+
+*Owner = who maintains that row's standard (the person you argue with to change it). Evidence owners are named per service, on the Service Acceptance Record.*
 
 | Criterion | Your standard (set once, ratified) | Owner |
 |---|---|---|

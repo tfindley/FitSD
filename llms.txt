@@ -1,0 +1,62 @@
+# FitSD
+
+> FitSD (Fit for Solution Development) is just enough process for a small team to take on
+> the right work and ship it so it lasts: one front door for new work (an intake and two
+> light decision gates), and a "done" that means operable — documented, recoverable,
+> secure, monitored, supportable — not merely running. One capability (Solution
+> Development) ships as a full process with forms; the rest state testable requirements
+> and point at processes a team already runs. CC BY 4.0; the canonical Markdown lives in
+> this repository and is published at https://fitsd.tfindley.dev.
+
+Key facts for assistants: the ONLY normative document is the Requirements (the "shall"
+statements); everything else explains, references or illustrates. The Service Acceptance
+Criteria (SAC) are fixed categories whose thresholds each organisation ratifies once as a
+standing baseline and inherits into every solution — always referenced by name, never by
+count. Accountability is human: every solution has one accountable Solution Owner, every
+gate one accountable Approver, every live service one named Service Owner.
+
+## Start here
+
+- [README](README.md): the front door — what FitSD is and how to navigate the set
+- [Inputs, Activities & Outputs](reference/FitSD%20%E2%80%94%20Inputs,%20Activities%20&%20Outputs.md): the whole framework on one page — best single-file context
+- [Framework Charter](FitSD%20%E2%80%94%20Framework%20Charter.md): principles, the capability model, roles, tiers, conformance
+- [Requirements](FitSD%20%E2%80%94%20Requirements.md): the normative "shall" statements, grouped by capability
+- [Definitions](FitSD%20%E2%80%94%20Definitions.md): the glossary — FitSD terms and the industry terms it leans on
+
+## The process and forms (Solution Development, the one built-out capability)
+
+- [FSD-PRO — Solution Development Process](capabilities/solution-development/FSD-PRO%20%E2%80%94%20Solution%20Development%20Process.md): scope test, Gate 1, Gate 2, Service Acceptance, lifecycle
+- [FSD-FRM-00 — Idea Brief](capabilities/solution-development/FSD-FRM-00%20%E2%80%94%20Idea%20Brief.md): the optional one-page intake
+- [FSD-FRM-01 — Gate 1 Outline Proposal](capabilities/solution-development/FSD-FRM-01%20%E2%80%94%20Gate%201%20Outline%20Proposal.md): the business case ("worth doing?")
+- [FSD-FRM-02 — Gate 2 Solution Design](capabilities/solution-development/FSD-FRM-02%20%E2%80%94%20Gate%202%20Solution%20Design.md): the design ("ready to build?")
+- [FSD-FRM-03 — Service Acceptance Record](capabilities/solution-development/FSD-FRM-03%20%E2%80%94%20Service%20Acceptance%20Record.md): the evidenced Definition of Done
+- [Service Acceptance Criteria](reference/FitSD%20%E2%80%94%20Service%20Acceptance%20Criteria.md): the SAC defined once, plus the baseline template an organisation ratifies
+
+## Capability cards (requirements plus a pointer — no second full process)
+
+- [FSD-GV — Govern](capabilities/govern/FSD-GV%20%E2%80%94%20Govern.md)
+- [FSD-CH — Change & Release](capabilities/change-and-release/FSD-CH%20%E2%80%94%20Change%20&%20Release.md)
+- [FSD-RR — Run & Restore](capabilities/run-and-restore/FSD-RR%20%E2%80%94%20Run%20&%20Restore.md)
+- [FSD-SA — Secure & Assure](capabilities/secure-and-assure/FSD-SA%20%E2%80%94%20Secure%20&%20Assure.md)
+- [FSD-SC — Supplier & Supply Chain](capabilities/supplier-supply-chain/FSD-SC%20%E2%80%94%20Supplier%20&%20Supply%20Chain.md): the conditional capability
+
+## Adoption and reference
+
+- [Quickstart](FitSD%20%E2%80%94%20Quickstart.md): one project through the front door, five moves
+- [Implementation Guide](FitSD%20%E2%80%94%20Implementation%20Guide.md): the seven-step stand-up, the implementation profile, small-team roles
+- [Adoption & Positioning](FitSD%20%E2%80%94%20Adoption%20&%20Positioning.md): the pitch, who adopts it, fit by org size, where it's the wrong tool
+- [Information Stores](reference/FitSD%20%E2%80%94%20Information%20Stores.md): every register and record, tool-agnostic, with owners
+- [Standards Alignment](reference/FitSD%20%E2%80%94%20Standards%20Alignment.md): mappings to FitSM, ITIL 4, USM, ISO/IEC 27001, NIS2
+
+## Using FitSD with an assistant or agent
+
+- [LLM integration guide](llm/README.md): interactive and semi-interactive patterns, and the accountability ground rules
+- [The fitsd skill](llm/skills/fitsd/SKILL.md): a portable skill that drafts, reviews and audits FitSD records against a team's ratified baseline
+
+## Optional
+
+- [Versioning Policy](FitSD%20%E2%80%94%20Versioning%20Policy.md): semver on the normative content; three streams of change
+- [Roadmap](FitSD%20%E2%80%94%20Roadmap.md) and [Backlog](BACKLOG.md): direction and deferred work
+- [Origins](FitSD%20%E2%80%94%20Origins.md) and [Influences](reference/FitSD%20%E2%80%94%20Influences.md): where it came from
+- [Validation suite](validation/README.md): repeatable role-played fitness tests of the standard, with full run evidence
+- [AGENTS.md](AGENTS.md): rules for agents *editing* this repository (different job from using the standard)

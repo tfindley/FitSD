@@ -9,7 +9,7 @@
 
 > **In one line.** FitSD is just enough process for a small team to take on the right work and ship it so it lasts: one front door for new work, and a "done" that means *operable*, not merely running.
 
-Small teams can't run ITIL, but they still have to decide what's worth building, design it so it can actually be run, and avoid the 2 a.m. call-out for something nobody wrote down. FitSD is the smallest amount of that discipline a handful of people can keep up. (The full pitch, spoken and one-page forms, is at the top of `FitSD — Adoption & Positioning.md`.)
+Small teams can't run ITIL, but they carry the same risks: effort spent on work that was never worth doing, and services that go live but can't be supported, recovered or secured. FitSD distils that discipline down to what a handful of people can actually keep up. (The full pitch, spoken and one-page forms, is at the top of `FitSD — Adoption & Positioning.md`.)
 
 Two things do most of the work:
 
@@ -20,13 +20,14 @@ It's a personal project, and it's deliberately not tied to any one organisation.
 
 ## How to read this
 
-You don't need to read it all — pick your path:
+Don't read it all. Pick your path:
 
 - **Just curious?** → `FitSD — Quickstart.md`: one project, five moves.
 - **Pitching it upward?** → `FitSD — Adoption & Positioning.md`: the pitch, ready to say out loud, is right at the top.
-- **Adopting it?** → `FitSD — Framework Charter.md` (what it is) → `FitSD — Requirements.md` (what you must meet) → `capabilities/solution-development/` (the one fully built process).
+- **Adopting it?** → `FitSD — Framework Charter.md` (what it is) → `FitSD — Requirements.md` (what you must meet) → `capabilities/solution-development/` (the one fully built process) → `FitSD — Implementation Guide.md` (stand it up in your team).
 - **Checking it against standards?** → `reference/FitSD — Standards Alignment.md`.
 - **Stuck on a term?** → `FitSD — Definitions.md`.
+- **Wiring in an AI assistant?** → `llm/README.md`: the ground rules and the portable `fitsd` skill; `llms.txt` is the reading map for models.
 
 ## What's in here
 
@@ -42,13 +43,19 @@ You don't need to read it all — pick your path:
 | `FitSD — Roadmap.md`                       | 0    | Direction of travel — bigger picture than the backlog               |
 | `FitSD — Origins.md`                       | 0    | Where the thinking came from                                        |
 | `FitSD — Definitions.md`                   | 0    | Master glossary: FitSD terms, MoSCoW, and common acronyms          |
+| `FitSD — Versioning Policy.md`             | 0    | How versions work: semver on the normative content, three streams of change |
 | `reference/FitSD — Standards Alignment.md` | 0    | How it maps to ISO 27001, NIS2, ITIL and FitSM                      |
 | `reference/FitSD — Influences.md`          | 0    | The Lean / DevOps canon behind the thinking (non-normative)        |
 | `reference/FitSD — Information Stores.md`  | 0    | The registers and records FitSD relies on, tech-agnostic, the data model |
+| `reference/FitSD — Inputs, Activities & Outputs.md` | 0 | The whole framework on one page: what each capability takes in, does, and produces |
 | `reference/FitSD — Service Acceptance Criteria.md` | 0 | The SAC defined once, inheritable categories plus your ratifiable baseline |
 | `capabilities/`                            | 2/4  | The process docs and forms — built out for Solution Development     |
+| `validation/`                              | —    | The fitness-test suite: role-played end-to-end scenarios that stress the standard in use, with each run's full record. Non-normative |
+| `llm/`                                     | —    | Assistant/agent integration for *using* FitSD: ground rules (LLMs draft, humans sign), interactive + semi-interactive patterns, and the portable `fitsd` skill. Non-normative |
+| `llms.txt`, `AGENTS.md`, `CLAUDE.md`       | —    | The curated reading map for LLMs; working rules for agents editing this repo   |
 | `diagrams/`, `BACKLOG.md`                  | —    | Mermaid diagrams; the running list of what's next                   |
 | `CHANGELOG.md`                             | —    | Notable changes to the standard, per release, for implementers     |
+| `VERSION`, `RELEASING.md`, `SECURITY.md`   | —    | The current version number; how releases are cut; how to report a vulnerability |
 | `LICENSE`                                  | —    | Creative Commons Attribution 4.0 (CC BY 4.0)                        |
 
 ## The capabilities

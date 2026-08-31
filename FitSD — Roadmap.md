@@ -4,20 +4,21 @@ framework: FitSD
 document: Roadmap
 tier: 0
 type: explanatory (non-normative)
+version: 0.3
 status: living
 owner: "Tristan Findley"
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, roadmap, plan]
 ---
 
 # FitSD — Roadmap
 
-> The direction of travel. Bigger-picture than the `BACKLOG` (which is the task list). This is the why and the where. Rough on purpose; a personal project moves when it moves.
+> **TL;DR** — The direction of travel: the why and the where, bigger-picture than the `BACKLOG` (the task list). Rough on purpose; a personal project moves when it moves.
 
 ## Now (v0.2) — shipped
 
 - The **Framework** layer (Tiers 0–1): the charter and the requirements.
-- All five capabilities: Solution Development built in full (process + its gate and acceptance forms); capability cards for Govern, Change & Release, Run & Restore, Secure & Assure.
+- The five original capabilities: Solution Development built in full (process + its gate and acceptance forms); capability cards for Govern, Change & Release, Run & Restore, Secure & Assure. (The conditional sixth, Supplier & Supply Chain, lands in v0.3 below.)
 - The supporting layer: adoption & positioning (which now opens with the pitch and one-page executive summary), standards alignment, influences, quickstart, definitions, diagrams, and a licence.
 - **v0.2 hardening:** lifecycle completion (end-of-life review & retirement, FSD-RR-7), the **information-stores** layer (every register/record made explicit and tech-agnostic), the demand pipeline + retained history in FSD-GV-4, continuity in the Definition of Done, and the new-technology intake trigger.
 
@@ -27,7 +28,9 @@ tags: [fitsd, roadmap, plan]
 
 ## Next — v0.4: publish the worked example
 
-One release, one deliverable. The framework has already been proven on a real project run end to end (the dogfooding that drove the v0.3 changes), so the shape works in practice. What v0.4 delivers is a *publishable* example: a project FitSD can tell in full, run through Idea Brief, both gates and Service Acceptance (real private runs stay private: FitSD carries no organisation's fingerprints, and that includes its examples). It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`). Nothing else rides in v0.4 — evidence before more structure.
+One release, one deliverable. The framework has already been proven on a real project run end to end (the dogfooding that drove the v0.3 changes), so the shape works in practice. What v0.4 delivers is a *publishable* example: a project FitSD can tell in full, run through Idea Brief, both gates and Service Acceptance (real private runs stay private: FitSD carries no organisation's fingerprints, and that includes its examples).
+
+It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`). Nothing else rides in v0.4 — evidence before more structure.
 
 ## Then — the unbuilt tiers
 
@@ -75,6 +78,14 @@ Two **Implementation**-layer tiers are named in the Charter (§5) but not yet bu
 - **RACI granularity:** per capability vs per key activity: keep it light enough that a small team actually fills it in.
 - **Minimum viable role set:** which roles are mandatory (Owner + Approver?) and which are optional or named-only on a tiny team.
 
+An end-to-end simulation exercise (2026-08) surfaced five more calls for the same draft:
+
+- **Sponsorship and the submitter:** nobody is *obliged* to help a submitter gather facts, and the mid-tier approver who carries a case upward to the next gate has no name. A sponsor duty, or an Approver duty to broker contributor input?
+- **Operators and first line:** *FSD-PRO* §7 requires acceptance "by operators" and the *Charter* defines Operator — but the process's own role table doesn't carry it, and the first-line/support function is invisible everywhere. Say who the operators are, first line included.
+- **Design authority:** who stands behind a Gate 2 design (distinct from the Solution Owner who drives it), and whether work above a local bar warrants qualified technical review beyond the single Approver.
+- **Value over time:** does a product/value-owner role exist, or does the Service Owner explicitly carry it? Silence reads as "nobody does".
+- **Review independence:** FSD-GV-5's review has no independence rule; the builder rule ("one line uncrossed") is the cheap pattern to mirror.
+
 **Effort & sequencing.** Medium: more design than Tier 5, and it touches existing docs (the Owner reconciliation ripples into FSD-PRO and the Charter). Light dependencies, but worth landing before or alongside Tier 5: the maturity self-check scores FSD-GV-6 (roles defined) and FSD-GV-2 (single owner), so a settled role model makes those scores meaningful.
 
 ### Also queued
@@ -87,7 +98,7 @@ The direction on *what FitSD is, and isn't*: settled while scoping v0.3.
 
 - **A sharp wedge, not a lean FitSM.** FitSD's value is the two things FitSM doesn't give you: a **front door** (intake + gates) and a **definition of done** (the SAC). Its leanness comes from how little it *builds*, one flagship process (FSD-PRO), not from a thin requirement set; the spine can require broad coverage precisely because it references out for everything but the front door. Keep it that way. The moment FitSD builds out a *second* full process, it's competing with FitSM on FitSM's turf and has lost its edge.
 - **The SAC is a "service design baseline."** The standing SAC baseline (FSD-GV-7) is really a design-time standard every service is *designed to*: a Govern artefact, consumed by Solution Development. Worth naming that framing (in the Govern card and Definitions). Do **not** rename the framework to "Fit for Service Design". That over-claims ITIL's breadth and blunts the wedge. (Bundling design principles / documentation & tooling standards into the baseline is a possible later step; the light first move is just to name the concept.)
-- **Honest gaps vs FitSM → thin requirements, not processes.** Two FitSM areas have no clean FitSD home today (*Standards Alignment* §2): **Service Level Management** and **Service Reporting**. Worth closing as thin `shall`s that reference out (see `BACKLOG`). Supplier landed as FSD-SC in v0.3.
+- **Honest gaps vs FitSM → thin requirements, not processes.** The two FitSM areas that had no clean FitSD home — **Service Level Management** and **Service Reporting** — are now closed as one thin `shall` (FSD-GV-9: service levels stated and published; performance reported at a cadence), the pattern to keep. Supplier landed as FSD-SC in v0.3.
 - **Declared non-goals.** Full Configuration Management / CMDB, Customer Relationship Management, and capacity-as-a-discipline stay **out** — "use your existing practice." These are where "not too narrow" tips into ITIL weight.
 - **The "Fit family."** FitSD is the first of a possible family of focused deep-dives over a broad-but-light frame, the pattern FitSM hints at. Deeper **Change & Release** and **Incident / Run & Restore** treatments are best written as **standalone candidate siblings** (e.g. *Fit for Change & Release*, *Fit for Incident Response*), wired into FitSD later through the existing FSD-CH / FSD-RR reference-out cards — *not* built into FitSD. If a second module becomes real, that's when to extract a shared core (see `BACKLOG`).
 

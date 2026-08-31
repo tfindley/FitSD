@@ -5,11 +5,11 @@ document_id: FSD-CH
 capability: Change & Release
 type: capability card
 tier: 2
-version: 0.2
+version: 0.3
 status: draft
 owner: "Management System Owner"
 satisfies: [FSD-CH-1, FSD-CH-2, FSD-CH-3, FSD-CH-4]
-date: 2026-06-23
+date: 2026-08-31
 tags: [fitsd, change, release, capability-card]
 ---
 

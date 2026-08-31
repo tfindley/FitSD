@@ -10,7 +10,7 @@ tags: [fitsd, backlog]
 
 # FitSD — Backlog
 
-Deferred ideas and improvements surfaced while building the framework, many from dogfooding it on a real project. Not yet scheduled.
+> **TL;DR** — Deferred ideas and improvements surfaced while building the framework, many from dogfooding it on a real project. Not yet scheduled; the bigger picture is the `Roadmap`.
 
 ## Framework tiers
 
@@ -24,6 +24,7 @@ Deferred ideas and improvements surfaced while building the framework, many from
 ## Solution Development
 
 - **SAC sample *values* + topic guidance.** Per-criterion "how to write a good X criterion" notes and worked *threshold values*. The SAC *structure* shipped in v0.3 (defined once as inheritable principles + a blank baseline template); the sample values stay *deferred until a worked example has landed*, so they're real, not invented.
+- **Operational-document content guidance.** A non-normative "what a runbook / HLD / recovery procedure minimally answers" appendix in the SAC reference — questions, not templates, matching the baseline's style; include "each procedure states who can execute it and where it hands off" and, for bespoke components, "where the source lives and how a successor makes a change". *(Simulation run, 2026-08: the standard mandates the documents exist, not what they contain — a stub titled "Runbook" passes the letter of acceptance.)*
 
 ## Adoption & reach
 
@@ -41,13 +42,16 @@ Deferred ideas and improvements surfaced while building the framework, many from
 
 Direction set while scoping v0.3 (fuller narrative in the `Roadmap`, "Shape & scope"). Candidates and boundaries, not yet scheduled.
 
-- **Service Level Management (candidate thin requirement).** A *thin* `shall`: each live service has agreed, recorded service levels (or an explicit "best effort" statement) with its customer. Closes the FitSM PR2 gap without building an SLM process; the availability SLO already lives in the SAC. Reference-out for the *how*.
-- **Service Reporting (candidate thin requirement).** A *thin* `shall`: service performance is reported to stakeholders at a defined cadence (could fold into the FSD-GV-5 review). Closes the FitSM PR3 gap. Reference-out for the *how*.
-- **Declared non-goals.** Full Configuration Management / CMDB (FitSM PR11), Customer Relationship Management (PR7), and capacity-as-a-discipline stay out of scope — met by "use your existing practice." Worth stating explicitly so the boundary is deliberate, not accidental.
+- **Declared non-goals.** Full Configuration Management / CMDB (FitSM PR11), Customer Relationship Management (PR7), and capacity-as-a-discipline stay out of scope — met by "use your existing practice." Now stated explicitly in *Standards Alignment* §2.
 - **Shared core (only if the family grows).** FitSD currently double-hats as the umbrella frame (the capability groups + requirements spine + definitions, the `FSD-` prefix on everything) *and* the Solution Development deep-dive. If a second "Fit-" deep-dive (Change, Incident) becomes real, extract a shared core so siblings reference the frame rather than redefine it.
 
 ## Done (recent)
 
+- ~~Owner transition / continuity re-verification (v0.3)~~ — **FSD-GV-8**: on a change of a live service's accountable owner, continuity is re-established and re-evidenced. The end-to-end simulation's headline finding (continuity was proven once, at acceptance, and decayed silently; the successor's "one change" verdict). *(2026-08-31)*
+- ~~Service Level Management + Service Reporting (v0.3)~~ — **FSD-GV-9**: service levels (or explicit best-effort) agreed, recorded and *published* to each live service's customers, with performance reported at a cadence. Closes FitSM PR2 + PR3 in one thin `shall`; *Standards Alignment* §2 updated. *(2026-08-31)*
+- ~~Conditions tracked to closure (v0.3)~~ — **FSD-SD-7**: gate/acceptance conditions carry an owner and target date, are tracked to closure, and breaches escalate to the approver who set them. The forms carry the fields; simulation evidence: of eleven acceptance conditions, three silently died. *(2026-08-31)*
+- ~~Cryptography / key management (v0.3)~~ — **FSD-SA-6**: keys, secrets and certificates managed to a defined standard (generation, storage, rotation, revocation), evidence retained. Closes the self-identified NIS2 21(2)(h) gap; mapped to ISO 27001 A.8.24. *(2026-08-31)*
+- ~~Per-service state in the GV-5 review~~ — note-level on FSD-GV-5 (register accuracy, open conditions, overdue evidence, EOL candidates; a missed review escalates) plus the Implementation Guide step-7 agenda. Deliberately not a tightened `shall`. *(2026-08-31)*
 - ~~FSD-SC — Supplier / supply-chain capability (v0.3)~~ — requirements **FSD-SC-1…4** + capability card (`capabilities/supplier-supply-chain/`); the conditional sixth capability. Closes NIS2 21(2)(d); maps ISO 27001 A.5.19–A.5.22 / FitSM PR8; wired into the Gate 1 vendor due diligence and the FSD-RR-7 renew decision; supplier register added to *Information Stores*. *(2026-07-04)*
 - ~~SAC as inheritable principles (v0.3)~~ — SAC reframed as standing, org-tunable categories with a ratifiable baseline (new `reference/FitSD — Service Acceptance Criteria`); new requirement **FSD-GV-7** (define & inherit the baseline); SAC now defined once and referenced by name across FSD-PRO/FRM-02/FRM-03 (drift cure). *(2026-07-01)*
 - ~~Idea Brief becomes a canonical form (v0.3)~~ — **FSD-FRM-00**, a thin one-page intake; carries forward into Gate 1; closes the "no Idea Brief form" gap. *(2026-07-01)*

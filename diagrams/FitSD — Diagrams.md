@@ -2,10 +2,11 @@
 title: FitSD — Diagrams
 framework: FitSD
 document: Diagrams
-version: 0.2
+type: reference (non-normative)
+version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - diagrams
@@ -14,7 +15,7 @@ tags:
 
 # FitSD — Diagrams
 
-Mermaid source for the framework's process and structure diagrams. These render natively on GitHub/GitLab and in Obsidian, and are embedded in the relevant documents (noted per diagram).
+> **TL;DR** — Mermaid source for the framework's process and structure diagrams. They render natively on GitHub/GitLab and in Obsidian, and are embedded in the documents noted per diagram — when a diagram changes, update the embedded copy in the same edit, or the two drift.
 
 ---
 
