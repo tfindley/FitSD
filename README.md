@@ -49,6 +49,7 @@ Don't read it all. Pick your path:
 | `reference/FitSD — Inputs, Activities & Outputs.md` | 0 | The whole framework on one page: what each capability takes in, does, and produces |
 | `reference/FitSD — Service Acceptance Criteria.md` | 0 | The SAC defined once, inheritable categories plus your ratifiable baseline |
 | `capabilities/`                            | 2/4  | The process docs and forms — built out for Solution Development     |
+| `validation/`                              | —    | The fitness-test suite: role-played end-to-end scenarios that stress the standard in use, with each run's full record. Non-normative |
 | `diagrams/`, `BACKLOG.md`                  | —    | Mermaid diagrams; the running list of what's next                   |
 | `CHANGELOG.md`                             | —    | Notable changes to the standard, per release, for implementers     |
 | `VERSION`, `RELEASING.md`, `SECURITY.md`   | —    | The current version number; how releases are cut; how to report a vulnerability |

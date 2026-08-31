@@ -21,12 +21,15 @@ pattern='\bv[0-9]+\.[0-9]+'
 
 # The governed set: every framework doc except the ones whose job is to talk
 # about versions (README, CHANGELOG, BACKLOG, Roadmap, Versioning Policy,
-# RELEASING) — and web/, which versions itself.
+# RELEASING) — web/, which versions itself — and validation/, whose run
+# records legitimately cite the version they tested (that is adoption
+# working as the Versioning Policy describes, not drift).
 hits="$(grep -rInE --include='*.md' \
   --exclude-dir='node_modules' \
   --exclude-dir='.git' \
   --exclude-dir='web' \
   --exclude-dir='docs' \
+  --exclude-dir='validation' \
   --exclude='README.md' \
   --exclude='CHANGELOG.md' \
   --exclude='BACKLOG.md' \
