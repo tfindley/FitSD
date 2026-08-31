@@ -27,6 +27,7 @@ Don't read it all. Pick your path:
 - **Adopting it?** → `FitSD — Framework Charter.md` (what it is) → `FitSD — Requirements.md` (what you must meet) → `capabilities/solution-development/` (the one fully built process) → `FitSD — Implementation Guide.md` (stand it up in your team).
 - **Checking it against standards?** → `reference/FitSD — Standards Alignment.md`.
 - **Stuck on a term?** → `FitSD — Definitions.md`.
+- **Wiring in an AI assistant?** → `llm/README.md`: the ground rules and the portable `fitsd` skill; `llms.txt` is the reading map for models.
 
 ## What's in here
 
@@ -50,6 +51,8 @@ Don't read it all. Pick your path:
 | `reference/FitSD — Service Acceptance Criteria.md` | 0 | The SAC defined once, inheritable categories plus your ratifiable baseline |
 | `capabilities/`                            | 2/4  | The process docs and forms — built out for Solution Development     |
 | `validation/`                              | —    | The fitness-test suite: role-played end-to-end scenarios that stress the standard in use, with each run's full record. Non-normative |
+| `llm/`                                     | —    | Assistant/agent integration for *using* FitSD: ground rules (LLMs draft, humans sign), interactive + semi-interactive patterns, and the portable `fitsd` skill. Non-normative |
+| `llms.txt`, `AGENTS.md`, `CLAUDE.md`       | —    | The curated reading map for LLMs; working rules for agents editing this repo   |
 | `diagrams/`, `BACKLOG.md`                  | —    | Mermaid diagrams; the running list of what's next                   |
 | `CHANGELOG.md`                             | —    | Notable changes to the standard, per release, for implementers     |
 | `VERSION`, `RELEASING.md`, `SECURITY.md`   | —    | The current version number; how releases are cut; how to report a vulnerability |
