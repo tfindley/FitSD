@@ -53,7 +53,7 @@ If yes, it's normative.
 
 Root `FitSD — *.md` = the framework layer. `capabilities/` = the one full process
 (Solution Development: FSD-PRO + forms FRM-00…03) and one-page cards for the rest.
-`reference/` = non-normative reference docs. `validation/` = the repeatable
+`reference/` = non-normative reference docs. The separate [`fitsd-validation`](https://github.com/tfindley/fitsd-validation) repo holds the repeatable
 fitness-test suite and its run evidence (excluded from the guards — its records may
 quote counts and cite versions). `llm/` = assistant/agent integration for *using* the
 standard. `llms.txt` = the curated reading map for LLMs.

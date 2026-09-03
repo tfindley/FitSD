@@ -35,4 +35,4 @@ sure it's recorded, not to shame the number.
 
 If, while checking, you find a defect in the **standard** (a contradiction, an ambiguity
 two readings survive), don't paper over it locally — log it for upstream, the way the
-`validation/` suite does.
+[validation suite](https://github.com/tfindley/fitsd-validation) does.
