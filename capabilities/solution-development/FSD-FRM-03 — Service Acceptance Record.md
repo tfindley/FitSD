@@ -4,7 +4,8 @@ framework: FitSD
 document_id: FSD-FRM-03
 capability: Solution Development
 tier: 4
-version: 0.2
+type: form (reference template)
+version: 0.3
 status: draft
 owner: Management System Owner
 approver: Approver
@@ -22,47 +23,58 @@ tags:
 
 # FSD-FRM-03 — Service Acceptance Record
 
-> **Service Acceptance asks: is it proven done?** A solution is accepted into service only when each Service Acceptance Criterion is met **and evidenced** — not merely configured. The approaches were designed at Gate 2 (FSD-FRM-02); here they are proven. The live copy is held in the team's work-tracking system; this is the blank template.
+> **Service Acceptance asks: is it proven done?** Walk each Service Acceptance Criterion and record the evidence. A solution is accepted into service only when each is met **and evidenced**, not merely configured. The approaches were designed at Gate 2 (FSD-FRM-02); here they are proven. Record failed attempts and known thinness alongside the pass — a successor reads this table before anything else. *(Terms: see `FitSD — Definitions`.)* The live copy is held in the team's work-tracking system; this is the blank template.
 
 ## Header
 
-| Field                            | Entry |
-| -------------------------------- | ----- |
-| **Solution title**               |       |
-| **Solution Owner**               |       |
-| **Delivery project (ref)**       |       |
+| Field                          | Entry |
+| ------------------------------ | ----- |
+| **Solution title**             |       |
+| **Solution Owner**             |       |
+| **Delivery project (ref)**     |       |
 | **Linked Gate 2 (FSD-FRM-02)** |       |
-| **Date**                         |       |
+| **Date**                       |       |
 
 ## 1. Acceptance criteria
 
-For each criterion, record the evidence (a link, a date, a reference) and whether it is met.
+For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline**. The criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance. Where the baseline's applicability rules say a criterion doesn't apply to this service, record **N/A per baseline** with the reason, a recorded call, not a skip.
 
-| Criterion | Evidence / link | Met? (Y/N) |
+| Criterion | Evidence / link | Met? (Y / N / N/A per baseline) |
 |---|---|---|
-| **Documentation** — HLD, runbook, recovery procedure, user/how-to published | | |
-| **Backup (tested)** — backup in place **and test restore performed**, dated | | |
-| **Security** — hardening applied, patch path set (FSD-RR), vuln posture acceptable, exceptions logged (FSD-SA) | | |
-| **Access** — access model implemented; least privilege; JML handling confirmed | | |
-| **Availability** — SLO met or accepted; capacity & scaling understood; DR position recorded | | |
-| **Monitoring & alerting** — monitoring live; thresholds set; test alert observed end-to-end | | |
-| **Incident profile** — service-level incident triggers & severities registered with the incident-management process | | |
-| **Supportability / handover** — support model agreed; runbook accepted by operators; team ready; training done; **continuity** assured (knowledge captured, not reliant on one person) | | |
-| **Cost / licensing** — licences in place; ongoing run-cost confirmed and owned | | |
+| **Documentation:** HLD (carrying the design decisions and rationale), runbook, recovery procedure, operating procedures (SOPs), user/how-to published | | |
+| **Backup (tested):** backup in place **and test restore performed**, dated | | |
+| **Security:** hardening applied, patch path set (FSD-RR), vuln posture acceptable, exceptions logged (FSD-SA) | | |
+| **Access:** access model implemented; least privilege; JML handling confirmed | | |
+| **Availability:** SLO met or accepted; capacity & scaling understood; DR position recorded | | |
+| **Monitoring & alerting:** monitoring live; thresholds set; test alert observed end-to-end | | |
+| **Incident profile:** service-level incident triggers & severities registered with the incident-management process (registration evidenced: accepted by whom, when) | | |
+| **Supportability / handover:** support model agreed; runbook & SOPs accepted by the named operators — first line included — in a dated record; knowledge transfer / cross-training done; team ready; **continuity** assured (not reliant on one person); any new/changed standing procedure the service forced (Gate 2 §4) written & adopted | | |
+| **Cost / licensing:** licences in place; ongoing run-cost (cash **and** operating effort) confirmed and owned | | |
 
-## 2. Outstanding remediation
+## 2. Conditions from Gate 2 — position at acceptance
 
-*List any criterion not yet met, the action required, and the owner/date. The record is re-presented when these are closed.*
+*Each condition the Gate 2 sign-off attached, and how it stands now.*
 
-| Criterion | Action required | Owner | Target date |
-| --------- | --------------- | ----- | ----------- |
-|           |                 |       |             |
+| Gate 2 condition | Position at acceptance |
+| ---------------- | ---------------------- |
+|                  |                        |
 
-## 3. Acceptance sign-off
+## 3. Outstanding remediation and open actions
+
+*List any criterion not yet met (the record is re-presented when these are closed), and any open actions that don't block acceptance — acceptance conditions land here too, each with an owner and target date, tracked until closed.*
+
+| Criterion / action | Blocks acceptance? (Y/N) | Action required | Owner | Target date |
+| ------------------ | ------------------------ | --------------- | ----- | ----------- |
+|                    |                          |                 |       |             |
+
+## 4. Acceptance sign-off
+
+Acceptance names the live Service Owner on the service register (FSD-GV-2). Conditions carried with acceptance each have an owner and a target date (§3) and stay on the review agenda until closed.
 
 | Field          | Entry                                        |
 | -------------- | -------------------------------------------- |
 | **Decision**   | Accepted into service / Remediation required |
+| **Service register entry** | *Service, live Service Owner (and deputy, if your continuity rule names one), status* |
 | **Approver**   |                                              |
 | **Conditions** |                                              |
 | **Date**       |                                              |

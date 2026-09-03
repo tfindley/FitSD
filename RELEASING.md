@@ -17,13 +17,13 @@ this is the operator's checklist.
 | Stream           | What it is                                                     | Version bump?           | How to ship                                   |
 | ---------------- | -------------------------------------------------------------- | ----------------------- | --------------------------------------------- |
 | **Website**      | Styling, layout, search, build config                          | `fitsd-web` only        | Commit in **fitsd-web**; its CI rebuilds       |
-| **Spec errata**  | Typos, clarifications, rendering fixes — *no normative effect* | **None** (see below)    | Depends on the current-channel binding         |
+| **Spec errata**  | Typos, clarifications, rendering fixes, *no normative effect* | **None** (see below)    | Depends on the current-channel binding         |
 | **Spec release** | New or changed **requirements** (normative)                    | `VERSION` (semver)      | Bump + tag + push (below), then promote in fitsd-web |
 
 Decide which stream you're in *before* you push: if you changed what FitSD *requires*, it's a
 release; otherwise it isn't.
 
-> **Is it normative?** If an adopter could become non-conformant — or newly conformant —
+> **Is it normative?** If an adopter could become non-conformant, or newly conformant,
 > because of your change, it's normative → a release. Reworded the same requirement, fixed
 > a typo, redrew a diagram, edited an explanatory page? Not normative → errata.
 
@@ -39,7 +39,7 @@ deliberate, reviewable act: bump `VERSION`, tag, push.
 3. **Tag** `vX.Y.Z` and push: `git push --follow-tags`. The tag is the immutable snapshot the site
    will bind the version to.
 4. keystone's `dispatch-web.yml` fires on the branch push and the new tag → fitsd-web rebuilds.
-5. **Make it current** (in the `fitsd-web` repo): `npm run promote -- X.Y` — flips the new version
+5. **Make it current** (in the `fitsd-web` repo): `npm run promote -- X.Y`, flips the new version
    to `role: current` bound to the `vX.Y.0` tag, and the outgoing current to `role: previous`.
    Review the `channels.manifest.mjs` diff, commit, push. fitsd-web publishes `:latest`; the host's
    Watchtower redeploys.
@@ -50,8 +50,8 @@ still want numbered.
 
 ## Errata to the current version
 
-The site's **current** channel is pinned to an **immutable tag** (e.g. `v0.2.0`), so — unlike the
-old "`main` is live" model — a typo fix committed to `main` does **not** change the published
+The site's **current** channel is pinned to an **immutable tag** (e.g. `v0.2.0`), so, unlike the
+old "`main` is live" model, a typo fix committed to `main` does **not** change the published
 current version. To ship errata to current, pick the team's policy (record it here):
 
 - **Patch-tag (recommended, keeps versions immutable):** commit the fix, cut a **patch tag**
@@ -69,14 +69,16 @@ on the next dispatch/nightly rebuild without a tag.
 
 A few conventions keep the standard consistent and its history legible.
 
-- **Log changes as you go.** Notable and normative changes go in [`CHANGELOG.md`](./CHANGELOG.md) under `## Unreleased` **when you make them** — reconstructing it from memory at release is how detail gets lost. At release, promote `## Unreleased` to `## vX.Y.Z — <date>`.
-- **No version claims in prose.** The version and status live in document frontmatter, the `VERSION` file, [`CHANGELOG.md`](./CHANGELOG.md), the README and the Roadmap — nowhere else. Normative and reference documents never state a version in body text: a "v0.2" baked into a callout goes stale the moment a release is cut. Run `bash scripts/check-version-drift.sh` before a spec release (it fails on a `vN.N` in a governed doc's prose).
+- **Log changes as you go.** Notable and normative changes go in [`CHANGELOG.md`](./CHANGELOG.md) under `## Unreleased` **when you make them**. Reconstructing it from memory at release is how detail gets lost. At release, promote `## Unreleased` to `## vX.Y.Z — <date>`.
+- **No version claims in prose.** The version and status live in document frontmatter, the `VERSION` file, [`CHANGELOG.md`](./CHANGELOG.md), the README and the Roadmap, nowhere else. Normative and reference documents never state a version in body text: a "v0.2" baked into a callout goes stale the moment a release is cut. Run `bash scripts/check-version-drift.sh` before a spec release (it fails on a `vN.N` in a governed doc's prose).
 - **Reference the SAC by name, never by count.** The Service Acceptance Criteria are referenced by name throughout — the set is versioned with the framework, and no document states how many there are. This is what stops the "eight vs nine" drift ([GitHub #7](https://github.com/tfindley/FitSD/issues/7)) from recurring. Run `bash scripts/check-sac-drift.sh` before a spec release (it fails if a number-word slips in before "SAC"/"criteria").
 - **Define the SAC once.** The criteria are *defined* in [`reference/FitSD — Service Acceptance Criteria`](./reference/FitSD%20%E2%80%94%20Service%20Acceptance%20Criteria.md); the process and forms reference them by name and carry only their stage column (Gate 2 = design approach, Service Acceptance = evidence). Don't re-describe a criterion elsewhere.
+- **Open with a TL;DR.** Every standard document opens with a `> **TL;DR** —` callout (em dash, not a colon). Two deliberate exceptions keep their own shared openers: the capability cards ("What a capability card is") and the four SD forms (the gate-question form, e.g. "Gate 1 asks: is this worth doing?").
+- **Cite numbered sections only where headings are numbered.** Documents with numbered H2s — the Charter, FSD-PRO, Adoption & Positioning, Standards Alignment, Diagrams, the forms — are cited as `Doc §n`; every other document is cited by heading name. Renumbering a heading means sweeping every `§` citation of it in the same edit.
 
 ## What the website does with all this
 
-- fitsd-web vendors this standard at the refs named in its `channels.manifest.mjs` — the published
+- fitsd-web vendors this standard at the refs named in its `channels.manifest.mjs`: the published
   version of each channel comes from that ref's root `VERSION` file, so the standard drives the
   site, not the reverse.
 - The version switcher shows the **current** version (site root `/`) plus every other channel

@@ -2,10 +2,11 @@
 title: FitSD — Diagrams
 framework: FitSD
 document: Diagrams
-version: 0.2
+type: reference (non-normative)
+version: 0.3
 status: draft
 owner: Tristan Findley
-date: 2026-06-23
+date: 2026-08-31
 tags:
   - fitsd
   - diagrams
@@ -14,7 +15,7 @@ tags:
 
 # FitSD — Diagrams
 
-Mermaid source for the framework's process and structure diagrams. These render natively on GitHub/GitLab and in Obsidian, and are embedded in the relevant documents (noted per diagram).
+> **TL;DR** — Mermaid source for the framework's process and structure diagrams. They render natively on GitHub/GitLab and in Obsidian, and are embedded in the documents noted per diagram — when a diagram changes, update the embedded copy in the same edit, or the two drift.
 
 ---
 
@@ -24,7 +25,7 @@ Mermaid source for the framework's process and structure diagrams. These render 
 
 ```mermaid
 flowchart LR
-    Demand["Demand /<br/>Idea Brief"] --> G1{"Gate 1<br/>worth doing?"}
+    Demand["Demand /<br/>Idea Brief (FRM-00)"] --> G1{"Gate 1<br/>worth doing?"}
     G1 -->|reject| Rej["Rejected"]
     G1 -->|park| Park["Parked"]
     G1 -->|PoC first| PoC["Proof of<br/>Concept"]
@@ -48,13 +49,14 @@ flowchart LR
 flowchart LR
     subgraph GV["Govern (FSD-GV): scope, roles, document control, PDCA"]
       direction LR
-      D["Demand"] --> SD["Bring in<br/>FSD-SD"]
+      D["Demand"] --> SD["Solution Development<br/>FSD-SD"]
       SD --> CH["Change and release<br/>FSD-CH"]
       CH --> RR["Run and restore<br/>FSD-RR"]
       RR --> Ret["End-of-life<br/>review"]
     end
     SD -.->|secure by design| SA["Secure and assure<br/>FSD-SA"]
     RR -.->|protect and assure| SA
+    SD -.->|vendor due diligence| SC["Supplier and supply chain<br/>FSD-SC (conditional)"]
 ```
 
 ---
@@ -86,7 +88,7 @@ flowchart TB
 
 ## 4. Service lifecycle (status)
 
-*The state a solution moves through, from idea to retirement — including the end-of-life fork (renew / replace / retire). Useful for tracking any one solution's position in the pipeline.*
+*The state a solution moves through, from idea to retirement, including the end-of-life fork (renew / replace / retire). Useful for tracking any one solution's position in the pipeline.*
 
 ```mermaid
 stateDiagram-v2
@@ -151,7 +153,7 @@ flowchart LR
 
 ## 6. Information stores
 
-*Embedded in `reference/FitSD — Information Stores`. The registers and records FitSD relies on, shown tech-agnostically — a "store" is a register or record set, never a named tool. Each is owned by a capability and tied to a lifecycle stage.*
+*Embedded in `reference/FitSD — Information Stores`. The registers and records FitSD relies on, shown tech-agnostically. A "store" is a register or record set, never a named tool. Each is owned by a capability and tied to a lifecycle stage.*
 
 ```mermaid
 flowchart TB
@@ -166,12 +168,13 @@ flowchart TB
     Livev -.-> IRec[("Incident records<br/>+ profiles")]
     Livev -.-> PRec[("Problem records")]
     EOLv -.-> RRec[("Retirement<br/>records")]
-    subgraph CROSS["Always-on — Govern + Secure & assure"]
+    subgraph CROSS["Always-on — Govern, Secure & assure, Supplier & supply chain"]
       direction LR
       RKg[("Risk register")]
       EXg[("Exceptions<br/>register")]
       DCg[("Document<br/>register")]
       BKg[("Backup &<br/>restore-test records")]
+      SPg[("Supplier /<br/>dependency register")]
     end
     FLOW -.->|maintained across every stage| CROSS
 ```
