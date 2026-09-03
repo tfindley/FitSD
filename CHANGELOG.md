@@ -8,7 +8,7 @@ Changes are logged under **Unreleased** as they land; at release the heading is 
 
 <!-- releases -->
 
-## Unreleased — v0.3.0 (MINOR, in progress on the `v0.3` branch)
+## v0.3.0 — 2026-09-03
 
 Theme: the Service Acceptance Criteria (SAC) become a **standing, organisation-owned baseline** — defined once and inherited by every solution, instead of rediscovered at each go-live. The supplier / supply-chain capability (FSD-SC) also lands, completing the capability model.
 
