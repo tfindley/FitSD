@@ -58,5 +58,5 @@ gate one accountable Approver, every live service one named Service Owner.
 - [Versioning Policy](FitSD%20%E2%80%94%20Versioning%20Policy.md): semver on the normative content; three streams of change
 - [Roadmap](FitSD%20%E2%80%94%20Roadmap.md) and [Backlog](BACKLOG.md): direction and deferred work
 - [Origins](FitSD%20%E2%80%94%20Origins.md) and [Influences](reference/FitSD%20%E2%80%94%20Influences.md): where it came from
-- [Validation suite](validation/README.md): repeatable role-played fitness tests of the standard, with full run evidence
+- [Validation suite](https://github.com/tfindley/fitsd-validation): repeatable role-played fitness tests of the standard, with full run evidence — a separate repo, open to contributed runs
 - [AGENTS.md](AGENTS.md): rules for agents *editing* this repository (different job from using the standard)

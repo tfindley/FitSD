@@ -95,4 +95,4 @@ Everything in `llm/` is non-normative tooling, versioned with the repo but no pa
 conformance. An organisation conforms by meeting the Requirements — with or without an
 assistant. And a finding about the *standard* surfaced while assisting (a gap, a
 contradiction, an ambiguity) doesn't get patched in a prompt: it gets raised upstream,
-the way `validation/` findings are.
+the way findings in the [validation suite](https://github.com/tfindley/fitsd-validation) are.

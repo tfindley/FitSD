@@ -8,6 +8,11 @@ Changes are logged under **Unreleased** as they land; at release the heading is 
 
 <!-- releases -->
 
+## Unreleased
+
+### Changed
+- **The validation suite moved to its own repo**, [`tfindley/fitsd-validation`](https://github.com/tfindley/fitsd-validation). It was `validation/` here. Non-normative throughout — no requirement, form or reference document changed, so this is errata and the version is unmoved. The reason is cadence: a run testing v0.3 can be contributed long after `v0.3.0` was tagged, so it could never be pinned to a spec tag, and every run added ~30 files of test evidence to the normative repo. The new repo also carries an AI **harness** (`harness/SKILL.md`), a run **validator** (`scripts/check-run.sh`) and a `CONTRIBUTING.md`, so third parties can run the suite against their own scenarios — by AI or by hand — and contribute the results. The v0.3.0 tag still contains the suite as it shipped.
+
 ## v0.3.0 — 2026-09-03
 
 Theme: the Service Acceptance Criteria (SAC) become a **standing, organisation-owned baseline** — defined once and inherited by every solution, instead of rediscovered at each go-live. The supplier / supply-chain capability (FSD-SC) also lands, completing the capability model.
