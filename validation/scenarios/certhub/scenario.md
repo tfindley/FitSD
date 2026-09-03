@@ -1,30 +1,29 @@
-# Scenario — "CertHub" at Fernbrook Software
+# Scenario — CertHub
 
-**Purpose (out of character).** A fitness-for-purpose stress-test of the FitSD standard.
-A fictional team runs a real-shaped project through every FitSD phase; each participant
-logs where the standard helped, where it was silent, and where it got in the way.
-Everything below is invented and organisation-neutral. Run per `validation/PROTOCOL.md`
-with the briefs in `validation/agents/`.
+> **TL;DR** — An internal self-service certificate service, taken through every FitSD stage.
+> Non-normative. Set at **[Fernbrook Software](../../organisations/fernbrook.md)**; run per
+> **[the protocol](../../PROTOCOL.md)** with the briefs in `validation/agents/`. Everything
+> below is invented.
 
-## The company
+**Purpose (out of character).** A fitness-for-purpose stress-test of the FitSD standard. A
+fictional team runs a real-shaped project through every FitSD phase; each participant logs
+where the standard helped, where it was silent, and where it got in the way.
 
-**Fernbrook Software** — a fictional ~150-person B2B SaaS company selling a logistics
-analytics platform. Engineering is ~60 people across eight product teams, plus a
-5-person **Platform & Infrastructure team** that runs shared services (CI/CD, Kubernetes,
-observability, DNS, artefact registry).
+The scenario is the *work* being pushed through the standard. It says nothing about which
+version of the standard is under test — that is a property of a **run**, so the same scenario
+can be re-run against a later version and the results compared. Each run of this scenario
+lives under `runs/`.
 
-Fernbrook adopted **FitSD v0.3** three months ago for the Platform team's intake and
-service management, prompted by two years of tool sprawl and a run of "who owns this?"
-incidents. The adoption pack (scope, roles, SAC baseline, net-new line) is in
-`artifacts/S0-adoption-pack.md` once Stage 0 has run.
+## Casting
 
-## The people (all fictional)
+The organisation profile lists Fernbrook's staff and their day jobs. This scenario casts them
+into FitSD roles:
 
-| Name | Role in company | FitSD hat(s) |
+| Name | Role in company | FitSD hat(s) for this scenario |
 |---|---|---|
 | **Priya Chandra** | Platform engineer (Engineer 1) | Solution Owner for CertHub; Contributor |
 | **Marcus Webb** | Platform team manager | Approver (Gate 1, Service Acceptance); Management System Owner |
-| **Elena Vasquez** | Lead / principal architect (org-wide) | Consulted SME (architecture); leads the Gate 2 design |
+| **Elena Vasquez** | Lead / principal architect | Consulted SME (architecture); leads the Gate 2 design |
 | **Dana Okafor** | CTO | Approver at Gate 2 (funds the build); governance |
 | **Sam Reyes** | Product manager, developer-experience | Asked to own CertHub as a *product* long term |
 | **Owen Gallagher** | Service delivery manager | Owns the support model conversation; operator side of acceptance |
@@ -87,14 +86,7 @@ who built it leaves?" risk. That is the point.
   ownership transfer, the pending CertHub 2.0 Gate 1, and an executive condition that the
   service be a named line at the (missed) June 2027 annual review.
 
-## Ground rules for every participant
+## Ground rules
 
-1. **The standard is what's in `keystone/`.** Use only what FitSD actually provides. If
-   you need something it doesn't provide (a template, a rule, a role, a number), do what a
-   real team does — make a sensible local call and proceed — but **log it as a finding**.
-2. **Stay in character in artifacts; step out of character in findings.** Artifacts read
-   like real records; findings read like a reviewer's notes.
-3. **Artifacts are the only shared memory.** Later participants see the artifact files,
-   never your reasoning. Write artifacts complete enough to stand alone.
-4. British English. Keep artifacts concise and realistic — a real team's paperwork, not
-   an essay.
+Every participant follows **[the three hard rules in `PROTOCOL.md`](../../PROTOCOL.md)** — they
+apply to every run, not just this scenario, and are not restated here.

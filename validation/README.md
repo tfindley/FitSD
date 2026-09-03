@@ -27,8 +27,14 @@ every artefact, finding, register and the final report — is under
 | `PROTOCOL.md` | How a run works: stages, sequencing, the information firewall, findings rules, synthesis |
 | `findings-template.md` | The entry format every participant logs findings in |
 | `agents/` | Thirteen role briefs, one per stage-seat, scenario-agnostic |
-| `scenarios/<name>/scenario.md` | A fictional world: organisation, people, trigger, proposed solution, stage hooks |
+| `organisations/<name>.md` | A fictional company: profile and people. **Reusable** — any scenario can be set here, and it is version-neutral, so the same organisation can be run against any version of the standard |
+| `scenarios/<name>/scenario.md` | The work pushed through the standard: casting, trigger, proposed solution, stage hooks. **Reusable** — it names no version, so it can be re-run |
 | `scenarios/<name>/runs/<id>/` | One run's complete output: `artifacts/` (in-world records), `findings/` (out-of-character logs, consolidated register, decision record), `RUN.md` (metadata), `REPORT.html` |
+
+The four pieces compose: a **run** is one **scenario**, at one **organisation**, conducted per the
+**method** (`PROTOCOL.md` + `agents/`), against one version of the standard. Each is reusable on its
+own — re-run a scenario against a later version and compare, or set a different scenario at the same
+organisation.
 
 ## Running it
 

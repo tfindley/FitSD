@@ -4,7 +4,8 @@
 |---|---|
 | **Run date (real)** | 2026-08-31 |
 | **Standard under test** | `keystone` branch `readability` at commit `2c88669` (v0.3 unreleased, after the phase-1 consistency/readability pass, *before* any simulation-driven change) |
-| **Scenario** | `../../scenario.md` (CertHub at Fernbrook Software — wholly fictional) |
+| **Scenario** | `../../scenario.md` (CertHub — wholly fictional) |
+| **Organisation** | `../../../../organisations/fernbrook.md` (Fernbrook Software) |
 | **Seats played by** | AI role-play throughout (Claude agents, one per seat, orchestrated per `validation/PROTOCOL.md`); no human seats this run |
 | **Stages run** | S0, S1–2a, S2b, S3a, S3b, S4, S5a/b/c (parallel), S5d, S6, S7 (firewalled), S8 — 12 runs |
 | **Firewall** | Held: S7 and S8 read `artifacts/` only; findings files were never shared between seats |
