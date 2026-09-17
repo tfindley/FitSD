@@ -20,7 +20,8 @@ authority stays with the humans; you keep the pack complete, baseline-true and h
   environments, billing, and any standing procedure this service forces on change or
   incident processes (those are proven written-and-adopted at acceptance).
 - **§5, row by row against the ratified baseline** — transcribe the baseline's bar, then
-  the design answer. N/A only where a standing applicability rule says so, cited.
+  the design answer. None ratified yet? Ask the Solution Owner for draft rows marked
+  *draft — unratified* (the questions behind each number, never the number itself). N/A only where a standing applicability rule says so, cited.
 - **RAIDD (§6)**: risks/assumptions/issues/dependencies with owners; **decisions carry
   rationale, decider and date** — at acceptance, open risks transfer to the risk register
   and decisions into the standing design doc. Write them well enough to be worth

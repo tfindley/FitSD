@@ -23,6 +23,7 @@ The shape: **two gates** (*is this worth doing?* at Gate 1, *is it ready to buil
 
 - Pick **one** real piece of upcoming work: something **net-new** (a new service, tool, or capability, not a routine change to something you already run). A tool to stand up, a service to replace, a capability to add.
 - Grab the forms from `capabilities/solution-development/`: the Idea Brief (FSD-FRM-00), Gate 1 (Outline Proposal), Gate 2 (Solution Design), and the Service Acceptance Record.
+- No **SAC baseline** yet (your standing bar for backups, monitoring, support and the rest)? You don't need one to start: the Idea Brief just says none is ratified yet, and you'll draft the rows this project needs at Gate 2.
 
 ## 1. Write the Idea Brief — half a day, tops
 
@@ -34,7 +35,7 @@ Fill the Gate 1 form: the driver, a rough value/risk read, T-shirt effort, the o
 
 ## 3. Design it at Gate 2 — half a day to a few days, once Gate 1 says go
 
-Design it: requirements, an architecture sketch with security in it, and the bit teams skip — how each acceptance criterion in your SAC baseline will actually be met: documentation, tested backup, access, monitoring, support, cost. If you can't yet say how you'll back it up or who'll support it, you've found the problem now instead of in six months.
+Design it: requirements, an architecture sketch with security in it, and the bit teams skip — how each acceptance criterion in your SAC baseline will actually be met: documentation, tested backup, access, monitoring, support, cost. (No baseline yet? Draft this project's rows from the template in *FitSD — Service Acceptance Criteria* and mark them unratified. If you adopt, they're the start of your real one.) If you can't yet say how you'll back it up or who'll support it, you've found the problem now instead of in six months.
 
 ## 4. Build it — your normal change process, no extra FitSD time
 

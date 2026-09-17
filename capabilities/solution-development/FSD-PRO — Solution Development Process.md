@@ -144,7 +144,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 **Purpose.** Confirm the chosen approach is designed and ready to build, including how it will be operated.
 
-**What is captured** (on FSD-FRM-02): a carry-forward summary from the approved Gate 1, refined as more is known; requirements as user stories, MoSCoW-rated; the architecture, with a diagram that shows where security sits; the **design approach for each Service Acceptance Criterion** (§7): how each will be met; operational impact (monitoring, billing/chargeback, service desk, environments, and any changes the service forces on your change or incident processes); a RAIDD log; and refined effort, cost and a light timeline (key milestones with target dates, and person-days by role, not a full FTE model).
+**What is captured** (on FSD-FRM-02): a carry-forward summary from the approved Gate 1, refined as more is known; requirements as user stories, MoSCoW-rated; the architecture, with a diagram that shows where security sits; the **design approach for each Service Acceptance Criterion** (§7): how each will be met against the standing baseline, or against draft rows marked unratified where none is ratified yet; operational impact (monitoring, billing/chargeback, service desk, environments, and any changes the service forces on your change or incident processes); a RAIDD log; and refined effort, cost and a light timeline (key milestones with target dates, and person-days by role, not a full FTE model).
 
 **Outcomes:**
 

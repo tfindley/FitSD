@@ -15,7 +15,8 @@ Criteria*; reference it **by name**, never by count):
   monitoring needs an alert observed end to end; the incident profile needs registration
   evidenced by who accepted it and when.
 - **Against the baseline**, not against vibes — quote the baseline's bar next to any row
-  you flag.
+  you flag. If the bar is Gate 2's *draft — unratified* rows, the record must say it's a
+  trial, not a conforming acceptance (FSD-GV-7); flag it if it doesn't.
 - **N/A only per a standing applicability rule**, cited, with the reason. N/A with no rule
   to point at means the baseline needs changing, not the record bending.
 - **Operator acceptance** (Supportability row): a dated record from the *named* operators,

@@ -23,8 +23,9 @@ plus demand source and primary driver. The **question**: the decision needed, ke
 if the submitter's question names a product ("should we buy X?"), reframe it as the need
 ("how do we…?") and park X as a Gate 1 option. The **answer**: the **outcome sought** (not
 the design — enforce "don't design anything yet" kindly but firmly; it's what keeps the
-options honest later) and rough in/out of scope. Reference the standing SAC baseline;
-capture any project-specific emphasis. Recommendation: take to Gate 1 / hold / drop —
+options honest later) and rough in/out of scope. Reference the standing SAC baseline if one is
+ratified; if not, record *none ratified yet* and carry on — it's needed by Gate 2, not
+now. Capture any project-specific emphasis. Recommendation: take to Gate 1 / hold / drop —
 theirs to make, yours to sharpen.
 
 ## Gate 1 (the business case)

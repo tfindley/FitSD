@@ -68,11 +68,11 @@ Your answer to the question, as an **outcome**, not a design: what "done" looks 
 | **Roughly in scope**             |                                                    |
 | **Roughly out of scope**         |                                                    |
 
-**Service-quality expectations.** Part of what "done" means. Name the standing **Service Acceptance baseline** as the quality bar this must eventually meet, and flag any project-specific emphasis, so quality shapes selection and design from the start, not just at acceptance. By reference only; don't re-specify it here.
+**Service-quality expectations.** Part of what "done" means. Name the standing **Service Acceptance baseline** as the quality bar this must eventually meet, and flag any project-specific emphasis, so quality shapes selection and design from the start, not just at acceptance. By reference only; don't re-specify it here. No baseline ratified yet? Say so and carry on, naming the bar you expect in the emphasis field: a baseline is needed by Gate 2, not to raise an idea.
 
 | Field                              | Entry                                                        |
 | ---------------------------------- | ------------------------------------------------------------ |
-| **Applies the standing SAC baseline?** | Yes, see *FitSD — Service Acceptance Criteria* |
+| **Applies the standing SAC baseline?** | Yes, see *FitSD — Service Acceptance Criteria* / None ratified yet |
 | **Any project-specific emphasis**  | *e.g. this one leans hard on availability / continuity / a regulatory measure* |
 
 ## 5. Next step

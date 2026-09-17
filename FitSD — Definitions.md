@@ -47,7 +47,7 @@ tags: [fitsd, definitions, glossary]
 
 **Service Acceptance Criteria (SAC) / Definition of Done.** The standing set of conditions a service must meet to be accepted: documentation, tested backup, security, access, availability, monitoring & alerting, incident profile, supportability, cost/licensing. Fixed *categories*; each organisation sets and ratifies its own *thresholds* as a standing baseline (FSD-GV-7). Defined in *FitSD — Service Acceptance Criteria*.
 
-**SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). In effect a standing **service design baseline**: a Govern artefact every solution is designed *to* at Gate 2 and proven against at acceptance. See *FitSD — Service Acceptance Criteria*.
+**SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). In effect a standing **service design baseline**: a Govern artefact every solution is designed *to* at Gate 2 and proven against at acceptance. A staged prerequisite: not needed to raise an idea, drafted as unratified rows at Gate 2 where none exists yet, and ratified for a conforming acceptance. See *FitSD — Service Acceptance Criteria*.
 
 **Solution Owner.** The single person accountable for a proposed solution, who drives it through the gates and completes the records.
 

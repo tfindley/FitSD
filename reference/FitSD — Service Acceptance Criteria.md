@@ -3,11 +3,11 @@ title: "FitSD — Service Acceptance Criteria"
 framework: FitSD
 document: Service Acceptance Criteria
 tier: 0
-version: 0.3
+version: 0.4
 type: reference (non-normative)
 status: draft
 owner: "Tristan Findley"
-date: 2026-07-01
+date: 2026-09-17
 tags: [fitsd, reference, service-acceptance, sac, definition-of-done, non-normative]
 ---
 
@@ -75,9 +75,15 @@ Set this once, ratify it, and inherit it into every solution. The prompts below 
 
 ## How the baseline flows
 
-- **Idea Brief (FSD-FRM-00)** — referenced, not re-specified: the brief names the SAC baseline as the service-quality expectation and notes any project-specific emphasis, so quality shapes selection from the start.
-- **Gate 2 (FSD-FRM-02 §5)** — *designed*: how each criterion will be met against the baseline.
-- **Service Acceptance (FSD-FRM-03 §1)** — *proven*: evidence each criterion meets the baseline before the service goes live.
+The baseline is a **staged prerequisite**: you don't need one to raise an idea, you need one to design, and you need a ratified one to accept.
+
+| Stage | What the baseline does | Needed? |
+|---|---|---|
+| **Idea Brief (FSD-FRM-00)**, Gate 1 | *Referenced*, not re-specified: the brief names it as the service-quality expectation and notes any project-specific emphasis, so quality shapes selection from the start. | **No.** None ratified yet? Say so, and name the bar you expect. Never a reason to hold a brief. |
+| **Gate 2 (FSD-FRM-02 §5)** | *Designed to*: how each criterion will be met against the baseline. | **Yes.** Where none is ratified yet, draft the rows this solution needs (below). |
+| **Service Acceptance (FSD-FRM-03 §1)** | *Proven*: evidence each criterion meets the baseline before the service goes live. | **Ratified**, to conform (FSD-GV-7). |
+
+**No baseline yet?** That's normal when you're trying FitSD on one project before adopting it. At Gate 2, the Solution Owner drafts the rows this solution needs from the template above, fills them with values people chose (never defaults), and marks them **draft — unratified**, so the Approver decides with that in view. Nothing downstream treats a draft as standing: acceptance proven against draft rows is a trial record, not a conformance claim. Ratify a baseline, and the drafts become the start of it.
 
 Standing up the baseline for the first time is an explicit step in *FitSD — Implementation Guide*.
 

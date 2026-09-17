@@ -4,11 +4,11 @@ framework: FitSD
 document: Implementation Guide
 layer: Implementation
 tier: "2–5 (cross-cutting)"
-version: 0.3
+version: 0.4
 type: implementation guide (non-normative)
 status: draft
 owner: "Tristan Findley"
-date: 2026-07-01
+date: 2026-09-17
 tags: [fitsd, implementation, adoption, guide, standup, non-normative]
 ---
 
@@ -31,10 +31,10 @@ Write down which services are under management: what's in, what's out. A line, n
 Every service gets **one** accountable owner (roles may be shared; accountability isn't). Name who signs off gates and acceptance: the **Approver** — and write down your **escalation line**: the spend, data-classification or impact level above which approval moves up (e.g. "the manager by default; the CTO above £10k/yr, for a new data classification, or for company-wide impact"). Name the **alternate approver** for work the default Approver builds (the "one line uncrossed" below). On a small team these collapse onto a couple of people; see *Roles on a small team* below.
 
 ### 3. Adopt the four forms — *FSD-SD-1…4*
-Take the blank templates from `capabilities/solution-development/`: **Idea Brief** (FSD-FRM-00), **Gate 1** (FSD-FRM-01), **Gate 2** (FSD-FRM-02), and the **Service Acceptance Record** (FSD-FRM-03). Put copies where your team works. Set your **net-new effort line** at the same time — the estimated-effort threshold above which work counts as net-new and comes through the gates (`FSD-PRO §1`; about 10 person-days is a sensible default) — and, if approval routes on cost (step 2), anchor the Gate 1 T-shirt sizes to rough local ranges so a size can't dodge the routing. From now on, net-new work comes through this door.
+Take the blank templates from `capabilities/solution-development/`: **Idea Brief** (FSD-FRM-00), **Gate 1** (FSD-FRM-01), **Gate 2** (FSD-FRM-02), and the **Service Acceptance Record** (FSD-FRM-03). Put copies where your team works. Set your **net-new effort line** at the same time — the estimated-effort threshold above which work counts as net-new and comes through the gates (`FSD-PRO §1`; about 10 person-days is a sensible default) — and, if approval routes on cost (step 2), anchor the Gate 1 T-shirt sizes to rough local ranges so a size can't dodge the routing.
 
 ### 4. Ratify your SAC baseline — *FSD-GV-7*
-This is the step teams skip and regret. The Service Acceptance Criteria are fixed *categories* but **your** *thresholds*: your availability target, your backup-test cadence, your continuity rule, what you count as a reportable incident. Open *FitSD — Service Acceptance Criteria*, fill the baseline template with your own values, and have the accountable owner **ratify** it — where the team sits inside a larger organisation, ratification sits *above* the person who wrote the baseline, so "ratified" adds something over "written". Now every solution inherits one known bar instead of rediscovering it at go-live.
+This is the step teams skip and regret. The Service Acceptance Criteria are fixed *categories* but **your** *thresholds*: your availability target, your backup-test cadence, your continuity rule, what you count as a reportable incident. Open *FitSD — Service Acceptance Criteria*, fill the baseline template with your own values, and have the accountable owner **ratify** it — where the team sits inside a larger organisation, ratification sits *above* the person who wrote the baseline, so "ratified" adds something over "written". Now every solution inherits one known bar instead of rediscovering it at go-live. Do this before your first Gate 2 is approved: a design needs a bar to be designed to (the Idea Brief and Gate 1 don't wait for it). Ran the Quickstart first? Start from the draft rows you wrote at its Gate 2. With the baseline ratified, net-new work comes through this door from now on.
 
 ### 5. Point Change, Incident and Security at what you already run — *the implementation profile*
 FitSD ships a full process only for Solution Development. For **Change & Release (FSD-CH)**, **Run & Restore (FSD-RR)**, **Secure & Assure (FSD-SA)** and, where it applies, **Supplier & Supply Chain (FSD-SC)** it states the requirement and expects you to meet it with the policy you already have. Record *which* of your policies/tools meets each: that mapping is your **implementation profile** (below).

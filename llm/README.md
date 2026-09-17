@@ -22,8 +22,10 @@ FitSD's accountability model is human by design, and an assistant works *for* it
    honest notes first).
 3. **Thresholds come from the ratified baseline, never from the model.** The SAC
    categories are fixed; the numbers are the organisation's (FSD-GV-7). If no ratified
-   baseline exists, the assistant's job is to say so and route to the stand-up, not to
-   supply plausible defaults.
+   baseline exists, the assistant says so and never supplies plausible defaults. The
+   baseline is a staged prerequisite: an Idea Brief or Gate 1 carries on without one,
+   Gate 2 works from human-drafted rows marked unratified, and an acceptance against
+   those is a trial record that routes to the stand-up.
 4. **Disclose the assistance.** A record substantially drafted by an LLM says so on the
    record (a one-line note is enough). This is the same honesty the evidence culture
    already demands, applied to authorship.

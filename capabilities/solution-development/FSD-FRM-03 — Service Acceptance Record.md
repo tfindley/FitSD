@@ -5,7 +5,7 @@ document_id: FSD-FRM-03
 capability: Solution Development
 tier: 4
 type: form (reference template)
-version: 0.3
+version: 0.4
 status: draft
 owner: Management System Owner
 approver: Approver
@@ -13,7 +13,7 @@ governing_process: FSD-PRO
 satisfies:
   - FSD-SD-4
   - FSD-SD-5
-date: 2026-06-23
+date: 2026-09-17
 tags:
   - fitsd
   - solution-development
@@ -37,7 +37,7 @@ tags:
 
 ## 1. Acceptance criteria
 
-For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline**. The criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance. Where the baseline's applicability rules say a criterion doesn't apply to this service, record **N/A per baseline** with the reason, a recorded call, not a skip.
+For each criterion, record the evidence (a link, a date, a reference) and whether it meets your organisation's **standing SAC baseline**. The criteria are defined once in *FitSD — Service Acceptance Criteria*; below is what *proof* looks like at acceptance. Where the baseline's applicability rules say a criterion doesn't apply to this service, record **N/A per baseline** with the reason, a recorded call, not a skip. Conformance needs a ratified baseline (FSD-GV-7). If the evidence here is weighed against Gate 2's *draft — unratified* rows instead, this is a trial record: say so.
 
 | Criterion | Evidence / link | Met? (Y / N / N/A per baseline) |
 |---|---|---|
