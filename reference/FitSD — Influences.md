@@ -4,20 +4,20 @@ framework: FitSD
 document: Influences
 tier: 0
 type: explanatory (non-normative)
-version: 0.3
+version: 0.4
 status: draft
 owner: "Tristan Findley"
-date: 2026-08-31
-tags: [fitsd, reference, influences, devops, lean]
+date: 2026-09-17
+tags: [fitsd, reference, influences, devops, lean, scqa]
 ---
 
 # FitSD — Influences
 
-> **TL;DR** — Where the thinking comes from. FitSD is a service-management framework, but its instincts about *flow* are borrowed from the Lean and DevOps canon. This note records those debts. None of it is normative: you don't have to read a single one of these books to use FitSD. But if you've read them, you'll recognise the shapes.
+> **TL;DR** — Where the thinking comes from. FitSD is a service-management framework, but its instincts about *flow* are borrowed from the Lean and DevOps canon, and the shape of its intake brief from the consulting canon. This note records those debts. None of it is normative: you don't have to read a single one of these books to use FitSD. But if you've read them, you'll recognise the shapes.
 
 ## The short version
 
-FitSD answers *what to control*. These books answer *why flow matters*. Put together: control the work coming in (so the team isn't drowned), prove it's ready before it ships (so it doesn't come back as a fire), and measure the flow honestly (so "fast" and "safe" aren't traded off against each other).
+FitSD answers *what to control*. These books answer *why flow matters*. Put together: control the work coming in (so the team isn't drowned), prove it's ready before it ships (so it doesn't come back as a fire), and measure the flow honestly (so "fast" and "safe" aren't traded off against each other). One more book shapes how the front door *speaks*: a proposal that leads with a clear ask gets a clear answer.
 
 ## The debts
 
@@ -35,6 +35,8 @@ Its other gift is the *four types of work*, and the warning that **unplanned wor
 
 **Accelerate / DORA — Forsgren, Humble & Kim.** The four key metrics (deployment frequency, lead time for change, change-fail rate, time to restore) are the flow measures FitSD points at, mostly in `FSD-CH` and `FSD-RR`. They're the antidote to choosing between fast and stable: the best teams are both.
 
+**The Pyramid Principle — Barbara Minto.** Set up your point in four moves: the *situation* your reader already agrees with, the *complication* that means it can't stand, the *question* that raises, and your *answer* (SCQA). The Idea Brief (`FSD-FRM-00`) is laid out in that order, so a brief written for the tracker also works read aloud to a review forum. FitSD makes one amendment: at intake, the answer is an *outcome*, never a design, because the options belong to Gate 1.
+
 ## Idea → where it lands in FitSD
 
 | Idea | Source | FitSD element |
@@ -46,6 +48,7 @@ Its other gift is the *four types of work*, and the warning that **unplanned wor
 | Unplanned work made visible | Phoenix | The front door / intake |
 | The four key metrics | Accelerate / DORA | Metrics in `FSD-CH` and `FSD-RR` |
 | Improvement of daily work | Unicorn (3rd Ideal) | Principle 1, and `FSD-GV` |
+| Situation, Complication, Question, Answer (SCQA) | The Pyramid Principle | The Idea Brief (`FSD-FRM-00`) |
 
 ## A caveat
 

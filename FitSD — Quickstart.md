@@ -4,10 +4,10 @@ framework: FitSD
 document: Quickstart
 tier: 0
 type: explanatory (non-normative)
-version: 0.3
+version: 0.4
 status: draft
 owner: "Tristan Findley"
-date: 2026-08-31
+date: 2026-09-17
 tags: [fitsd, quickstart, getting-started]
 ---
 
@@ -26,7 +26,7 @@ The shape: **two gates** (*is this worth doing?* at Gate 1, *is it ready to buil
 
 ## 1. Write the Idea Brief — half a day, tops
 
-One page (there's a template, FSD-FRM-00). What's the problem, what would "done" look like, what's roughly in and out of scope. Don't design anything yet; you're just getting enough on paper to decide whether it's worth a proper look. (A public worked example, run end to end, is in the works.)
+One page (there's a template, FSD-FRM-00), in four moves: where things stand, what's changed that forces a decision, the question that raises, and your answer: the outcome you're after, and roughly what's in and out of scope. Don't design anything yet; you're just getting enough on paper to decide whether it's worth a proper look. (A public worked example, run end to end, is in the works.)
 
 ## 2. Take it to Gate 1 — half a day to write, one ~30-minute conversation
 

@@ -5,7 +5,7 @@ document_id: FSD-PRO
 capability: Solution Development
 tier: 2
 type: process (reference implementation)
-version: 0.3
+version: 0.4
 status: draft
 owner: Management System Owner
 approver: Approver
@@ -18,7 +18,7 @@ satisfies:
   - FSD-SD-6
   - FSD-SD-7
 review_cycle: Annual, or on material change to how the team takes on new work
-date: 2026-08-31
+date: 2026-09-17
 tags:
   - fitsd
   - solution-development
@@ -73,7 +73,7 @@ Accountability does **not** transfer with the request. A solution that proceeds 
 
 **Service Acceptance Criteria (SAC).** The standard Definition of Done for any solution delivered through this process: the operational outputs that must exist alongside the product itself. The categories are defined, and an organisation's standing baseline is ratified, in *FitSD — Service Acceptance Criteria*; they are proven at §7.
 
-**Idea Brief.** The optional one-page intake (FSD-FRM-00) raised before Gate 1 to decide whether an idea is worth a proper look. It carries forward into Gate 1 and designs nothing.
+**Idea Brief.** The optional one-page intake (FSD-FRM-00) raised before Gate 1 to decide whether an idea is worth a proper look. It is laid out as situation, complication, question and answer (SCQA), with the answer stated as an outcome. It carries forward into Gate 1 and designs nothing.
 
 **Net-new.** Work meeting any of the in-scope triggers in §1; the test that distinguishes Solution Development work from a routine change.
 

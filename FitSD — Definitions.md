@@ -4,10 +4,10 @@ framework: FitSD
 document: Definitions
 tier: 0
 type: reference (non-normative)
-version: 0.3
+version: 0.4
 status: living
 owner: "Tristan Findley"
-date: 2026-08-31
+date: 2026-09-17
 tags: [fitsd, definitions, glossary]
 ---
 
@@ -29,7 +29,7 @@ tags: [fitsd, definitions, glossary]
 
 **Business case.** FitSD produces no separate business-case document. The **Gate 1 Outline Proposal *is* the business case**: the driver, the cost of doing nothing, the options, the effort and the decision, in the language leadership funds work in. The Idea Brief frames the need; Gate 1 makes the fundable case; Gate 2 firms up cost, effort and timeline. Kept at the right weight: a fundable proposal, not an enterprise appraisal (Principle 2: every artefact earns its place).
 
-**Idea Brief.** The optional one-page intake (FSD-FRM-00) raised before Gate 1 to decide whether an idea is worth a proper look. Carries forward into Gate 1; it designs nothing.
+**Idea Brief.** The optional one-page intake (FSD-FRM-00) raised before Gate 1 to decide whether an idea is worth a proper look. Laid out as *SCQA* (situation, complication, question, answer). Carries forward into Gate 1; it designs nothing.
 
 **Implementation profile.** A team's local version of FitSD: their actual documents and tools, mapped to the requirements.
 
@@ -106,6 +106,8 @@ tags: [fitsd, definitions, glossary]
 **RAID / RAIDD log.** A running list of Risks, Assumptions, Issues, Dependencies, and, in the longer form, Decisions. A standard project-tracking tool.
 
 **RACI.** A responsibility matrix: who is Responsible, Accountable, Consulted, Informed for each activity.
+
+**SCQA.** Situation, Complication, Question, Answer: Barbara Minto's structure for a brief, from *The Pyramid Principle*. Set out the ground as it stands, what's changed to force a decision, the question that raises, then your answer. The Idea Brief (FSD-FRM-00) is laid out in this order, with one FitSD twist: at intake the answer is an outcome, not a design.
 
 **SLA / SLO.** Service-level agreement (a commitment to a customer) / service-level objective (an internal target). FitSD requires each live service to state its service levels — or an explicit best-effort position — to its customers, published to them (FSD-GV-9); the availability SLO itself lives in the SAC baseline.
 

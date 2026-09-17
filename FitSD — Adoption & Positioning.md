@@ -4,10 +4,10 @@ framework: FitSD
 document: Adoption & Positioning
 tier: 0
 type: explanatory (non-normative)
-version: 0.3
+version: 0.4
 status: draft
 owner: "Tristan Findley"
-date: 2026-08-31
+date: 2026-09-17
 tags: [fitsd, adoption, positioning, pitch, executive-summary, explanatory]
 ---
 
@@ -62,7 +62,7 @@ Talking upward is where FitSD earns its keep.
 
 **Team lead to the board.** Stack the Gate records up and you have a portfolio view: here's our demand, here's what we propose, here's what we need to proceed. The gates *are* the governance conversation. Leadership steers by approving, parking or rejecting at Gate 1, and funds the build at Gate 2. It puts the team's work in the language of risk and investment the board already uses.
 
-Either direction, the trick is the same: the form does the framing. The hard part of talking to leadership — structure, brevity, a clear ask — is baked into the template, so you don't have to be good at it on the day.
+Either direction, the trick is the same: the form does the framing. The hard part of talking to leadership — structure, brevity, a clear ask — is baked into the template, so you don't have to be good at it on the day. The Idea Brief even runs in the order consultants brief executives in: situation, complication, question, answer (SCQA).
 
 ## 5. Where Solution Development sits
 

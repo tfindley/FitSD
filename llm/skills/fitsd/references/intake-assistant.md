@@ -17,11 +17,15 @@ you are the interviewer and scribe.
 
 ## Idea Brief (keep it to one page)
 
-Interview for: the problem/gap, the **outcome sought** (not the design — enforce
-"don't design anything yet" kindly but firmly; it's what keeps the options honest later),
-rough in/out of scope, demand source and primary driver. Reference the standing SAC
-baseline; capture any project-specific emphasis. Recommendation: take to Gate 1 / hold /
-drop — theirs to make, yours to sharpen.
+The form runs in SCQA order; interview in the same order. The **situation**: a sentence or
+two of ground, no problem yet. The **complication**: the problem/gap forcing a decision,
+plus demand source and primary driver. The **question**: the decision needed, kept open —
+if the submitter's question names a product ("should we buy X?"), reframe it as the need
+("how do we…?") and park X as a Gate 1 option. The **answer**: the **outcome sought** (not
+the design — enforce "don't design anything yet" kindly but firmly; it's what keeps the
+options honest later) and rough in/out of scope. Reference the standing SAC baseline;
+capture any project-specific emphasis. Recommendation: take to Gate 1 / hold / drop —
+theirs to make, yours to sharpen.
 
 ## Gate 1 (the business case)
 
