@@ -4,10 +4,10 @@ framework: FitSD
 document: Roadmap
 tier: 0
 type: explanatory (non-normative)
-version: 0.3
+version: 0.4
 status: living
 owner: "Tristan Findley"
-date: 2026-08-31
+date: 2026-09-17
 tags: [fitsd, roadmap, plan]
 ---
 
@@ -15,22 +15,27 @@ tags: [fitsd, roadmap, plan]
 
 > **TL;DR** — The direction of travel: the why and the where, bigger-picture than the `BACKLOG` (the task list). Rough on purpose; a personal project moves when it moves.
 
-## Now (v0.2) — shipped
+## Shipped
+
+### v0.2
 
 - The **Framework** layer (Tiers 0–1): the charter and the requirements.
-- The five original capabilities: Solution Development built in full (process + its gate and acceptance forms); capability cards for Govern, Change & Release, Run & Restore, Secure & Assure. (The conditional sixth, Supplier & Supply Chain, lands in v0.3 below.)
+- The five original capabilities: Solution Development built in full (process + its gate and acceptance forms); capability cards for Govern, Change & Release, Run & Restore, Secure & Assure. (The conditional sixth, Supplier & Supply Chain, landed in v0.3 below.)
 - The supporting layer: adoption & positioning (which now opens with the pitch and one-page executive summary), standards alignment, influences, quickstart, definitions, diagrams, and a licence.
 - **v0.2 hardening:** lifecycle completion (end-of-life review & retirement, FSD-RR-7), the **information-stores** layer (every register/record made explicit and tech-agnostic), the demand pipeline + retained history in FSD-GV-4, continuity in the Definition of Done, and the new-technology intake trigger.
 
-## In progress
+### v0.3
 
-- **v0.3: in progress (this branch).** The Idea Brief becomes a canonical form (FSD-FRM-00); the SAC are reframed as inheritable principles with a ratifiable standing baseline (*FitSD — Service Acceptance Criteria*, new requirement FSD-GV-7); a business *Implementation Guide* lands; and the Solution Development forms/process are simplified (SAC defined once, referenced by name; carry-forward across the four forms). The **supplier / supply-chain capability (FSD-SC)** also lands: requirements plus a card, the conditional sixth, closing the NIS2 21(2)(d) gap. The changes were raised by dogfooding, a real project run through the framework end to end. Structure only. SAC *sample values* still wait on the worked example below.
+- The Idea Brief became a canonical form (FSD-FRM-00); the SAC were reframed as inheritable principles with a ratifiable standing baseline (*FitSD — Service Acceptance Criteria*, new requirement FSD-GV-7); a business *Implementation Guide* landed; and the Solution Development forms/process were simplified (SAC defined once, referenced by name; carry-forward across the four forms). The **supplier / supply-chain capability (FSD-SC)** also landed: requirements plus a card, the conditional sixth, closing the NIS2 21(2)(d) gap. The changes were raised by dogfooding, a real project run through the framework end to end. Structure only. SAC *sample values* still wait on the worked example below.
+- The validation suite moved to its own repo (`fitsd-validation`) after the release, so runs can be contributed on their own cadence.
 
-## Next — v0.4: publish the worked example
+## In progress — v0.4: publish the worked example
 
-One release, one deliverable. The framework has already been proven on a real project run end to end (the dogfooding that drove the v0.3 changes), so the shape works in practice. What v0.4 delivers is a *publishable* example: a project FitSD can tell in full, run through Idea Brief, both gates and Service Acceptance (real private runs stay private: FitSD carries no organisation's fingerprints, and that includes its examples).
+**v0.4: in progress (this branch).** One release, one deliverable. The framework has already been proven on a real project run end to end (the dogfooding that drove the v0.3 changes), so the shape works in practice. What v0.4 delivers is a *publishable* example: a project FitSD can tell in full, run through Idea Brief, both gates and Service Acceptance (real private runs stay private: FitSD carries no organisation's fingerprints, and that includes its examples).
 
-It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`). Nothing else rides in v0.4 — evidence before more structure.
+It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`).
+
+One change rides ahead of it: the **front door gets its final shape**. The Idea Brief is laid out as **SCQA** (situation, complication, question, answer), so a brief doubles as a pitch to a review forum ([#15](https://github.com/tfindley/FitSD/issues/15)). It goes first because the worked example is written against it; an example drafted on a form that then changes is stale on arrival. Nothing else rides in v0.4 — evidence before more structure.
 
 ## Then — the unbuilt tiers
 

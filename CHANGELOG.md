@@ -10,6 +10,9 @@ Changes are logged under **Unreleased** as they land; at release the heading is 
 
 ## Unreleased
 
+### Added
+- **The v0.4 preview line is open** (branch `v0.4`, served at `/0.4/` on the site). v0.3.0 stays the current version until v0.4 is released. See the Roadmap for what v0.4 carries.
+
 ### Changed
 - **The validation suite moved to its own repo**, [`tfindley/fitsd-validation`](https://github.com/tfindley/fitsd-validation). It was `validation/` here. Non-normative throughout — no requirement, form or reference document changed, so this is errata and the version is unmoved. The reason is cadence: a run testing v0.3 can be contributed long after `v0.3.0` was tagged, so it could never be pinned to a spec tag, and every run added ~30 files of test evidence to the normative repo. The new repo also carries an AI **harness** (`harness/SKILL.md`), a run **validator** (`scripts/check-run.sh`) and a `CONTRIBUTING.md`, so third parties can run the suite against their own scenarios — by AI or by hand — and contribute the results. The v0.3.0 tag still contains the suite as it shipped.
 

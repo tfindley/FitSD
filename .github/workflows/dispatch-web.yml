@@ -14,7 +14,7 @@ on:
     # Watched refs mirror fitsd-web/channels.manifest.mjs: the moving preview/future BRANCH
     # channels, and version TAGS (a release / promotion). Add a branch here when a new moving
     # channel is added to the manifest.
-    branches: [v0.3]
+    branches: [v0.4]
     tags: ["v*"]
   workflow_dispatch:
 
