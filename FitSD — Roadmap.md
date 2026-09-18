@@ -7,7 +7,7 @@ type: explanatory (non-normative)
 version: 0.4
 status: living
 owner: "Tristan Findley"
-date: 2026-09-17
+date: 2026-09-18
 tags: [fitsd, roadmap, plan]
 ---
 
@@ -35,7 +35,7 @@ tags: [fitsd, roadmap, plan]
 
 It's the single highest-value missing piece: the Adoption doc (§8) argues a messy, real worked example persuades better than any amount of spec, and it's the only honest source for SAC sample values (see `BACKLOG`).
 
-One change rides ahead of it: the **front door gets its final shape**. The Idea Brief is laid out as **SCQA** (situation, complication, question, answer), so a brief doubles as a pitch to a review forum ([#15](https://github.com/tfindley/FitSD/issues/15)). It goes first because the worked example is written against it; an example drafted on a form that then changes is stale on arrival. Nothing else rides in v0.4 — evidence before more structure.
+One change rides ahead of it: the **front door gets its final shape**. The Idea Brief is rebuilt around how things are, what's wrong with that, what it risks, the questions it raises and what "done" would look like, so a brief doubles as a pitch to a review forum ([#15](https://github.com/tfindley/FitSD/issues/15)). It goes first because the worked example is written against it, and an example drafted on a form that then changes is stale on arrival. Nothing else rides in v0.4. Evidence before more structure.
 
 ## Then — the unbuilt tiers
 

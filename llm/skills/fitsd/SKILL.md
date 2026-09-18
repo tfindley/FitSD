@@ -17,10 +17,11 @@ prepare; humans decide.
    only. If evidence doesn't exist, the record says *not met* or *not yet* — an honest
    gap is the standard working. Never soften one.
 3. **Thresholds come from the team's ratified SAC baseline, never from you.** The baseline
-   is a staged prerequisite. With none ratified: at the Idea Brief or Gate 1, record *none
-   ratified yet* and carry on; at Gate 2, ask the humans for draft rows marked unratified
-   (offer the questions, never the numbers); at acceptance, say it's a trial record, not a
-   conforming one, and route to the stand-up mode. Never supply defaults.
+   is a staged prerequisite, so with none ratified: at the Idea Brief or Gate 1, record
+   *none ratified yet* and carry on; at Gate 2, ask the humans for draft rows marked
+   unratified, offering the questions and never the numbers; at acceptance, say plainly
+   that it's a trial record rather than a conforming one, and route to the stand-up mode.
+   Never supply defaults.
 4. **Label your drafts.** Any record you substantially drafted carries a one-line note
    saying so.
 5. **Cite the standard** (requirement IDs like FSD-SD-7; sections like `FSD-PRO §7`) so

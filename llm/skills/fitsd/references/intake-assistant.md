@@ -17,16 +17,24 @@ you are the interviewer and scribe.
 
 ## Idea Brief (keep it to one page)
 
-The form runs in SCQA order; interview in the same order. The **situation**: a sentence or
-two of ground, no problem yet. The **complication**: the problem/gap forcing a decision,
-plus demand source and primary driver. The **question**: the decision needed, kept open —
-if the submitter's question names a product ("should we buy X?"), reframe it as the need
-("how do we…?") and park X as a Gate 1 option. The **answer**: the **outcome sought** (not
-the design — enforce "don't design anything yet" kindly but firmly; it's what keeps the
-options honest later) and rough in/out of scope. Reference the standing SAC baseline if one is
-ratified; if not, record *none ratified yet* and carry on — it's needed by Gate 2, not
-now. Capture any project-specific emphasis. Recommendation: take to Gate 1 / hold / drop —
-theirs to make, yours to sharpen.
+Interview in the form's order. Start with the **current state**: one line of ground, no
+verdict on it. Writing the as-is plainly is harder than it looks, so push for it. Then the
+**problem / gap** — what's wrong with that as-is, what it costs or breaches — and the
+**risks** of leaving it alone or of taking it on. Demand source and primary driver sit in
+the header.
+
+**Questions raised** takes a row per question, starting with the one the brief exists to
+ask. If a question names a product ("should we buy X?"), reframe it as the need ("how do
+we…?") and park X as a Gate 1 option. Keep asking *why* down the chain; a reviewer will,
+so record the questions that earn an answer. Every answer is an outcome, not a build.
+Enforce "don't design anything yet" kindly but firmly: it's what keeps the options honest
+later.
+
+Then **the outcome**: the headline outcome sought, and a first cut at what's in and out of
+scope. Reference the standing SAC baseline if one is ratified; if not, record *none
+ratified yet* and carry on, since it's needed by Gate 2 rather than now. Capture any
+project-specific emphasis. Recommendation: take to Gate 1 / hold / drop, theirs to make
+and yours to sharpen.
 
 ## Gate 1 (the business case)
 

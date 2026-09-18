@@ -7,7 +7,7 @@ version: 0.4
 type: reference (non-normative)
 status: draft
 owner: "Tristan Findley"
-date: 2026-09-17
+date: 2026-09-18
 tags: [fitsd, reference, service-acceptance, sac, definition-of-done, non-normative]
 ---
 
@@ -75,7 +75,7 @@ Set this once, ratify it, and inherit it into every solution. The prompts below 
 
 ## How the baseline flows
 
-The baseline is a **staged prerequisite**: you don't need one to raise an idea, you need one to design, and you need a ratified one to accept.
+The baseline is a **staged prerequisite**. You don't need one to raise an idea. You do need one to design against, and a ratified one to accept.
 
 | Stage | What the baseline does | Needed? |
 |---|---|---|
@@ -83,7 +83,7 @@ The baseline is a **staged prerequisite**: you don't need one to raise an idea, 
 | **Gate 2 (FSD-FRM-02 §5)** | *Designed to*: how each criterion will be met against the baseline. | **Yes.** Where none is ratified yet, draft the rows this solution needs (below). |
 | **Service Acceptance (FSD-FRM-03 §1)** | *Proven*: evidence each criterion meets the baseline before the service goes live. | **Ratified**, to conform (FSD-GV-7). |
 
-**No baseline yet?** That's normal when you're trying FitSD on one project before adopting it. At Gate 2, the Solution Owner drafts the rows this solution needs from the template above, fills them with values people chose (never defaults), and marks them **draft — unratified**, so the Approver decides with that in view. Nothing downstream treats a draft as standing: acceptance proven against draft rows is a trial record, not a conformance claim. Ratify a baseline, and the drafts become the start of it.
+**No baseline yet?** Normal, if you're trying FitSD on one project before adopting it. At Gate 2 the Solution Owner drafts the rows this solution needs from the template above, fills them with values people chose rather than defaults, and marks them **draft — unratified** so the Approver decides with that in view. Nothing downstream treats a draft as standing. An acceptance proven against draft rows is a trial record, not a conformance claim. Ratify a baseline and those drafts become its first rows.
 
 Standing up the baseline for the first time is an explicit step in *FitSD — Implementation Guide*.
 

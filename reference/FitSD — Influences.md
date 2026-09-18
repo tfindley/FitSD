@@ -7,7 +7,7 @@ type: explanatory (non-normative)
 version: 0.4
 status: draft
 owner: "Tristan Findley"
-date: 2026-09-17
+date: 2026-09-18
 tags: [fitsd, reference, influences, devops, lean, scqa]
 ---
 
@@ -35,7 +35,7 @@ Its other gift is the *four types of work*, and the warning that **unplanned wor
 
 **Accelerate / DORA — Forsgren, Humble & Kim.** The four key metrics (deployment frequency, lead time for change, change-fail rate, time to restore) are the flow measures FitSD points at, mostly in `FSD-CH` and `FSD-RR`. They're the antidote to choosing between fast and stable: the best teams are both.
 
-**The Pyramid Principle — Barbara Minto.** Set up your point in four moves: the *situation* your reader already agrees with, the *complication* that means it can't stand, the *question* that raises, and your *answer* (SCQA). The Idea Brief (`FSD-FRM-00`) is laid out in that order, so a brief written for the tracker also works read aloud to a review forum. FitSD makes one amendment: at intake, the answer is an *outcome*, never a design, because the options belong to Gate 1.
+**The Pyramid Principle — Barbara Minto.** Set up your point in four moves: the *situation* your reader already agrees with, the *complication* that means it can't stand, the *question* that raises, and your *answer* (SCQA). The Idea Brief (`FSD-FRM-00`) follows that order in its own words rather than the four labels, so a brief written for the tracker also works read aloud to a review forum. FitSD amends it twice. At intake the answer is an *outcome*, never a design, because the options belong to Gate 1. And the brief carries a row per question, because a review asks its own and the answers they force out are the point.
 
 ## Idea → where it lands in FitSD
 

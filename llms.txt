@@ -26,7 +26,7 @@ gate one accountable Approver, every live service one named Service Owner.
 ## The process and forms (Solution Development, the one built-out capability)
 
 - [FSD-PRO — Solution Development Process](capabilities/solution-development/FSD-PRO%20%E2%80%94%20Solution%20Development%20Process.md): scope test, Gate 1, Gate 2, Service Acceptance, lifecycle
-- [FSD-FRM-00 — Idea Brief](capabilities/solution-development/FSD-FRM-00%20%E2%80%94%20Idea%20Brief.md): the optional one-page intake, laid out as SCQA (situation, complication, question, answer)
+- [FSD-FRM-00 — Idea Brief](capabilities/solution-development/FSD-FRM-00%20%E2%80%94%20Idea%20Brief.md): the optional one-page intake
 - [FSD-FRM-01 — Gate 1 Outline Proposal](capabilities/solution-development/FSD-FRM-01%20%E2%80%94%20Gate%201%20Outline%20Proposal.md): the business case ("worth doing?")
 - [FSD-FRM-02 — Gate 2 Solution Design](capabilities/solution-development/FSD-FRM-02%20%E2%80%94%20Gate%202%20Solution%20Design.md): the design ("ready to build?")
 - [FSD-FRM-03 — Service Acceptance Record](capabilities/solution-development/FSD-FRM-03%20%E2%80%94%20Service%20Acceptance%20Record.md): the evidenced Definition of Done

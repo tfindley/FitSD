@@ -10,7 +10,7 @@ status: draft
 owner: Management System Owner
 approver: Approver
 governing_process: FSD-PRO
-date: 2026-09-17
+date: 2026-09-18
 tags:
   - fitsd
   - solution-development
@@ -81,7 +81,7 @@ tags:
 
 ## 5. Service Acceptance Criteria — design approach
 
-State *how* each criterion will be met **against your organisation's standing SAC baseline** (the categories are defined in *FitSD — Service Acceptance Criteria*; your thresholds are the baseline you inherit). Each is proven later on FSD-FRM-03. No baseline ratified yet? Draft the rows this solution needs from the template in *FitSD — Service Acceptance Criteria*, with values people chose, and mark them **draft — unratified** so the Approver decides with that in view.
+State *how* each criterion will be met **against your organisation's standing SAC baseline** (the categories are defined in *FitSD — Service Acceptance Criteria*; your thresholds are the baseline you inherit). Each is proven later on FSD-FRM-03. No baseline ratified yet? Draft the rows this solution needs from the template in *FitSD — Service Acceptance Criteria*, with values your team chose, and mark them **draft — unratified** so the Approver decides with that in view.
 
 | Criterion | Design approach |
 |---|---|

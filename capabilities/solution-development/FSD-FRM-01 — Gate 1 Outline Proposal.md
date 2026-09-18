@@ -10,7 +10,7 @@ status: draft
 owner: Management System Owner
 approver: Approver
 governing_process: FSD-PRO
-date: 2026-09-17
+date: 2026-09-18
 tags:
   - fitsd
   - solution-development
@@ -36,7 +36,7 @@ tags:
 
 ## 1. Idea
 
-*Carry forward from the Idea Brief (FSD-FRM-00) where one was raised, confirmed and firmed up as more is now known: its situation and complication become the **Overview**, its question and outcome the **Requirement / outcome**; its driver goes to §2, and its complication feeds §4 (impact of doing nothing, why now). If the work entered here directly, complete it fresh.*
+*Carry forward from the Idea Brief (FSD-FRM-00) where one was raised, confirmed and firmed up as more is now known. Its current state and problem / gap become the **Overview**; its questions, answers and outcome sought become the **Requirement / outcome**. The driver goes to §2, the brief's risks to §2 and §4, and the problem itself to §4 (impact of doing nothing, why now). If the work entered here directly, complete it fresh.*
 
 | Field                     | Entry                                                                                                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
