@@ -5,11 +5,11 @@ document_id: FSD-GV
 capability: Govern
 type: capability card
 tier: 2
-version: 0.3
+version: 0.4
 status: draft
 owner: "Management System Owner"
 satisfies: [FSD-GV-1, FSD-GV-2, FSD-GV-3, FSD-GV-4, FSD-GV-5, FSD-GV-6, FSD-GV-7, FSD-GV-8, FSD-GV-9]
-date: 2026-08-31
+date: 2026-10-21
 tags: [fitsd, govern, capability-card]
 ---
 
@@ -45,7 +45,7 @@ Make sure there's actually a managed system here, not just a pile of activities.
 
 There's no separate Govern process to install. These are met directly by how you handle scope, roles, documents and reviews. Map onto:
 
-- **FitSM GR1–GR9** (the general management requirements).
+- **FitSM GR1–GR7** (the general management requirements).
 - **ISO/IEC 27001 clauses 4–10** if you're heading toward certification.
 - **Your own document-control and governance habits**, if they already hold.
 
@@ -70,6 +70,6 @@ Govern is home to the *Third Way* of *The Phoenix Project*: continual learning a
 - `FSD-PRO`: Solution Development (Govern frames its gates and feeds the service register)
 - `FitSD — Requirements` → FSD-GV section
 - `reference/FitSD — Service Acceptance Criteria`: the standing baseline Govern ratifies (FSD-GV-7)
-- `FitSD — Standards Alignment`: FitSM GR1–9, ISO 27001 clauses 4–10
+- `FitSD — Standards Alignment`: FitSM GR1–GR7, ISO 27001 clauses 4–10
 - `reference/FitSD — Influences`: the canon behind the improvement lens
 - `reference/FitSD — Information Stores`: the registers and records Govern keeps in order

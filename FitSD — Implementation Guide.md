@@ -8,7 +8,7 @@ version: 0.4
 type: implementation guide (non-normative)
 status: draft
 owner: "Tristan Findley"
-date: 2026-09-17
+date: 2026-10-21
 tags: [fitsd, implementation, adoption, guide, standup, non-normative]
 ---
 
@@ -23,6 +23,8 @@ Use the **Quickstart** first: run one real piece of work through the gates and s
 ## The stand-up checklist
 
 Seven steps, about half a day total. Each one is a decision you record, not machinery you build, and each names the requirement it satisfies so you can show conformance later. Work down the list once.
+
+> **Already running FitSM, ITIL or ISO 20000?** You have a shorter list. Your management system already answers steps 1, 6 and 7, and most of step 5 is a citation rather than a decision — name the requirement over there that satisfies the requirement over here. **Step 4 is the one that carries the value**, because a standing acceptance baseline is the thing your framework doesn't give you. *FitSD — Companion Profile — FitSM* works the whole mapping through for a FitSM system, and *Charter* §7 explains why citing another framework is ordinary conformance, not a second route.
 
 ### 1. Define your scope — *FSD-GV-1*
 Write down which services are under management: what's in, what's out. A line, not a document. This is the boundary everything else sits inside.
@@ -48,6 +50,8 @@ Pick when you'll review the system (and re-ratify the SAC baseline): annually, o
 ## Your implementation profile
 
 This is FitSD's answer to "are we actually conforming?": a plain mapping of each requirement to the local thing that satisfies it. It is the **implementation profile** the Charter already names (*Charter* §8, Vocabulary), *not* a Statement of Applicability. FitSD deliberately doesn't carry the certification apparatus (see *Standards Alignment*). Keep it light; a populated example will follow the published worked example.
+
+**Running another framework?** The "Satisfied by" column takes its requirement IDs — *FitSM PR12.3*, say — and your profile names which **companion profile** it follows, so the organisation states once where its spine is met. Where a mapping is only partial, record what closes the difference; that is the profile doing its job.
 
 | Capability | Requirements | Satisfied by (your local doc / tool / policy) | Owner |
 |---|---|---|---|

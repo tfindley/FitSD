@@ -3,10 +3,10 @@ title: FitSD — Standards Alignment
 framework: FitSD
 document: Standards Alignment
 tier: 0
-version: 0.3
+version: 0.4
 status: draft
 owner: Tristan Findley
-date: 2026-08-31
+date: 2026-10-21
 tags:
   - fitsd
   - reference
@@ -36,28 +36,32 @@ tags:
 
 ## 2. FitSM
 
-FitSD re-groups FitSM's 14 processes (PR1–PR14) and General Requirements (GR1–GR9) into its lifecycle-shaped capabilities. Everything done under FitSD is FitSM-conformant-shaped.
+FitSD re-groups FitSM's 14 processes (PR1–PR14) and General Requirements (GR1–GR7) into its lifecycle-shaped capabilities. Everything done under FitSD is FitSM-conformant-shaped.
 
 | FitSD capability              | FitSM process / requirement                                                                            |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Govern (FSD-GV)                   | GR1–GR9 (management commitment, documentation, scope, PDCA) + PR14 Continual Service Improvement       |
-| **Solution Development (FSD-SD)** | PR1 Service Portfolio Mgmt + PR13 Release & Deployment Mgmt (+ a *design* step FitSM does not isolate) |
+| Govern (FSD-GV)                   | GR1–GR7 (management commitment, documentation, scope & stakeholders, PDCA) + PR14 Continual Service Improvement |
+| **Solution Development (FSD-SD)** | PR1 Service Portfolio Mgmt + PR13 Release & Deployment Mgmt, handing the build to PR12 Change Mgmt. Design & transition planning is an *activity* inside PR1 (PR1.3), not its own process; FitSM's nearest equivalent to the Gate forms is its Service Design & Transition Package template |
 | Change & release (FSD-CH)         | PR12 Change Mgmt + PR13 Release & Deployment Mgmt                                                      |
 | Run & restore (FSD-RR)            | PR9 Incident & Service Request, PR10 Problem, PR4 Availability & Continuity, PR5 Capacity              |
 | Secure & assure (FSD-SA)          | PR6 Information Security Mgmt, PR4 Continuity                                                           |
 | Supplier & supply chain (FSD-SC)  | PR8 Supplier Relationship Mgmt                                                                          |
 
-**Only divergence:** FitSM has no single intake/Service-Design process; FitSD consolidates portfolio decision + design + release-readiness into one Solution Development capability with the Service Acceptance Criteria (SAC). A FitSM assessor would see FitSD's SD records satisfying PR1 and PR13 together.
+**What FitSD adds:** FitSM has no Solution Development process, but it is a mistake to read that as a hole. FitSM *requires* the flow. Proposals for new or changed services are evaluated on predicted demand, required resources and expected benefits (PR1.2). Design and transition are planned, "considering timescales for realisation, responsibilities, new or changed technology, communication and service acceptance criteria" (PR1.3). Releases are "built, tested and evaluated against acceptance criteria prior to being deployed" (PR13.4). Its Service Design & Transition Package template even sketches the shape. What FitSM leaves to the implementer is the *how*: the gates, the lifecycle phases, the forms. FitSD supplies exactly that — two gates, four forms, and the SAC as an inheritable baseline. **FitSM requires the flow and leaves you to build it; FitSD builds it.** A FitSM assessor would see FitSD's SD records satisfying PR1 and PR13 together.
+
+**The one real divergence — intake scope:** FitSM's PR1 intake is scoped to *services*. FitSD's front door is scoped to all **net-new work**, including internal technical work and any new technology, tool or third-party dependency the team must own, support or secure — regardless of cost or effort (FSD-SD-1). That anti-sprawl trigger has no equivalent in PR1, and it is the most defensible thing FitSD adds over FitSM rather than merely building out.
+
+**Running FitSD alongside a FitSM system:** this table is capability-level. The requirement-by-requirement mapping — which FitSM requirement satisfies which FitSD one, what's left to build, and where the forms feed your records — is in *FitSD — Companion Profile — FitSM*.
 
 **Known gaps, mostly closed:** **PR2 Service Level Management** and **PR3 Service Reporting** are now covered by the thin requirement FSD-GV-9 (service levels stated and published to customers; performance reported at a cadence), with the availability SLO living in the SAC. **PR7 Customer Relationship Management** and **PR11 Configuration Management** remain declared non-goals, met by "use your existing practice" (see the *Roadmap*, "Shape & scope").
 
 ## 3. ITIL 4
 
-Pure subset relationship. FitSD maps onto ITIL 4 practices and Service Value Chain (SVC) activities.
+Pure subset relationship. FitSD maps onto ITIL 4 practices and Service Value Chain (SVC) activities. An ITIL shop can adopt FitSD as a companion on the same pattern as the FitSM profile — the mechanism generalises; only the mapping differs. No ITIL companion profile is published yet.
 
 | FitSD                             | ITIL 4                                                                                                                                                                                                 |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| FSD-SD (intake → design → acceptance) | SVC *Design & transition*, *Obtain/build*; practices *Service design*, *Service validation & testing* (= the SAC), *Release management*, *Change enablement*, *Service catalogue/portfolio management* |
+| FSD-SD (intake → design → acceptance) | SVC *Design & transition*, *Obtain/build*; practices *Service design*, *Service validation & testing* (= the SAC, including its Validation & test criterion), *Release management*, *Change enablement*, *Service catalogue/portfolio management* |
 | FSD-CH                                | *Change enablement*, *Deployment management*, *Release management*                                                                                                                                     |
 | FSD-RR                                | *Incident*, *Problem*, *Monitoring & event*, *Availability*, *Capacity & performance* management                                                                                                       |
 | FSD-SA                                | *Information security management*, *Risk management*, *Service continuity management*                                                                                                                  |
@@ -147,6 +151,6 @@ Primary / canonical standards (authoritative; consult directly):
 
 - **NIS2** — Directive (EU) 2022/2555, EUR-Lex CELEX:32022L2555 — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555
 - **ISO/IEC 27001:2022** — Information security management systems — Requirements. Published by ISO (iso.org); standard text is paywalled.
-- **FitSM** — published free by ITEMO (the FitSM standard family, parts 0–6). Retrieve the current release from the official ITEMO / FitSM site.
+- **FitSM** — published free by ITEMO (the FitSM standard family, parts 0–6), https://www.fitsm.eu/. The §2 mapping is made against **FitSM-1: Requirements, Edition 2021, Version 3.0** — 17 general requirements in 7 categories (GR1–GR7) and 65 process-specific requirements in 14 categories (PR1–PR14) — read directly, not via the secondary sources above. Requirement text quoted in §2 is from that release. Retrieve the current release from the official ITEMO / FitSM site before relying on it.
 - **ITIL 4** — published by PeopleCert / Axelos.
 - **USM** — the Unified Service Management method (USM Foundation / Jan van Bon).

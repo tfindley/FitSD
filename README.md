@@ -49,6 +49,8 @@ Don't read it all. Pick your path:
 | `reference/FitSD — Information Stores.md`  | 0    | The registers and records FitSD relies on, tech-agnostic, the data model |
 | `reference/FitSD — Inputs, Activities & Outputs.md` | 0 | The whole framework on one page: what each capability takes in, does, and produces |
 | `reference/FitSD — Service Acceptance Criteria.md` | 0 | The SAC defined once, inheritable categories plus your ratifiable baseline |
+| `reference/FitSD — Validation & Test Guidance.md` | 0 | How to prove a solution does what was agreed, proportionate to risk |
+| `reference/FitSD — Companion Profile — FitSM.md` | 0 | For teams already running FitSM: what's already met, what's left to build, where the forms fit |
 | `capabilities/`                            | 2/4  | The process docs and forms — built out for Solution Development     |
 | [`fitsd-validation`](https://github.com/tfindley/fitsd-validation) *(separate repo)* | —    | The fitness-test suite and the case studies it produces: role-played end-to-end runs that stress the standard in use, with each run's full record. Non-normative, and on its own cadence — a run testing v0.3 can be contributed long after v0.3.0 was tagged |
 | `llm/`                                     | —    | Assistant/agent integration for *using* FitSD: ground rules (LLMs draft, humans sign), interactive + semi-interactive patterns, and the portable `fitsd` skill. Non-normative |

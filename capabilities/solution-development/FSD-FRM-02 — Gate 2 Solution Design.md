@@ -10,7 +10,7 @@ status: draft
 owner: Management System Owner
 approver: Approver
 governing_process: FSD-PRO
-date: 2026-09-18
+date: 2026-10-21
 tags:
   - fitsd
   - solution-development
@@ -32,6 +32,7 @@ tags:
 | **Solution Owner**               |                              |
 | **Contributors**                 |                              |
 | **Linked Gate 1 (FSD-FRM-01)** |                              |
+| **Framework record(s)**          | *(optional — if you run another framework, the matching record there: the design & transition plan, the RFC(s). See your companion profile)* |
 | **Date**                         |                              |
 
 ## 1. Carry-forward from Gate 1
@@ -48,13 +49,13 @@ tags:
 
 ## 2. Requirements
 
-*Functional and technical requirements as user stories, MoSCoW-rated (Must / Should / Could / Won't).*
+*Functional and technical requirements as user stories, MoSCoW-rated (Must / Should / Could / Won't). Say how each will be shown to be met — Given / When / Then is the plain way to write a testable criterion (see `FitSD — Definitions`). Every Must and every accepted Should is demonstrated at Service Acceptance under **Validation & test** (§5), so a story with no stated criterion is a story nobody can sign off.*
 
-| #   | User story                  | MoSCoW |
-| --- | --------------------------- | ------ |
-| 1   | *As a … I want … so that …* |        |
-| 2   |                             |        |
-| 3   |                             |        |
+| #   | User story                  | MoSCoW | How proven |
+| --- | --------------------------- | ------ | ---------- |
+| 1   | *As a … I want … so that …* |        | *Given … when … then …; on which environment; who attests* |
+| 2   |                             |        |            |
+| 3   |                             |        |            |
 
 ## 3. Architecture
 
@@ -83,17 +84,20 @@ tags:
 
 State *how* each criterion will be met **against your organisation's standing SAC baseline** (the categories are defined in *FitSD — Service Acceptance Criteria*; your thresholds are the baseline you inherit). Each is proven later on FSD-FRM-03. No baseline ratified yet? Draft the rows this solution needs from the template in *FitSD — Service Acceptance Criteria*, with values your team chose, and mark them **draft — unratified** so the Approver decides with that in view.
 
-| Criterion | Design approach |
-|---|---|
-| **Documentation** | *Which docs (HLD, runbook, recovery, operating procedures/SOPs, user) and where they will live; how the delivery's decisions and rationale (§6) carry into the design doc* |
-| **Backup (tested)** | *What is backed up, frequency, retention, location, and how a test restore will be proven* |
-| **Security** | *Hardening, patch path (FSD-RR), vulnerability posture, any exceptions (FSD-SA)* |
-| **Access** | *Access model: roles, least privilege, grant/revoke, admin control, JML handling* |
-| **Availability** | *Expected availability / SLO, capacity & scaling, DR considerations* |
-| **Monitoring & alerting** | *What is monitored, thresholds, where alerts route* |
-| **Incident profile** | *What counts as an incident for this service (triggers and severities) to register with the incident-management process* |
-| **Supportability / handover** | *Operating & support model, runbook & SOPs, knowledge transfer / cross-training needed; how continuity is assured so the service isn't reliant on one person; any new/changed standing procedure this service will require (from §4 process impact)* |
-| **Cost / licensing** | *Expected run-cost and licences* |
+**Every criterion gets a route.** *Baseline* — met the standard way. *Alternative* — the criterion applies but the standard means doesn't fit, so state the other means and why; approving this form approves the alternative. *N/A per baseline* — cite the baseline's applicability rule. Leave none blank. A service that provides a SAC control to other services (a backup, monitoring, identity or patching platform) proves that criterion independently of itself; that is the common alternative, and your baseline may already carry it as a standing rule. An alternative meant to be temporary is recorded as time-bound and carried as a condition (§8).
+
+| Criterion | Route (baseline / alternative + why / N/A per baseline + rule) | Design approach |
+|---|---|---|
+| **Documentation** | | *Which docs (HLD, runbook, recovery, operating procedures/SOPs, user) and where they will live; how the delivery's decisions and rationale (§6) carry into the design doc* |
+| **Backup (tested)** | | *What is backed up, frequency, retention, location, and how a test restore will be proven* |
+| **Security** | | *Hardening, patch path (FSD-RR), vulnerability posture, any exceptions (FSD-SA)* |
+| **Access** | | *Access model: roles, least privilege, grant/revoke, admin control, JML handling* |
+| **Availability** | | *Expected availability / SLO, capacity & scaling, DR considerations* |
+| **Monitoring & alerting** | | *What is monitored, thresholds, where alerts route* |
+| **Incident profile** | | *What counts as an incident for this service (triggers and severities) to register with the incident-management process* |
+| **Validation & test** | | *How each Must and accepted Should in §2 will be demonstrated, on what environment and data, and who attests the pass* |
+| **Supportability / handover** | | *Operating & support model, runbook & SOPs, knowledge transfer / cross-training needed; how continuity is assured so the service isn't reliant on one person; any new/changed standing procedure this service will require (from §4 process impact)* |
+| **Cost / licensing** | | *Expected run-cost and licences* |
 
 ## 6. RAIDD
 

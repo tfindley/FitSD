@@ -7,7 +7,7 @@ type: reference (non-normative)
 version: 0.4
 status: living
 owner: "Tristan Findley"
-date: 2026-09-18
+date: 2026-10-21
 tags: [fitsd, definitions, glossary]
 ---
 
@@ -45,7 +45,15 @@ tags: [fitsd, definitions, glossary]
 
 **Service Acceptance.** The close-out at the end of delivery: proof, with evidence, that a service is ready before it goes live.
 
-**Service Acceptance Criteria (SAC) / Definition of Done.** The standing set of conditions a service must meet to be accepted: documentation, tested backup, security, access, availability, monitoring & alerting, incident profile, supportability, cost/licensing. Fixed *categories*; each organisation sets and ratifies its own *thresholds* as a standing baseline (FSD-GV-7). Defined in *FitSD — Service Acceptance Criteria*.
+**Service Acceptance Criteria (SAC) / Definition of Done.** The standing set of conditions a service must meet to be accepted: documentation, tested backup, security, access, availability, monitoring & alerting, incident profile, validation & test, supportability, cost/licensing. Fixed *categories*; each organisation sets and ratifies its own *thresholds* as a standing baseline (FSD-GV-7). Every criterion is **addressed** at acceptance by one of three routes — met against the baseline, met by an approved alternative, or N/A under a baseline rule (FSD-SD-5). Defined in *FitSD — Service Acceptance Criteria*, which also sets out the three layers: fixed categories, the organisation's baseline, and the per-solution *Service SAC*.
+
+**Approved alternative.** A route through a Service Acceptance Criterion for a service where the criterion *applies* but the standard means doesn't fit: another means that meets the criterion's intent, with its reason recorded and the Gate 2 Approver's approval behind it (FSD-FRM-02 §5). Distinct from *N/A per baseline*, where the criterion doesn't apply at all. A design decision, not an open action — unless it is weaker than the baseline and time-bound, when it is carried as a condition (FSD-SD-7).
+
+**Foundational service.** A service that provides a SAC control to other services — the backup, monitoring, identity, incident or patching platform. It cannot prove its own criterion using itself, so it proves it independently: the backup platform's catalogue restore-tested from a separate target, the monitoring platform watched by an out-of-band heartbeat. The usual reason for an *approved alternative*, and worth a standing rule in the baseline.
+
+**Validation & test.** The Service Acceptance Criterion that proves a solution does what it was agreed to do: the Gate 2 Musts and accepted Shoulds demonstrated against their stated criteria, not assumed from "it deployed". The other criteria prove the service can be *run*; this one proves it *works*. The baseline sets the method of proof — how much evidence a service of this risk needs and who attests it — never the test cases, which belong to the solution. See *FitSD — Validation & Test Guidance*.
+
+**Companion profile.** An implementation profile whose satisfaction sources are another framework's requirements — a team running FitSM citing its PR12.3 for FSD-CH-1, say. Not a second conformance route: *Charter* §7's single model already allows conformance "with your own documents", and for such a team those documents are their management system. FitSD ships a worked one: *FitSD — Companion Profile — FitSM*.
 
 **SAC baseline.** An organisation's own ratified thresholds for each Service Acceptance Criterion, set once and inherited by every solution (FSD-GV-7). In effect a standing **service design baseline**: a Govern artefact every solution is designed *to* at Gate 2 and proven against at acceptance. A staged prerequisite: not needed to raise an idea, drafted as unratified rows at Gate 2 where none exists yet, and ratified for a conforming acceptance. See *FitSD — Service Acceptance Criteria*.
 
@@ -83,7 +91,7 @@ tags: [fitsd, definitions, glossary]
 
 **EOL / EOS.** End of life / end of support, when a product stops being maintained, a common trigger for new work.
 
-**Given / When / Then.** A plain way to write a testable criterion: *given* a situation, *when* something happens, *then* this should result. Borrowed from behaviour-driven development.
+**Given / When / Then.** A plain way to write a testable criterion: *given* a situation, *when* something happens, *then* this should result. Borrowed from behaviour-driven development. Used on Gate 2's requirements table (FSD-FRM-02 §2) to say how each user story will be proven, and demonstrated at acceptance under *Validation & test*. See *FitSD — Validation & Test Guidance*.
 
 **JML.** Joiners, movers, leavers: the lifecycle of granting, changing and removing a person's access.
 

@@ -18,7 +18,7 @@ satisfies:
   - FSD-SD-6
   - FSD-SD-7
 review_cycle: Annual, or on material change to how the team takes on new work
-date: 2026-09-18
+date: 2026-10-21
 tags:
   - fitsd
   - solution-development
@@ -144,7 +144,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 **Purpose.** Confirm the chosen approach is designed and ready to build, including how it will be operated.
 
-**What is captured** (on FSD-FRM-02): a carry-forward summary from the approved Gate 1, refined as more is known; requirements as user stories, MoSCoW-rated; the architecture, with a diagram that shows where security sits; the **design approach for each Service Acceptance Criterion** (§7): how each will be met against the standing baseline, or against draft rows marked unratified where none is ratified yet; operational impact (monitoring, billing/chargeback, service desk, environments, and any changes the service forces on your change or incident processes); a RAIDD log; and refined effort, cost and a light timeline (key milestones with target dates, and person-days by role, not a full FTE model).
+**What is captured** (on FSD-FRM-02): a carry-forward summary from the approved Gate 1, refined as more is known; requirements as user stories, MoSCoW-rated, each saying how it will be proven; the architecture, with a diagram that shows where security sits; the **design approach for each Service Acceptance Criterion** (§7): how each will be met against the standing baseline, or against draft rows marked unratified where none is ratified yet; operational impact (monitoring, billing/chargeback, service desk, environments, and any changes the service forces on your change or incident processes); a RAIDD log; and refined effort, cost and a light timeline (key milestones with target dates, and person-days by role, not a full FTE model).
 
 **Outcomes:**
 
@@ -157,6 +157,8 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 
 **Purpose.** Confirm the solution is ready to run before it is accepted into service. The outputs of this process are the product itself **plus** the operational artefacts below that make it supportable. The criteria are defined once in *FitSD — Service Acceptance Criteria* and proven here against the organisation's standing baseline (FSD-GV-7). Each is *designed* at Gate 2 and *proven* here, on FSD-FRM-03, with evidence.
 
+**Every criterion is addressed, by one of three routes** (FSD-SD-5): met against the baseline; met by an **approved alternative**, where the criterion applies but the standard means doesn't fit, approved at Gate 2 with its reason; or **N/A per baseline**, citing a standing applicability rule. The route is recorded with the evidence. Nothing is left blank.
+
 | Criterion | Proven at acceptance |
 |---|---|
 | **Documentation** | HLD (carrying the design decisions and their rationale from delivery), runbook, recovery procedure, operating procedures (SOPs) and user/how-to docs published; links recorded |
@@ -166,6 +168,7 @@ The lifecycle runs **Idea Brief** (FSD-FRM-00) → Gate 1 → optional PoC → G
 | **Availability** | Expected availability / SLO met or accepted; capacity and scaling understood; DR position recorded |
 | **Monitoring & alerting** | Monitoring live with thresholds set and alert routing confirmed; a test alert observed end-to-end |
 | **Incident profile** | Service-level incident triggers and severities defined (what counts as an incident for *this* service) and registered with the incident-management process (FSD-RR-6) — registration evidenced by who accepted the profile for that process, and when |
+| **Validation & test** | The Gate 2 requirements (FSD-FRM-02 §2) demonstrated against their stated criteria — the Musts and the accepted Shoulds — dated, with results recorded and failures shown beside the passes; attested by whoever the baseline names |
 | **Supportability / handover** | Operating and support model agreed; runbook and SOPs accepted by the named operators — first-line support included — in a dated record; knowledge transfer / cross-training delivered; **continuity** assured: operating knowledge captured, not reliant on a single person; any new or changed standing procedure the service forced (Gate 2 §4) written and adopted |
 | **Cost / licensing** | Licences in place; ongoing run-cost confirmed and owned |
 

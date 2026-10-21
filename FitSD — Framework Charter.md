@@ -4,10 +4,10 @@ framework: FitSD
 document: Charter
 tier: 0
 type: framework charter
-version: 0.3
+version: 0.4
 status: draft
 owner: Tristan Findley
-date: 2026-08-31
+date: 2026-10-21
 tags:
   - fitsd
   - framework
@@ -27,7 +27,9 @@ tags:
 
 A small team trying to run services properly hits the same wall every time. ITIL and ISO 20000 assume a department, a budget, and people whose whole job is process. Most teams have none of that. They still have to decide what's worth building, design it so it can actually be run, and not get caught out when it breaks at the worst moment.
 
-FitSD is the smallest amount of that discipline a handful of people can keep up. It takes what ITIL, ISO 20000 and FitSM get right and drops everything a small team can't sustain.
+FitSD is a **Solution Development process** — the front door new work comes through, and the definition of done it has to meet — **plus the thin spine that process needs when nothing else is there.**
+
+Which half you adopt depends on what you already have. A team running FitSM, ITIL or ISO 20000 takes the process and leaves the spine: their management system already answers the governance, change, incident and security requirements, and FitSD builds the design-and-transition flow those standards require but don't ship. A team with nothing takes both, and FitSD is the smallest amount of that discipline a handful of people can keep up. Either way it takes what ITIL, ISO 20000 and FitSM get right and drops everything a small team can't sustain.
 
 The name nods to **FitSM** (*Fit for Service Management*), the lightweight ITSM standard it sits closest to. FitSD is *Fit for Solution Development*. Same intent, narrower focus: the front door work comes through. *(Working name; the naming story is in the project's notes.)*
 
@@ -39,7 +41,7 @@ FitSD doesn't compete with ITIL or ISO 20000. It's a smaller cut of the same clo
 | ------------- | ----------------------------------- | ------------------------------------------------------------------------ |
 | ITIL 4        | Heavy, whole value chain            | FitSD borrows the lifecycle ideas, drops the breadth                     |
 | ISO/IEC 20000 | Certifiable standard                | FitSD requirements are a defensible subset                               |
-| FitSM         | Lightweight, ~14 processes, neutral | Closest cousin; FitSD is lighter still and **intake-first**              |
+| FitSM         | Lightweight, 14 processes, neutral  | Closest cousin, and the natural **companion**: FitSM requires intake, design-and-transition planning and acceptance testing but ships no process for them. FitSD is that process, and lighter still if you adopt it alone |
 | USM / VeriSM  | Method / digital-first              | Compatible philosophies; FitSD is more prescriptive about the front door |
 
 Two commitments set it apart. Work enters through one front door, not a dozen side channels. And nothing goes live until it's ready to be run (documented, recoverable, secure, monitored, supportable), not just switched on. Security and resilience are designed in from the start, not bolted on once an auditor asks.
@@ -58,7 +60,9 @@ The rules that decide what makes the cut.
 
 ## 4. The capability model
 
-FitSD splits service management into five core groups, plus one **conditional** capability, supplier / supply-chain assurance (**FSD-SC**), for teams whose services rely on suppliers and third-party dependencies (it closes the NIS2 supply-chain gap; see its card).
+FitSD organises what a service-management system has to answer into five core groups, plus one **conditional** capability, supplier / supply-chain assurance (**FSD-SC**), for teams whose services rely on suppliers and third-party dependencies (it closes the NIS2 supply-chain gap; see its card).
+
+The groups are a way of covering the ground, not a claim to own it. FitSD builds a process for exactly one of them — Solution Development. For the rest it states the requirement and points at whatever you already run. If that is a FitSM or ITIL management system, those capabilities are answered there and you adopt the front door alone (see §7).
 
 | Group                | Question it answers                     | Core capabilities                                                    |
 | -------------------- | --------------------------------------- | -------------------------------------------------------------------- |
@@ -137,6 +141,10 @@ FitSD names functions, not job titles. On a small team one person wears several 
 ## 7. Conformance and maturity
 
 You conform to FitSD when you can show each Tier 1 requirement is met, with your own documents, tools and registers. It's about meeting the requirement, not adopting our templates.
+
+**That includes another framework's requirements.** If you run a FitSM, ITIL or ISO 20000 management system, the document you point at for most of FitSD's spine is that system. Your implementation profile names the requirement over there that satisfies the requirement over here — FitSM's PR12.3 for FSD-CH-1, say — and you have conformed, without writing a second management system or taking on a second definition of one. There is **one** conformance model and one bar; a *companion profile* is simply an implementation profile whose satisfaction sources are another framework's requirements. FitSD ships a worked one: *FitSD — Companion Profile — FitSM*.
+
+Where the mapping is partial — the other framework requires the intent but not FitSD's specific bar — the profile records the gap and how you close it. That is the profile doing its job, not a lesser kind of conformance.
 
 Maturity is a rough self-assessment, scored per capability:
 

@@ -47,6 +47,8 @@ gate one accountable Approver, every live service one named Service Owner.
 - [Adoption & Positioning](FitSD%20%E2%80%94%20Adoption%20&%20Positioning.md): the pitch, who adopts it, fit by org size, where it's the wrong tool
 - [Information Stores](reference/FitSD%20%E2%80%94%20Information%20Stores.md): every register and record, tool-agnostic, with owners
 - [Standards Alignment](reference/FitSD%20%E2%80%94%20Standards%20Alignment.md): mappings to FitSM, ITIL 4, USM, ISO/IEC 27001, NIS2
+- [Companion Profile — FitSM](reference/FitSD%20%E2%80%94%20Companion%20Profile%20%E2%80%94%20FitSM.md): for a team already running FitSM — which FitSM requirement satisfies which FitSD one, what's left to build, and where the forms feed their records
+- [Validation & Test Guidance](reference/FitSD%20%E2%80%94%20Validation%20&%20Test%20Guidance.md): how to prove a solution does what was agreed, proportionate to risk — the Validation & test criterion's how
 
 ## Using FitSD with an assistant or agent
 

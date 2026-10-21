@@ -17,6 +17,12 @@ questionnaire, or after adopting a new version of the standard.
      register, the record, the dated review that proves the shall in operation.
    - Grade: **met / met-but-thin (would not survive an auditor) / not met / N-A with the
      recorded reason**.
+   - Where the profile is a **companion profile** — satisfaction sources are another
+     framework's requirement IDs rather than the team's own documents — grade the cited
+     requirement, not the citation. FitSM's PR12.3 standing behind FSD-CH-1 is conformance
+     (*Charter* §7), not a dodge; but a *partial* mapping needs the profile to record what
+     closes the difference, and an absent note is the gap. *FitSD — Companion Profile —
+     FitSM* carries the worked mapping and its coverage column.
 3. Watch the requirements that fail quietly in practice — the validation evidence says
    these decay first: register currency (FSD-GV-4), the review actually happening and
    looking at per-service state (FSD-GV-5), continuity re-established on owner change

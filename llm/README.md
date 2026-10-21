@@ -61,9 +61,10 @@ The same reference files work as agent briefs. Patterns that fit the standard's 
   first validation run showed conditions die politely on monthly agendas precisely
   because nothing mechanical reads their dates.
 - **Acceptance linting in CI.** A submitted Service Acceptance Record is checked before
-  the human review: empty evidence cells, undated operator acceptance, N/A without an
-  applicability rule to cite, a missing register entry. The lint gates the *meeting*,
-  never the decision.
+  the human review: empty evidence cells, a criterion with no route stated, undated
+  operator acceptance, N/A without an applicability rule to cite, an approved alternative
+  with no Gate 2 approval behind it, a missing register entry. The lint gates the
+  *meeting*, never the decision.
 - **Review-pack assembly.** Before the management review, an agent walks the service
   register per service (owner still employed? deputy named? last restore test? last
   continuity evidence? service statement published?) and produces the per-service table

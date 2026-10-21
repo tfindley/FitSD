@@ -4,10 +4,10 @@ framework: FitSD
 document: Requirements
 tier: 1
 type: normative
-version: 0.3
+version: 0.4
 status: draft
 owner: Tristan Findley
-date: 2026-08-31
+date: 2026-10-21
 tags:
   - fitsd
   - framework
@@ -35,7 +35,7 @@ The *how* is satisfied one of two ways: (a) a **FitSD reference capability** (a 
 
 The management system itself.
 
-**Reference (how satisfied):** met directly by your scope, document-control, roles and review practices. FitSD ships no separate process. Maps to FitSM GR1–GR9, ITIL SVS governance, ISO 27001 clauses 4–10.
+**Reference (how satisfied):** met directly by your scope, document-control, roles and review practices. FitSD ships no separate process. Maps to FitSM GR1–GR7, ITIL SVS governance, ISO 27001 clauses 4–10.
 
 | ID          | Requirement                                                                                                          | Note                                        |
 | ----------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
@@ -47,7 +47,7 @@ The management system itself.
 | **FSD-GV-6** | Roles **shall** be defined, including who may authorise what.                                                        | One person may hold several.                |
 | **FSD-GV-7** | The organisation **shall** define and **ratify a standing Service Acceptance baseline** — its own thresholds for each Service Acceptance Criterion — and apply it to every solution's Service Acceptance. | The SAC categories are fixed (FSD-SD-5); the *thresholds* are the organisation's, set once and inherited by every solution rather than rediscovered each time. Defined in *reference/FitSD — Service Acceptance Criteria*; stood up via *FitSD — Implementation Guide*. |
 | **FSD-GV-8** | When the accountable owner of a live service changes or leaves, continuity **shall** be re-established and re-evidenced within a period the organisation defines: a handover, the successor's walk-through of the runbook and recovery procedure, any deputy or cover the baseline requires re-named, and the leaver's owned register entries transferred. | The gap between "owner named" (FSD-GV-2) and "leaver's access revoked" (FSD-SA-2) is where operating knowledge lives. Continuity is proven at Service Acceptance (FSD-SD-5); this re-proves it on the one event that voids it. |
-| **FSD-GV-9** | Each live service **shall** have agreed, recorded service levels — or an explicit best-effort statement — with its customers, **published to them**, and performance against them **shall** be reported to those customers at a defined cadence. | Thin and reference-out: the availability SLO already lives in the SAC; reporting can ride the FSD-GV-5 review or another meeting you already hold. Closes the FitSM PR2/PR3 gap. |
+| **FSD-GV-9** | Each live service **shall** have agreed, recorded service levels — or an explicit best-effort statement — with its customers, **published to them**, and performance against them **shall** be reported to those customers at a defined cadence. | Thin and reference-out: the availability SLO already lives in the SAC — or, where SLAs exist, the SAC verifies against them; reporting can ride the FSD-GV-5 review or another meeting you already hold. Closes the FitSM PR2/PR3 gap. |
 
 ## FSD-SD — Solution Development
 
@@ -61,7 +61,7 @@ The front door. How net-new work enters and reaches live service, and the contro
 | **FSD-SD-2** | A new service **shall** pass a value/feasibility decision before design begins.                                                                                                                                       | Gate 1: "worth doing?"                          |
 | **FSD-SD-3** | A new service **shall** pass a design-readiness decision before delivery, covering how it will be operated.                                                                                                           | Gate 2: "ready to build?"                       |
 | **FSD-SD-4** | Every new or materially changed service **shall** meet a defined Service Acceptance / Definition of Done before entering live service, **evidenced** rather than asserted.                                            | Readiness baked in.                              |
-| **FSD-SD-5** | Service Acceptance **shall**, as a minimum, cover: documentation; tested backup and recoverability; security; access control; availability; monitoring and alerting; service-level incident triggers; supportability, handover and continuity (operating knowledge captured, not reliant on a single person); and cost/licensing. | The Definition of Done: categories defined in *reference/FitSD — Service Acceptance Criteria*, proven at FSD-PRO §7. The set may grow as practice matures; thresholds are the organisation's standing baseline (FSD-GV-7), including any recorded applicability rules. Incident triggers also satisfy FSD-RR-6. |
+| **FSD-SD-5** | Service Acceptance **shall address** every Service Acceptance Criterion — met against the standing baseline, met by an **approved alternative**, or **not applicable** under a baseline rule — recording the route taken and its rationale. The criteria **shall**, as a minimum, cover: documentation; tested backup and recoverability; security; access control; availability; monitoring and alerting; service-level incident triggers; **validation that the agreed requirements are met**; supportability, handover and continuity (operating knowledge captured, not reliant on a single person); and cost/licensing. | The Definition of Done: categories defined in *reference/FitSD — Service Acceptance Criteria*, proven at FSD-PRO §7. *Address* rather than *cover* is what stops a silent skip: an approved alternative is a deliberate Gate 2 decision for a criterion that applies but cannot be met the standard way (a backup platform cannot restore-test itself); an N/A cites a standing rule. The set may grow as practice matures; thresholds are the organisation's standing baseline (FSD-GV-7), including any recorded applicability rules. Incident triggers also satisfy FSD-RR-6. Validation proves the Gate 2 requirements were delivered, not merely that the service runs. |
 | **FSD-SD-6** | Each gate and acceptance decision **shall** have a single accountable approver and be recorded.                                                                                                                       | Lightweight, single-approver by default.         |
 | **FSD-SD-7** | Conditions attached to a gate or acceptance decision **shall** be recorded with an owner and a target date and tracked to closure; a breached condition **shall** be escalated to the approver who set it.             | Real decisions are usually "yes, with conditions". The forms carry the fields (FRM-02 §1, FRM-03 §2–3); this is the duty that stops conditions silently dying after go-live. A new requirement, not a tightening of FSD-SD-6. |
 

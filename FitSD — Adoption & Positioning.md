@@ -7,7 +7,7 @@ type: explanatory (non-normative)
 version: 0.4
 status: draft
 owner: "Tristan Findley"
-date: 2026-09-18
+date: 2026-10-21
 tags: [fitsd, adoption, positioning, pitch, executive-summary, explanatory]
 ---
 
@@ -115,11 +115,13 @@ This diagram is the Solution Development slice. For the same inputs-and-outputs 
 | **SMB (10–200)** | The whole lightweight management system, and the on-ramp to ISO 27001 / NIS2 | Credibility to customers and regulators, with no enterprise PMO |
 | **Enterprise** | A team-level front door feeding the heavier ITIL machinery | Local discipline; it was never meant to be the system of record |
 
+**Already running FitSM, ITIL or ISO 20000?** Then size matters less than what you already have, and you adopt FitSD as a **companion** rather than a system. Your management system answers most of FitSD's spine already; what it doesn't give you is a runnable solution-development flow — FitSM requires proposals to be evaluated (PR1.2), design and transition to be planned (PR1.3) and releases to be tested against acceptance criteria (PR13.3, PR13.4), and ships no process for any of it. FitSD is that process. Your implementation profile cites your own framework's requirements for everything else; *FitSD — Companion Profile — FitSM* is a worked example, and *Charter* §7 explains why that is ordinary conformance rather than a second route.
+
 ## 7. Where FitSD is the wrong tool
 
 - **Not a full ISMS or ITIL** when certification scope, scale or a contract actually demands the heavy apparatus: a formal risk methodology, a Statement of Applicability, internal audit. FitSD is the on-ramp, not the destination.
 - **Not for routine change.** Day-to-day BAU belongs in Change & Release (FSD-CH), not the gates. The scope test in `FSD-PRO §1` exists precisely to keep it out.
-- **Little to add** for a team already running mature ITIL or ISO that works — beyond, maybe, borrowing the intake-first pattern as a front door.
+- **Little to add** for a team whose solution-development flow already works — a mature ITIL or ISO shop that genuinely evaluates proposals, designs for operability and tests against acceptance criteria before go-live. If that is you, take the SAC as a checklist and leave the rest. (If it *isn't* you, the gap is the point: see the companion note in §6.)
 
 ## 8. The adoption journey
 

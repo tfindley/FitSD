@@ -21,7 +21,7 @@ authority stays with the humans; you keep the pack complete, baseline-true and h
   incident processes (those are proven written-and-adopted at acceptance).
 - **§5, row by row against the ratified baseline** — transcribe the baseline's bar, then
   the design answer. None ratified yet? Ask the Solution Owner for draft rows marked
-  *draft — unratified* (the questions behind each number, never the number itself). N/A only where a standing applicability rule says so, cited.
+  *draft — unratified* (the questions behind each number, never the number itself). Every row gets a **route**: baseline, approved alternative, or N/A. N/A only where a standing applicability rule says so, cited. Propose an **approved alternative** where the criterion applies but the standard means can't work — the classic case is a service that provides a SAC control to others (backup, monitoring, identity, incident, patching), which must prove that criterion independently of itself; say so plainly and let the Approver decide. Press on the **Validation & test** row: it needs §2's Musts to carry stated criteria, so if §2's *How proven* column is empty, that is the gap to close first.
 - **RAIDD (§6)**: risks/assumptions/issues/dependencies with owners; **decisions carry
   rationale, decider and date** — at acceptance, open risks transfer to the risk register
   and decisions into the standing design doc. Write them well enough to be worth

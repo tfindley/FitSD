@@ -17,8 +17,21 @@ Criteria*; reference it **by name**, never by count):
 - **Against the baseline**, not against vibes — quote the baseline's bar next to any row
   you flag. If the bar is Gate 2's *draft — unratified* rows, the record must say it's a
   trial, not a conforming acceptance (FSD-GV-7); flag it if it doesn't.
-- **N/A only per a standing applicability rule**, cited, with the reason. N/A with no rule
-  to point at means the baseline needs changing, not the record bending.
+- **Every criterion addressed, by a stated route** — baseline, approved alternative, or
+  N/A. A blank row is the finding. **N/A only per a standing applicability rule**, cited,
+  with the reason: N/A with no rule to point at means the baseline needs changing, not the
+  record bending. An **approved alternative** must cite the Gate 2 approval that authorised
+  it and still carry evidence — "approved" is not "proven". Where an alternative is weaker
+  than the baseline and time-bound, check it is carried as a condition (FSD-SD-7) rather
+  than banked as permanent.
+- **Foundational services**: if the service under acceptance provides a SAC control to
+  other services — backup, monitoring, identity, incident, patching — press on whether that
+  criterion is proven *independently of itself*. A backup platform whose restore test ran
+  through its own catalogue has proven nothing.
+- **Validation & test**: the Gate 2 Musts and accepted Shoulds demonstrated against their
+  stated criteria, dated, attested by whoever the baseline names. "Built" is not
+  "validated", and "it deployed" is not evidence. Check the attestation against the
+  baseline's rule on whether the builder may sign their own work.
 - **Operator acceptance** (Supportability row): a dated record from the *named* operators,
   first line included — not a meeting's verbal yes. Cross-training evidenced as the
   baseline defines sufficiency.
@@ -43,6 +56,6 @@ Criteria*; reference it **by name**, never by count):
 ## Output
 
 For a preparer: the gap list to close before submission. For an Approver: a one-page
-audit — rows clean / rows to press / rows unsupported — and a reminder that "Accepted"
+audit — rows clean / rows to press / rows unsupported / rows unaddressed — and a reminder that "Accepted"
 may carry conditions, each needing an owner, a date and a tracked home. The decision and
 the signature are theirs.

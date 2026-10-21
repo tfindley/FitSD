@@ -10,7 +10,7 @@ status: draft
 owner: Management System Owner
 approver: Approver
 governing_process: FSD-PRO
-date: 2026-09-18
+date: 2026-10-21
 tags:
   - fitsd
   - solution-development
@@ -32,6 +32,7 @@ tags:
 | **Solution Owner** | *(accountable for this solution; confirmed by the Approver at sign-off)* |
 | **Contributors**   |                                   |
 | **Linked Idea Brief (FSD-FRM-00)** | *(if one was raised)* |
+| **Framework record(s)** | *(optional — if you run another framework, the matching record there: the service proposal, the change or release ID. See your companion profile)* |
 | **Date**           |                                   |
 
 ## 1. Idea
